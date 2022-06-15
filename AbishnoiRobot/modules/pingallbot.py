@@ -230,17 +230,7 @@ async def bots(client, message):
   except FloodWait as e:
     await asyncio.sleep(e.value)
 
-@teletips.on_message(filters.command("start") & filters.private)
-async def start(client, message):
-  text = f'''
-Heya {message.from_user.mention},
-My name is **PingAll**. I'm here to help you to get everyone's attention by mentioning all members in your chat.
 
-I have some additional cool features and also I can work in channels.
-
-Don't forget to join my [channel](http://t.me/Abishnoi_bots) to recieve information on all the latest updates.
-teletips.run()
- 
  
 #Copyright ©️ 2021 TeLe TiPs. All Rights Reserved (ᴀʟʟ ʀɪɢʜᴛs ᴛᴇʟᴇ ᴛɪᴘs ) 
 
