@@ -58,3 +58,4 @@ motor
 telegram
 gpytranslate
 yt_dlp
+gtts
