@@ -454,8 +454,8 @@ __help__ = """
  ❍ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
  ❍ /kang*:* reply to a sticker to add it to your pack.
  ❍ /stickers*:* Find stickers for given term on combot sticker catalogue
- ❍ /mmf*:* Reply to photo ( ex : `/mmf ABISHNOI ' )
 """
+
 
 __mod_name__ = "Sᴛɪᴄᴋᴇʀ"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
