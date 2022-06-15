@@ -14,10 +14,9 @@
 
 
 <p align="center">
-  <img src="https://github.com/KingAbishnoi/AbishnoiRobot/blob/master/AbishnoiRobot/resources/Abishnoi.jpg">
-</p>
 
 ## ㅤㅤㅤ 🖤「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」🖤
+     
 ɪ ᴀᴍ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [💞「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」💞](https://t.me/Abishnoi_ro_bot)
 ᴛʜɪs ɪs ᴀ ᴅᴇᴍᴏ ʙᴏᴛ <br> ɪ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ нσω ʟᴏɴɢᴇʀ ɪ'ʟʟ вε ʜᴏsᴛɪɴɢ ɪᴛ...
 
