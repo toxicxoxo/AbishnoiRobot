@@ -57,3 +57,9 @@ def wall(update: Update, context: CallbackContext):
 
 WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall)
 dispatcher.add_handler(WALLPAPER_HANDLER)
+
+__mod_name__ = "Wᴀʟʟᴘᴀᴘᴇʀ"
+
+__help__ = """
+❍ /wallpaper *:*  Gᴇᴛ ᴀ ᴡᴀʟʟᴘᴀᴘᴇʀ.
+ """
