@@ -234,12 +234,12 @@ async def bots(client, message):
 __mod_name__ = "Pɪɴɢᴀʟʟ"    
      
 __help__ = """
-- /ping "input": <i>Mention all members.</i>
-- /remove: <i>Remove all deleted accounts.</i>
-- /admins: <i>Mention all admins.</i>
-- /bots: <i>Get the full bot list.</i>
-- /stop: <i>Stop an on going process.</i>
-'''
+- /all `input` *:* Mention all members.
+- /remove *:* Remove all deleted accounts.
+- /admins *:* Mention all admins.
+- /bots *:* Get the full bot list.
+- /stop *:* Stop an on going process.
+"""
   await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
 
 print("Done!")  
