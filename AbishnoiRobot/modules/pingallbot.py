@@ -13,7 +13,7 @@ from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import FloodWait
 
 teletips=Client(
-    "AbishnoiRobot",
+    "PingAllBot",
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"]
@@ -23,7 +23,7 @@ chatQueue = []
 
 stopProcess = False
 
-@teletips.on_message(filters.command(["gadu","all"]))
+@teletips.on_message(filters.command(["ping","all"]))
 async def everyone(client, message):
   global stopProcess
   try: 
@@ -229,17 +229,20 @@ async def bots(client, message):
       await teletips.send_message(message.chat.id, text3)
   except FloodWait as e:
     await asyncio.sleep(e.value)
-
-
- 
-#Copyright ©️ 2021 TeLe TiPs. All Rights Reserved (ᴀʟʟ ʀɪɢʜᴛs ᴛᴇʟᴇ ᴛɪᴘs ) 
-
-__mod_name__ = "Pɪɴɢᴀʟʟ"
-
+    
+    
+__mod_name__ = "Pɪɴɢᴀʟʟ"    
+     
 __help__ = """
- ❍ /ping <input> ᴏʀ /all  *:* @ᴀʟʟ  
- ❍ /admins ᴏʀ /staff *:* ᴀᴅᴍɪɴʟɪsᴛ
- ❍ /bots *:* ᴀʟʟ ʙᴏᴛs ʟɪsᴛ 
- ❍ /stop ᴏʀ /cancel *:* sᴛᴏᴘ ᴀᴄᴛɪᴠᴇ ᴘʀᴏᴄᴇss 
- ❍ /remove ᴏʀ  /clean *:* ʀᴇᴍᴏᴠᴇ ᴅᴇʟᴇᴀᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ 
-"""
+- /ping "input": <i>Mention all members.</i>
+- /remove: <i>Remove all deleted accounts.</i>
+- /admins: <i>Mention all admins.</i>
+- /bots: <i>Get the full bot list.</i>
+- /stop: <i>Stop an on going process.</i>
+'''
+  await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
+
+print("Done!")  
+teletips.run()
+ 
+#Copyright ©️ 2021 TeLe TiPs. All Rights Reserved 
