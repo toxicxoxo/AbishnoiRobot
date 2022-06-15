@@ -230,19 +230,13 @@ async def bots(client, message):
   except FloodWait as e:
     await asyncio.sleep(e.value)
     
+
+
+teletips.run()
+ 
     
 __mod_name__ = "Pɪɴɢᴀʟʟ"    
      
 __help__ = """
-- /all `input` *:* Mention all members.
-- /remove *:* Remove all deleted accounts.
-- /admins *:* Mention all admins.
-- /bots *:* Get the full bot list.
-- /stop *:* Stop an on going process.
-"""
-  await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
-
-print("Done!")  
-teletips.run()
- 
-#Copyright ©️ 2021 TeLe TiPs. All Rights Reserved 
+» /bots *:* bots.
+"""    
