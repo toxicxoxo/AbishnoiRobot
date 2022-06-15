@@ -105,3 +105,9 @@ async def ytmusic(client, message: Message):
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
+            
+__mod_name__ = "Vɪᴅᴇᴏ"
+
+__help__ = """
+❍ /video *:*  Gᴇᴛ ᴀ ᴠɪᴅᴇᴏ ғʀᴏᴍ ʏᴛ ᴜsɪɴɢ ɴᴀᴍᴇ 
+ """
