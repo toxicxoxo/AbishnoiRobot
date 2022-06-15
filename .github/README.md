@@ -24,16 +24,14 @@
 
     
     
-    <h3 align="center">
-    ─「 sᴜᴩᴩᴏʀᴛ 」─
-</h3>
+
 
 <p align="center">
 <a href="https://telegram.me/Abishnoi_bots"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <p align="center">
-<a href="https://telegram.me/Abishnoi1M"><img src="https://img.shields.io/badge/%20Abishnoi-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/Abishnoi1M"><img src="https://img.shields.io/badge/%20Abishnoi-black.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 
