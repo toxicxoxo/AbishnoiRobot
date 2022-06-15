@@ -8,13 +8,8 @@
 <p align="center">
     <a href="https://github.com/KingAbishnoi/AbishnoiRobot/stargazers"><img src="https://img.shields.io/github/stars/KingAbishnoi/AbishnoiRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
-<p align="center">
-    <a href="https://github.com/KingAbishnoi/AbishnoiRobot"> <img src="https://img.shields.io/github/repo-size/KingAbishnoi/AbishnoiRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/KingAbishnoi/AbishnoiRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/KingAbishnoi/AbishnoiRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/KingAbishnoi/AbishnoiRobot/issues"> <img src="https://img.shields.io/github/issues/KingAbishnoi/AbishnoiRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/KingAbishnoi/AbishnoiRobot/network/members"> <img src="https://img.shields.io/github/forks/KingAbishnoi/AbishnoiRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
-</p>
+
+
 
 
 ━━━━━━━━━━━━━━━━━━━━━━
