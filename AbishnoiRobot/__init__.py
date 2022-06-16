@@ -7,7 +7,7 @@ import telegram.ext as tg
 from aiohttp import ClientSession
 from pyrogram import Client, errors
 from telethon import TelegramClient
-
+from Python_ARQ import ARQ
 
 StartTime = time.time()
 
@@ -93,6 +93,9 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
+    ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
+    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ")
+
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
@@ -163,6 +166,8 @@ else:
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     INFOPIC = Config.INFOPIC
     REDIS_URL = Config.REDIS_URL
+    ARQ_API_KEY = Config.ARQ_API_KEY
+    ARQ_API_URL = Config.ARQ_API_URL
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
@@ -174,6 +179,10 @@ DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(1356469075)
 
+
+# ARQ Client
+print("[INFO]: INITIALIZING ARQ CLIENT")
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Abishnoi", API_ID, API_HASH)
