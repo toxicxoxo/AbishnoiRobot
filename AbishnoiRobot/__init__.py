@@ -91,7 +91,7 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
-    REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+    REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "UmsCkvpzKtQkjASh6ekqHSxG")
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "OIWIJR-QKCSFZ-ITMHQH-GWBKSG-ARQ")
