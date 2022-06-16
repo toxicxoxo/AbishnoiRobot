@@ -95,7 +95,8 @@ if ENV:
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "OIWIJR-QKCSFZ-ITMHQH-GWBKSG-ARQ")
-
+    SESSION_STRING = os.environ.get("SESSION_STRING", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
@@ -169,7 +170,7 @@ else:
     ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
     REM_BG_API_KEY = Config.REM_BG_API_KEY
-
+    STRING_SESSION = Config.STRING_SESSION
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
