@@ -7,7 +7,7 @@ from pyrogram import filters
 from AbishnoiRobot import pbot as client
 
 
-ANON = "https://telegra.ph/file/07339cc6eeafc45aa76e0.jpg"
+ANON = "https://telegra.ph/file/77bb85443f0a5f099c875.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
@@ -31,6 +31,7 @@ async def repo(client, message):
                     InlineKeyboardButton(
                         "• sᴏᴜʀᴄᴇ •",
                         url="https://github.com/KingAbishnoi/AbishnoiRobot",
+                      InlineKeyboardButton("• ᴍᴏʀᴇ ʙᴏᴛ's •", url="https://t.me/abishnoi_bots"),   
                     ),
                 ]
             ]
