@@ -7,7 +7,7 @@ from pyrogram import filters
 from AbishnoiRobot import pbot as client
 
 
-ANON = "https://telegra.ph/file/7bd111132fce009e4605e.jpg"
+ANON = "https://telegra.ph/file/07339cc6eeafc45aa76e0.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
