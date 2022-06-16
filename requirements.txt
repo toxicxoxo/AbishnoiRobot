@@ -59,3 +59,4 @@ telegram
 gpytranslate
 yt_dlp
 gtts
+python-arq
