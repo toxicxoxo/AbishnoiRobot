@@ -95,7 +95,7 @@ if ENV:
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "OIWIJR-QKCSFZ-ITMHQH-GWBKSG-ARQ")
-
+   REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "YnFb2HdqvrwMPjZeqUvX295n")
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
@@ -168,6 +168,7 @@ else:
     REDIS_URL = Config.REDIS_URL
     ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
+    REM_BG_API_KEY = Config.REM_BG_API_KEY
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
