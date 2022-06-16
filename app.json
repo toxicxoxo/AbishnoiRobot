@@ -1,6 +1,6 @@
 {
       "name": "「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」",
-      "description": "Telegram Group Management ,Fun bot.",
+      "description": "Telegram Group Management or Fun bot.",
       "logo": "https://telegra.ph/file/05982372c0c7b30bee416.jpg",
       "keywords": [
          "telegram",
@@ -169,7 +169,7 @@
       },
       "START_IMG": {
       "description": "Telegraph link of the image which will be shown at start command.",
-         "required": "True"
+         "required": "false"
          "value": "https://telegra.ph/file/af7da107698b16d23ea0b.jpg"
    },      
       "BAN_STICKER": {
