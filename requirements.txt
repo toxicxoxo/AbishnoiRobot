@@ -60,3 +60,4 @@ gpytranslate
 yt_dlp
 gtts
 python-arq
+StringSession
