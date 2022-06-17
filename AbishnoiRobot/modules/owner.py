@@ -6,9 +6,15 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 def command(bot, message):
     bot.send_message(\n
     
-                BUTTON = [
-        [
-
-            Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Abishnoi1M"),
-        ]
-    ]
+                     reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=1452219013"),
+                    InlineKeyboardButton(
+                        "• sᴏᴜʀᴄᴇ •",
+                        url="https://github.com/KingAbishnoi/AbishnoiRobot",
+                    ),
+                ]
+            ]
+        ),
+   
