@@ -1,10 +1,11 @@
 # Code By Asad Deliver To Abɪsʜɴᴏɪ (ᴛʜᴀɴᴋs ᴀsᴀᴅ ᴅᴇʟɪᴠᴇʀ  )
 # © Alexa_Help
 
-from AbishnoiRobot import pbot as bot
+import asyncio
 from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.types import Message
+from pyrogram.types import (InlineKeyboardButton,
+                            InlineKeyboardMarkup, InputMediaPhoto, Message)
+from AbishnoiRobot import pbot as bot
 
 @bot.on_message(filters.command("owner") & filters.private & ~filters.edited)
 async def useradd(_, message: Message):
