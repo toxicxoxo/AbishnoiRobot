@@ -2,7 +2,7 @@ ffrom AbishnoiRobot import pbot as bot
 from pyrogram import filters 
 @bot.on_message(filters.command("owner"))
 def command(bot, message):  
-    bot.send_message(message.chat.id, " ENJOY "",
+    bot.send_message(message.chat.id,"@Abishnoi1M")
                      reply_markupp=InlineKeyboardMarkup(
             [
                 [
@@ -13,7 +13,9 @@ def command(bot, message):
                     ),
                 ]
             ]
-        )")
+        )
+        ")
+        
    
     
                      
