@@ -1,5 +1,5 @@
 
-  from platform import python_version as y
+
   from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
   from pyrogram import filters
   from AbishnoiRobot import pbot as client
