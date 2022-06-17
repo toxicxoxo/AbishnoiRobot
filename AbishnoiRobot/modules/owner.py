@@ -1,7 +1,7 @@
 # Code By Asad Deliver To Abɪsʜɴᴏɪ (ᴛʜᴀɴᴋs ᴀsᴀᴅ ᴅᴇʟɪᴠᴇʀ  )
 # © Alexa_Help
 
-  from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
   from AbishnoiRobot import pbot as bot
   from pyrogram import filters
 
