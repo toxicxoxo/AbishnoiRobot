@@ -4,7 +4,7 @@
 
   from AbishnoiRobot import pbot as bot
   from pyrogram import filters
-
+  from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
    AK = "https://telegra.ph/file/348fd99cf32b44153f5c1.jpg"
 
