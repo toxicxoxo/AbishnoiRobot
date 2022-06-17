@@ -4,13 +4,14 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 @bot.on_message(filters.command("owner"))
 def command(bot, message):
-    bot.send_message(message.chat.id, 
-    
+    bot.send_message(message.chat.id,
+                     
+    buttons = [
     
              reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=1452219013"
+                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/Abishnoi1M"
                     
                                         ),
                 ]
