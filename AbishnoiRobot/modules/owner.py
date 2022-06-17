@@ -2,9 +2,10 @@
 # © Alexa_Help
 
 
-  from AbishnoiRobot import pbot as bot
-  from pyrogram import filters
-  from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+import asyncio
+from pyrogram import filters
+from pyrogram.types import (InlineKeyboardButton,                             InlineKeyboardMarkup, InputMediaPhoto, Message)
+from AbishnoiRobot import pbot as bot
 
    AK = "https://telegra.ph/file/348fd99cf32b44153f5c1.jpg"
 
