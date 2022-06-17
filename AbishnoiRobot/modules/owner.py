@@ -1,12 +1,9 @@
-from AbishnoiRobot import pbot as bot
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
+ffrom AbishnoiRobot import pbot as bot
+from pyrogram import filters 
 @bot.on_message(filters.command("owner"))
-def command(bot, message):
-    bot.send_message(
-    
-                     reply_markup=InlineKeyboardMarkup(
+def command(bot, message):  
+    bot.send_message(message.chat.id, "
+                     reply_markupp=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=1452219013"),
@@ -16,5 +13,7 @@ def command(bot, message):
                     ),
                 ]
             ]
-        ),
+        )")
    
+    
+                     
