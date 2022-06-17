@@ -6,7 +6,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @bot.on_message(filters.command("owner") & filters.private & ~filters.edited)
-async def useradd(_, message: Message):
+ def useradd(_, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/9df5e00ded2ef88341769.jpg",
         caption=f"""•ᴀʙɪsʜɴᴏɪ•""",
