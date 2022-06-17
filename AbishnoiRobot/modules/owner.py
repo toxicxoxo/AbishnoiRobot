@@ -1,10 +1,11 @@
+
   from platform import python_version as y
   from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
   from pyrogram import filters
   from AbishnoiRobot import pbot as client
 
 
-   AK =  "https://telegra.ph/file/348fd99cf32b44153f5c1.jpg"
+   AK = "https://telegra.ph/file/348fd99cf32b44153f5c1.jpg"
    
 
    
@@ -26,3 +27,5 @@
             ]
         ),
     )
+
+
