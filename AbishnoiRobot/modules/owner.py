@@ -4,6 +4,7 @@
 from AbishnoiRobot import pbot as bot
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import Message
 
 @app.on_message(filters.command("owner") & filters.private & ~filters.edited)
 async def useradd(_, message: Message):
