@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 def command(bot, message):
     bot.send_message
     
-        keyboard = InlineKeyboardMarkup(
+                InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
