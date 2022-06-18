@@ -1,11 +1,3 @@
-#https://t.me/Abishnoi1M
-#https://t.me/Abishnoi_bots
-#https://t.me/AlishaSupport
-
-#kua bi change Kiya to lode lag skte h 
-
-#Copyright policy 
-
 import asyncio
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,                             InlineKeyboardMarkup, InputMediaPhoto, Message)
@@ -29,11 +21,37 @@ async def repo(client, message):
                         ]     
                   ]      
             ),     
+      )
       
-      
-      
-      
-      
-      )  
-__mod_name__ = "Oᴡɴᴇʀ" 
+       
+        
+         
+           
+         @bot.on_message(filters.command(["subway"]))
+async def repo(client, message):   
+       await message.reply_photo(      
+            photo=ABISHNOI,      
+            caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」](t.me/Abishnoi_ro_bot)**
+""",        
+            reply_markup=InlineKeyboardMarkup(   
+                  [          
+                        [          
+                              InlineKeyboardButton("• sᴜʙᴡᴀʏ-sᴜʀғᴇʀs- •", url="https://poki.com/en/g/subway-surfers"),
+                              InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/Abishnoi1M"),             
+                              
+                        ]     
+                  ]      
+            ),     
+      )         
+              
+                
+                      
+                      
+                        
+                          
+                            
+                              
+                                             
+                                        
+__mod_name__ = "ɢᴀᴍᴇs" 
 
