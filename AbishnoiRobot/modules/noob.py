@@ -27,7 +27,7 @@ async def repo(client, message):
         
          
            
-         @bot.on_message(filters.command(["subway"]))
+         @bot.on_message(filters.command(["game1", "subway"]))
 async def repo(client, message):   
        await message.reply_photo(      
             photo=ABISHNOI,      
