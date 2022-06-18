@@ -5,7 +5,7 @@ from pyrogram.types import (InlineKeyboardButton,                             In
 
 from AbishnoiRobot import pbot as bot
       
-ABISHNOI = "https://telegra.ph/file/7bd111132fce009e4605e.jpg"  
+ABISHNOI = "https://telegra.ph/file/348fd99cf32b44153f5c1.jpg"  
 
 @bot.on_message(filters.command(["noob", "owner"]))
 async def repo(client, message):   
@@ -16,7 +16,7 @@ async def repo(client, message):
             reply_markup=InlineKeyboardMarkup(   
                   [          
                         [          
-                              InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=1452219013"),        
+                              InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/Abishnoi1M"),        
                               
                         ]     
                   ]      
