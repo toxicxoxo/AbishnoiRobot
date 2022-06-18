@@ -27,10 +27,14 @@ async def repo(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=1452219013"),
+                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/Abishnoi1M"),
                     InlineKeyboardButton(
-                        "• sᴏᴜʀᴄᴇ •",
-                        url="https://github.com/KingAbishnoi/AbishnoiRobot",
+                        "• sᴏᴜʀᴄᴇ ʀᴏʙᴏᴛ •",
+                        url="https://github.com/KingAbishnoi/AbishnoiRobot"),
+
+                    InlineKeyboardButton(
+                        "• sᴏᴜʀᴄʀ ᴍᴜsɪᴄ •",
+                        url="https://github.com/KingAbishnoi/AbishnoiXMusic",
                      
                     ),
                 ]
