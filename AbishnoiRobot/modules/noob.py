@@ -1,3 +1,4 @@
+      
       from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton   
       from pyrogram import filters  
       from AbishnoiRobot import pbot as client 
@@ -14,8 +15,7 @@ async def repo(client, message):
                   [          
                         [          
                               InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=1452219013"),        
-                              InlineKeyboardButton("• sᴏᴜʀᴄᴇ •",      url="https://github.com/KingAbishnoi/AbishnoiRobot",           
-                                                  ),             
+                              
                         ]     
                   ]      
             ),     
