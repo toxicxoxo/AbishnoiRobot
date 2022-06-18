@@ -28,18 +28,18 @@ def allow_connections(update, context) -> str:
                 sql.set_allow_connect_to_chat(chat.id, False)
                 send_message(
                     update.effective_message,
-                    "Connection has been disabled for this chat",
+                    "Cᴏɴɴᴇᴄᴛɪᴏɴ ʜᴀs ʙᴇᴇɴ ᴅɪsᴀʙʟᴇᴅ ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ",
                 )
             elif var == "yes":
                 sql.set_allow_connect_to_chat(chat.id, True)
                 send_message(
                     update.effective_message,
-                    "Connection has been enabled for this chat",
+                    "Cᴏɴɴᴇᴄᴛɪᴏɴ ʜᴀs ʙᴇᴇɴ ᴇɴᴀʙʟᴇᴅ ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ",
                 )
             else:
                 send_message(
                     update.effective_message,
-                    "Please enter `yes` or `no`!",
+                    "Pʟᴇᴀsᴇ ᴇɴᴛᴇʀ `yes` or `no`!",
                     parse_mode=ParseMode.MARKDOWN,
                 )
         else:
@@ -47,18 +47,18 @@ def allow_connections(update, context) -> str:
             if get_settings:
                 send_message(
                     update.effective_message,
-                    "Connections to this group are *Allowed* for members!",
+                    "Cᴏɴɴᴇᴄᴛɪᴏɴs ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ᴀʀᴇ *Aʟʟᴏᴡᴇᴅ* ғᴏʀ ᴍᴇᴍʙᴇʀs!",
                     parse_mode=ParseMode.MARKDOWN,
                 )
             else:
                 send_message(
                     update.effective_message,
-                    "Connection to this group are *Not Allowed* for members!",
+                    "Cᴏɴɴᴇᴄᴛɪᴏɴs ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ᴀʀᴇ * ɴᴏᴛ Aʟʟᴏᴡᴇᴅ* ғᴏʀ ᴍᴇᴍʙᴇʀs!",
                     parse_mode=ParseMode.MARKDOWN,
                 )
     else:
         send_message(
-            update.effective_message, "This command is for group only. Not in PM!"
+            update.effective_message, "Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘ ᴏɴʟʏ. Nᴏᴛ ɪɴ PM!"
         )
 
 
@@ -81,9 +81,9 @@ def connection_chat(update, context):
         chat_name = update.effective_message.chat.title
 
     if conn:
-        message = "You are currently connected to {}.\n".format(chat_name)
+        message = "Yᴏᴜ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ {}.\n".format(chat_name)
     else:
-        message = "You are currently not connected in any group.\n"
+        message = "Yᴏᴜ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɪɴ ᴀɴʏ ɢʀᴏᴜᴘ.\n"
     send_message(update.effective_message, message, parse_mode="markdown")
 
 
@@ -111,10 +111,10 @@ def connect_chat(update, context):
                         connect_chat, update.effective_message.from_user.id
                     )
                 except BadRequest:
-                    send_message(update.effective_message, "Invalid Chat ID!")
+                    send_message(update.effective_message, "ɪɴᴠᴀʟɪᴅ  ᴄʜᴀᴛ ɪᴅ !")
                     return
             except BadRequest:
-                send_message(update.effective_message, "Invalid Chat ID!")
+                send_message(update.effective_message, "ɪɴᴠᴀʟɪᴅ ᴄʜᴀᴛ ɪᴅ ")
                 return
 
             isadmin = getstatusadmin.status in ("administrator", "creator")
@@ -132,17 +132,17 @@ def connect_chat(update, context):
                     chat_name = conn_chat.title
                     send_message(
                         update.effective_message,
-                        "Successfully connected to *{}*. \nUse /helpconnect to check available commands.".format(
+                        "Successfully connected ᴛᴏ *{}*. \nɴᴏᴡ ᴜsᴇ /helpconnect ᴛᴏ ᴄʜᴇᴄᴋ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.".format(
                             chat_name
                         ),
                         parse_mode=ParseMode.MARKDOWN,
                     )
                     sql.add_history_conn(user.id, str(conn_chat.id), chat_name)
                 else:
-                    send_message(update.effective_message, "Connection failed!")
+                    send_message(update.effective_message, "Cᴏɴɴᴇᴄᴛɪᴏɴ ғᴀɪʟᴇᴅ!")
             else:
                 send_message(
-                    update.effective_message, "Connection to this chat is not allowed!"
+                    update.effective_message, "Cᴏɴɴᴇᴄᴛɪᴏɴ ᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ɪs ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ!"
                 )
         else:
             gethistory = sql.get_history_conn(user.id)
@@ -160,7 +160,7 @@ def connect_chat(update, context):
             conn = connected(context.bot, update, chat, user.id, need_admin=False)
             if conn:
                 connectedchat = dispatcher.bot.getChat(conn)
-                text = "You are currently connected to *{}* (`{}`)".format(
+                text = "Yᴏᴜ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ *{}* (`{}`)".format(
                     connectedchat.title, conn
                 )
                 buttons.append(
@@ -169,9 +169,9 @@ def connect_chat(update, context):
                     )
                 )
             else:
-                text = "Write the chat ID or tag to connect!"
+                text = "Wʀɪᴛᴇ ᴛʜᴇ ᴄʜᴀᴛ ID ᴏʀ ᴛᴀɢ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ!"
             if gethistory:
-                text += "\n\n*Connection history:*\n"
+                text += "\n\n*Cᴏɴɴᴇᴄᴛɪᴏɴ ʜɪsᴛᴏʀʏ:*\n"
                 text += "╒═══「 *Info* 」\n"
                 text += "│  Sorted: `Newest`\n"
                 text += "│\n"
@@ -224,14 +224,14 @@ def connect_chat(update, context):
                 chat_name = dispatcher.bot.getChat(chat.id).title
                 send_message(
                     update.effective_message,
-                    "Successfully connected to *{}*.".format(chat_name),
+                    "Sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ *{}*.".format(chat_name),
                     parse_mode=ParseMode.MARKDOWN,
                 )
                 try:
                     sql.add_history_conn(user.id, str(chat.id), chat_name)
                     context.bot.send_message(
                         update.effective_message.from_user.id,
-                        "You are connected to *{}*. \nUse `/helpconnect` to check available commands.".format(
+                        "Yᴏᴜ ᴀʀᴇ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ *{}*. \n ᴜsᴇ `/helpconnect` ᴛᴏ ᴄʜᴇᴄᴋ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.".format(
                             chat_name
                         ),
                         parse_mode="markdown",
@@ -241,10 +241,10 @@ def connect_chat(update, context):
                 except Unauthorized:
                     pass
             else:
-                send_message(update.effective_message, "Connection failed!")
+                send_message(update.effective_message, "Cᴏɴɴᴇᴄᴛɪᴏɴ ғᴀɪʟᴇᴅ!!")
         else:
             send_message(
-                update.effective_message, "Connection to this chat is not allowed!"
+                update.effective_message, "Cᴏɴɴᴇᴄᴛɪᴏɴ ᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ɪs ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ!"
             )
 
 
@@ -254,12 +254,12 @@ def disconnect_chat(update, context):
         disconnection_status = sql.disconnect(update.effective_message.from_user.id)
         if disconnection_status:
             sql.disconnected_chat = send_message(
-                update.effective_message, "Disconnected from chat!"
+                update.effective_message, "Dɪsᴄᴏɴɴᴇᴄᴛᴇᴅ ғʀᴏᴍ ᴄʜᴀᴛ!"
             )
         else:
-            send_message(update.effective_message, "You're not connected!")
+            send_message(update.effective_message, "Yᴏᴜ'ʀᴇ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ")
     else:
-        send_message(update.effective_message, "This command is only available in PM.")
+        send_message(update.effective_message, "Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ PM.")
 
 
 def connected(bot: Bot, update: Update, chat, user_id, need_admin=True):
@@ -291,14 +291,14 @@ def connected(bot: Bot, update: Update, chat, user_id, need_admin=True):
                 else:
                     send_message(
                         update.effective_message,
-                        "You must be an admin in the connected group!",
+                        "Yᴏᴜ ᴍᴜsᴛ ʙᴇ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘ!",
                     )
             else:
                 return conn_id
         else:
             send_message(
                 update.effective_message,
-                "The group changed the connection rights or you are no longer an admin.\nI've disconnected you.",
+                "Tʜᴇ ɢʀᴏᴜᴘ ᴄʜᴀɴɢᴇᴅ ᴛʜᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ʀɪɢʜᴛs ᴏʀ ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀɴ ᴀᴅᴍɪɴ.\n I'ᴠᴇ ᴅɪsᴄᴏɴɴᴇᴄᴛᴇᴅ ʏᴏᴜ",
             )
             disconnect_chat(update, bot)
     else:
@@ -306,15 +306,15 @@ def connected(bot: Bot, update: Update, chat, user_id, need_admin=True):
 
 
 CONN_HELP = """
- Actions are available with connected groups:
- • View and edit Notes.
- • View and edit Filters.
- • Get invite link of chat.
- • Set and control AntiFlood settings.
- • Set and control Blacklist settings.
- • Set Locks and Unlocks in chat.
- • Enable and Disable commands in chat.
- • Export and Imports of chat backup."""
+  Aᴄᴛɪᴏɴs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴡɪᴛʜ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘs:
+ • Vɪᴇᴡ ᴀɴᴅ ᴇᴅɪᴛ Nᴏᴛᴇs.
+ • Vɪᴇᴡ ᴀɴᴅ ᴇᴅɪᴛ Fɪʟᴛᴇʀs.
+ • Gᴇᴛ ɪɴᴠɪᴛᴇ ʟɪɴᴋ ᴏғ ᴄʜᴀᴛ.
+ • Sᴇᴛ ᴀɴᴅ ᴄᴏɴᴛʀᴏʟ AɴᴛɪFʟᴏᴏᴅ sᴇᴛᴛɪɴɢs.
+ • Sᴇᴛ ᴀɴᴅ ᴄᴏɴᴛʀᴏʟ Bʟᴀᴄᴋʟɪsᴛ sᴇᴛᴛɪɴɢs.
+ • Sᴇᴛ Lᴏᴄᴋs ᴀɴᴅ Uɴʟᴏᴄᴋs ɪɴ ᴄʜᴀᴛ.
+ • Eɴᴀʙʟᴇ ᴀɴᴅ Dɪsᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ɪɴ ᴄʜᴀᴛ.
+ • Exᴘᴏʀᴛ ᴀɴᴅ Iᴍᴘᴏʀᴛs ᴏғ ᴄʜᴀᴛ ʙᴀᴄᴋᴜᴘ."""
 
 
 @run_async
@@ -323,7 +323,7 @@ def help_connect_chat(update, context):
     args = context.args
 
     if update.effective_message.chat.type != "private":
-        send_message(update.effective_message, "PM me with that command to get help.")
+        send_message(update.effective_message, "PM ᴍᴇ ᴡɪᴛʜ ᴛʜᴀᴛ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ.")
         return
     else:
         send_message(update.effective_message, CONN_HELP, parse_mode="markdown")
@@ -357,31 +357,31 @@ def connect_button(update, context):
                 )
                 chat_name = conn_chat.title
                 query.message.edit_text(
-                    "Successfully connected to *{}*. \nUse `/helpconnect` to check available commands.".format(
+                    "Sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ *{}*. \n Usᴇ `/helpconnect` ᴛᴏ ᴄʜᴇᴄᴋ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.".format(
                         chat_name
                     ),
                     parse_mode=ParseMode.MARKDOWN,
                 )
                 sql.add_history_conn(user.id, str(conn_chat.id), chat_name)
             else:
-                query.message.edit_text("Connection failed!")
+                query.message.edit_text("Cᴏɴɴᴇᴄᴛɪᴏɴ ғᴀɪʟᴇᴅ!!")
         else:
             context.bot.answer_callback_query(
-                query.id, "Connection to this chat is not allowed!", show_alert=True
+                query.id, "Cᴏɴɴᴇᴄᴛɪᴏɴ ᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ɪs ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ", show_alert=True
             )
     elif disconnect_match:
         disconnection_status = sql.disconnect(query.from_user.id)
         if disconnection_status:
-            sql.disconnected_chat = query.message.edit_text("Disconnected from chat!")
+            sql.disconnected_chat = query.message.edit_text("Dɪsᴄᴏɴɴᴇᴄᴛᴇᴅ ғʀᴏᴍ ᴄʜᴀᴛ !")
         else:
             context.bot.answer_callback_query(
-                query.id, "You're not connected!", show_alert=True
+                query.id, "Yᴏᴜ'ʀᴇ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ!!", show_alert=True
             )
     elif clear_match:
         sql.clear_history_conn(query.from_user.id)
-        query.message.edit_text("History connected has been cleared!")
+        query.message.edit_text("Hɪsᴛᴏʀʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ʜᴀs ʙᴇᴇɴ ᴄʟᴇᴀʀᴇᴅ!")
     elif connect_close:
-        query.message.edit_text("Closed.\nTo open again, type /connect")
+        query.message.edit_text("Cʟᴏsᴇᴅ.\n Tᴏ ᴏᴘᴇɴ ᴀɢᴀɪɴ, ᴛʏᴘᴇ /connect")
     else:
         connect_chat(update, context)
 
@@ -389,16 +389,16 @@ def connect_button(update, context):
 __mod_name__ = "Cᴏɴɴᴇᴄᴛ"
 
 __help__ = """
-Sometimes, you just want to add some notes and filters to a group chat, but you don't want everyone to see; This is where connections come in...
-This allows you to connect to a chat's database, and add things to it without the commands appearing in chat! For obvious reasons, you need to be an admin to add things; but any member in the group can view your data.
+Sᴏᴍᴇᴛɪᴍᴇs, ʏᴏᴜ ᴊᴜsᴛ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ sᴏᴍᴇ ɴᴏᴛᴇs ᴀɴᴅ ғɪʟᴛᴇʀs ᴛᴏ ᴀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ, ʙᴜᴛ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴡᴀɴᴛ ᴇᴠᴇʀʏᴏɴᴇ ᴛᴏ sᴇᴇ; Tʜɪs ɪs ᴡʜᴇʀᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴs ᴄᴏᴍᴇ ɪɴ...
+Tʜɪs ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ᴀ ᴄʜᴀᴛ's ᴅᴀᴛᴀʙᴀsᴇ, ᴀɴᴅ ᴀᴅᴅ ᴛʜɪɴɢs ᴛᴏ ɪᴛ ᴡɪᴛʜᴏᴜᴛ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴀᴘᴘᴇᴀʀɪɴɢ ɪɴ ᴄʜᴀᴛ! Fᴏʀ ᴏʙᴠɪᴏᴜs ʀᴇᴀsᴏɴs, ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀɴ ᴀᴅᴍɪɴ ᴛᴏ ᴀᴅᴅ ᴛʜɪɴɢs; ʙᴜᴛ ᴀɴʏ ᴍᴇᴍʙᴇʀ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ ᴄᴀɴ ᴠɪᴇᴡ ʏᴏᴜʀ ᴅᴀᴛᴀ..
 
- ❍ /connect: Connects to chat (Can be done in a group by /connect or /connect <chat id> in PM)
- ❍ /connection: List connected chats
- ❍ /disconnect: Disconnect from a chat
- ❍ /helpconnect: List available commands that can be used remotely
+ ❍ /connect: Cᴏɴɴᴇᴄᴛs ᴛᴏ ᴄʜᴀᴛ (Cᴀɴ ʙᴇ ᴅᴏɴᴇ ɪɴ ᴀ ɢʀᴏᴜᴘ ʙʏ /connect ᴏʀ /connect <ᴄʜᴀᴛ ɪᴅ> ɪɴ PM)
+ ❍ /connection: Lɪsᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀᴛs
+ ❍ /disconnect: Dɪsᴄᴏɴɴᴇᴄᴛ ғʀᴏᴍ ᴀ ᴄʜᴀᴛ
+ ❍ /helpconnect: Lɪsᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛʜᴀᴛ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʀᴇᴍᴏᴛᴇʟʏ
 
 *Admin only:*
- ❍ /allowconnect <yes/no>: allow a user to connect to a chat
+ ❍ /allowconnect <yes/no>: ᴀʟʟᴏᴡ ᴀ ᴜsᴇʀ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ᴀ ᴄʜᴀᴛ
 """
 
 CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, pass_args=True)

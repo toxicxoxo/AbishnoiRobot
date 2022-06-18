@@ -19,7 +19,7 @@ async def msg(event):
     try:
         a = country.info()
     except:
-        await event.reply("Country Not Available Currently")
+        await event.reply("Cᴏᴜɴᴛʀʏ Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Cᴜʀʀᴇɴᴛʟʏ")
     name = a.get("name")
     bb = a.get("altSpellings")
     hu = ""
@@ -79,29 +79,29 @@ async def msg(event):
 
     wiki = a.get("wiki")
 
-    caption = f"""<b><u>Information Gathered Successfully</b></u>
+    caption = f"""<b><u>Iɴғᴏʀᴍᴀᴛɪᴏɴ Gᴀᴛʜᴇʀᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ</b></u>
 <b>
-Country Name:- {name}
-Alternative Spellings:- {hu}
-Country Area:- {area} square kilometers
-Borders:- {borders}
-Calling Codes:- {call}
-Country's Capital:- {capital}
-Country's currency:- {currencies}
-Country's Flag:- {okie}
-Demonym:- {HmM}
-Country Type:- {EsCoBaR}
-ISO Names:- {iso}
-Languages:- {lMAO}
-Native Name:- {nonive}
-population:- {waste}
-Region:- {reg}
-Sub Region:- {sub}
-Time Zones:- {tom}
-Top Level Domain:- {lanester}
-wikipedia:- {wiki}</b>
+Cᴏᴜɴᴛʀʏ Nᴀᴍᴇ :- {name}
+Aʟᴛᴇʀɴᴀᴛɪᴠᴇ Sᴘᴇʟʟɪɴɢs :- {hu}
+Cᴏᴜɴᴛʀʏ Aʀᴇᴀ :- {area} sǫᴜᴀʀᴇ ᴋɪʟᴏᴍᴇᴛᴇʀs
+Bᴏʀᴅᴇʀs  :- {borders}
+Cᴀʟʟɪɴɢ ᴄᴏᴅᴇ :- {call}
+Cᴏᴜɴᴛʀʏ's Cᴀᴘɪᴛᴀ :- {capital}
+Cᴏᴜɴᴛʀʏ's Cᴜʀʀᴇɴᴄʏ  :- {currencies}
+Cᴏᴜɴᴛʀʏ's ғʟᴀɢ  :- {okie}
+Dᴇᴍᴏɴʏᴍ  :- {HmM}
+Cᴏᴜɴᴛʀʏ Tʏᴘᴇ :- {EsCoBaR}
+ɪsᴏ ɴᴀᴍᴇ :- {iso}
+Lᴀɴɢᴜᴀɢᴇs:- {lMAO}
+Nᴀᴛɪᴠᴇ Nᴀᴍᴇs  :- {nonive}
+Pᴏᴘᴜʟᴀᴛɪᴏɴ:- {waste}
+Rᴇɢɪᴏɴ :- {reg}
+Sᴜʙ Rᴇɢɪᴏɴ :- {sub}
+Tɪᴍᴇ ᴢᴏɴᴇ :- {tom}
+Tᴏᴘ Lᴇᴠᴇʟ Dᴏᴍᴀɪɴ :- {lanester}
+Wɪᴋɪᴘᴇᴅɪᴀ:- {wiki}</b>
 
-Gathered By [Abishnoi](t.me/Abishnoi1M)</b>
+Iɴғᴏ ʙʏ ➪ [Abishnoi](t.me/Abishnoi1M)</b>
 """
 
     await borg.send_message(
@@ -112,9 +112,9 @@ Gathered By [Abishnoi](t.me/Abishnoi1M)</b>
 
 
 __help__ = """
-I will give information about a country
+I ᴡɪʟʟ ɢɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴄᴏᴜɴᴛʀʏ
 
- ❍ /country <country name>*:* Gathering info about given country
+ ❍ /country <ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ>*:* Gᴀᴛʜᴇʀɪɴɢ ɪɴғᴏ ᴀʙᴏᴜᴛ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛʀʏ
 """
 
 __mod_name__ = "Cᴏᴜɴᴛʀʏ"

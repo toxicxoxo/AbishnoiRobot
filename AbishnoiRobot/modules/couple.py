@@ -32,7 +32,7 @@ tomorrow = str(dt_tom())
 @pbot.on_message(filters.command(["couple", "couples"]) & ~filters.edited)
 async def couple(_, message):
     if message.chat.type == "private":
-        return await message.reply_text("This command only works in groups.")
+        return await message.reply_text("Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs..")
     try:
         chat_id = message.chat.id
         is_selected = await get_couple(chat_id, today)
@@ -42,7 +42,7 @@ async def couple(_, message):
                 if not i.user.is_bot:
                     list_of_users.append(i.user.id)
             if len(list_of_users) < 2:
-                return await message.reply_text("Not enough users")
+                return await message.reply_text("Nᴏᴛ ᴇɴᴏᴜɢʜ ᴜsᴇʀs")
             c1_id = random.choice(list_of_users)
             c2_id = random.choice(list_of_users)
             while c1_id == c2_id:
@@ -50,7 +50,7 @@ async def couple(_, message):
             c1_mention = (await pbot.get_users(c1_id)).mention
             c2_mention = (await pbot.get_users(c2_id)).mention
 
-            couple_selection_message = f"""**Couple of the day:**
+            couple_selection_message = f"""**Cᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ:**
 {c1_mention} + {c2_mention} = 😘
 __New couple of the day may be chosen at 12AM {tomorrow}__"""
             await pbot.send_message(message.chat.id, text=couple_selection_message)
@@ -62,7 +62,7 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
             c2_id = int(is_selected["c2_id"])
             c1_name = (await pbot.get_users(c1_id)).first_name
             c2_name = (await pbot.get_users(c2_id)).first_name
-            couple_selection_message = f"""Couple of the day:
+            couple_selection_message = f"""Cᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ:
 [{c1_name}](tg://openmessage?user_id={c1_id}) + [{c2_name}](tg://openmessage?user_id={c2_id}) = 😘
 __New couple of the day may be chosen at 12AM {tomorrow}__"""
             await pbot.send_message(message.chat.id, text=couple_selection_message)
@@ -72,9 +72,9 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 
 
 __help__ = """
-Choose couples in your chat
+Cʜᴏᴏsᴇ ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ
 
- ❍ /couple *:* Choose 2 users and send their name as couples in your chat.
+ ❍ /couple *:* Cʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ..
 """
 
 __mod_name__ = "Cᴏᴜᴘʟᴇ​"
