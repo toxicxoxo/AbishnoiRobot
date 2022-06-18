@@ -1,3 +1,11 @@
+#https://t.me/Abishnoi1M
+#https://t.me/Abishnoi_bots
+#https://t.me/AlishaSupport
+
+#kua bi change Kiya to lode lag skte h 
+
+#Copyright policy 
+
 import asyncio
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,                             InlineKeyboardMarkup, InputMediaPhoto, Message)
