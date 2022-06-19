@@ -177,7 +177,7 @@ async def _(dyno):
         app = Heroku.app(HEROKU_APP_NAME)
     except:
         return await dyno.reply(
-            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku"
+            " Pʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ Hᴇʀᴏᴋᴜ API Kᴇʏ, Yᴏᴜʀ Aᴘᴘ ɴᴀᴍᴇ ᴀʀᴇ ᴄᴏɴғɪɢᴜʀᴇᴅ ᴄᴏʀʀᴇᴄᴛʟʏ ɪɴ ᴛʜᴇ ʜᴇʀᴏᴋᴜ"
         )
     v = await dyno.reply("Getting Logs....")
     with open("logs.txt", "w") as log:

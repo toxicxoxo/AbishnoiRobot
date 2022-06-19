@@ -26,7 +26,7 @@ async def _(event):
         lan, text = input_str.split("|")
     else:
         await event.reply(
-            "Invalid Syntax\nFormat `/tts lang | text`\nFor eg: `/tts en | hello`"
+            "ɪɴᴠᴀʟɪᴅ sʏɴᴛᴀx  \nFormat `/tts lang | text`\nFᴏʀ ᴇɢ.: `/tts en | hello`"
         )
         return
     text = text.strip()
@@ -36,19 +36,19 @@ async def _(event):
         tts.save("k.mp3")
     except AssertionError:
         await event.reply(
-            "The text is empty.\n"
-            "Nothing left to speak after pre-precessing, "
-            "tokenizing and cleaning."
+           "Tʜᴇ ᴛᴇxᴛ ɪs ᴇᴍᴘᴛʏ.\n"
+            "Nᴏᴛʜɪɴɢ ʟᴇғᴛ ᴛᴏ sᴘᴇᴀᴋ ᴀғᴛᴇʀ ᴘʀᴇ-ᴘʀᴇᴄᴇssɪɴɢ, "
+            "ᴛᴏᴋᴇɴɪᴢɪɴɢ ᴀɴᴅ ᴄʟᴇᴀɴɪɴɢ."
         )
         return
     except ValueError:
-        await event.reply("Language is not supported.")
+        await event.reply("Lᴀɴɢᴜᴀɢᴇ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ.")
         return
     except RuntimeError:
-        await event.reply("Error loading the languages dictionary.")
+        await event.reply("Eʀʀᴏʀ ʟᴏᴀᴅɪɴɢ ᴛʜᴇ ʟᴀɴɢᴜᴀɢᴇs ᴅɪᴄᴛɪᴏɴᴀʀʏ.")
         return
     except gTTSError:
-        await event.reply("Error in Google Text-to-Speech API request !")
+        await event.reply("Eʀʀᴏʀ ɪɴ Gᴏᴏɢʟᴇ Tᴇxᴛ-ᴛᴏ-Sᴘᴇᴇᴄʜ API ʀᴇǫᴜᴇsᴛ !")
         return
     with open("k.mp3", "r"):
         await tbot.send_file(
@@ -59,8 +59,7 @@ async def _(event):
 __help__ = """ 
 ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ :
 
-𝙵𝚘𝚛𝚖𝚊𝚝 /tts 𝚕𝚊𝚗𝚐𝚞𝚊𝚐𝚎 | 𝚝𝚎𝚡𝚝
-𝙴𝚡𝚊𝚖𝚙𝚕𝚎 : /tts  𝚎𝚗 | 𝚑𝚎𝚕𝚕𝚘
+Exᴀᴍᴘʟᴇ : /tts  en | ʜᴇʟʟᴏ
 """
 
 __mod_name__ = "ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ"

@@ -68,37 +68,36 @@ openhehe = ChatBannedRights(
 async def close_ws(event):
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply("🤦🏻‍♂️You are not admin so you can't use this command...")
+            await event.reply("🤦🏻‍♂️Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ sᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ 🤦..")
             return
 
     if not event.is_group:
-        await event.reply("You Can Only Enable Night Mode in Groups.")
+        await event.reply("Yᴏᴜ Cᴀɴ Oɴʟʏ Eɴᴀʙʟᴇ Nɪɢʜᴛ Mᴏᴅᴇ ɪɴ Gʀᴏᴜᴘs.")
         return
     if is_nightmode_indb(str(event.chat_id)):
-        await event.reply("This Chat is Has Already Enabled Night Mode.")
+        await event.reply("Tʜɪs Cʜᴀᴛ ɪs Hᴀs Aʟʀᴇᴀᴅʏ Eɴᴀʙʟᴇᴅ Nɪɢʜᴛ Mᴏᴅᴇ.")
         return
     add_nightmode(str(event.chat_id))
     await event.reply(
-        f"Added Chat {event.chat.title} With Id {event.chat_id} To Database. **This Group Will Be Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
-    )
+        f"Aᴅᴅᴇᴅ ᴄʜᴀᴛ {event.chat.title} ᴡɪᴛʜ ɪᴅ  {event.chat_id} ᴛᴏ ᴅᴀᴛᴀʙᴀs . **Tʜɪs Gʀᴏᴜᴘ Wɪʟʟ Bᴇ Cʟᴏsᴇᴅ Oɴ 12Aᴍ(IST) Aɴᴅ Wɪʟʟ Oᴘᴇɴᴇᴅ Oɴ 06Aᴍ(IST)**" )
 
 
 @register(pattern="^/rmnight")
 async def disable_ws(event):
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply("🤦🏻‍♂️You are not admin so you can't use this command...")
+            await event.reply("🤦🏻‍♂️Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ sᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ...🤦 ")
             return
 
     if not event.is_group:
-        await event.reply("You Can Only Disable Night Mode in Groups.")
+        await event.reply("Yᴏᴜ Cᴀɴ Oɴʟʏ Dɪsᴀʙʟᴇ Nɪɢʜᴛ Mᴏᴅᴇ ɪɴ Gʀᴏᴜᴘs.")
         return
     if not is_nightmode_indb(str(event.chat_id)):
         await event.reply("This Chat is Has Not Enabled Night Mode.")
         return
     rmnightmode(str(event.chat_id))
     await event.reply(
-        f"Removed Chat {event.chat.title} With Id {event.chat_id} From Database."
+        f"Rᴇᴍᴏᴠᴇᴅ Chat {event.chat.title} Wɪᴛʜ ɪᴅ  {event.chat_id} ғʀᴏᴍ ᴅᴀᴛᴀʙᴀsᴇ ."
     )
 
 
@@ -110,7 +109,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Abishnoi Robot**",
+                "12:00 Aᴍ, Gʀᴏᴜᴘ Is Cʟᴏsɪɴɢ Tɪʟʟ 6 Aᴍ. Nɪɢʜᴛ Mᴏᴅᴇ Sᴛᴀʀᴛᴇᴅ ! \n   **𝖯𝖮𝖶𝖤𝖱𝖤𝖣  𝖡𝖸 ➪ 𝖠𝖡𝖦 𝖱𝖮𝖡𝖮𝖳 **",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -118,7 +117,7 @@ async def job_close():
                 )
             )
         except Exception as e:
-            logger.info(f"Unable To Close Group {warner} - {e}")
+            logger.info(f"Uɴᴀʙʟᴇ Tᴏ Cʟᴏsᴇ Gʀᴏᴜᴘ {warner} - {e}")
 
 
 # Run everyday at 12am
@@ -135,7 +134,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "06:00 Am, Group Is Opening.\n** Powered By 「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」**",
+                "ɴᴏᴡ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ \ɴ** Pᴏᴡᴇʀᴇᴅ Bʏ 「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -143,7 +142,7 @@ async def job_open():
                 )
             )
         except Exception as e:
-            logger.info(f"Unable To Open Group {warner.chat_id} - {e}")
+            logger.info(f"Uɴᴀʙʟᴇ Tᴏ Oᴘᴇɴ Gʀᴏᴜᴘ {warner.chat_id} - {e}")
 
 
 # Run everyday at 06
@@ -152,12 +151,12 @@ scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
 scheduler.start()
 
 __help__ = """
-*Admins Only*
+*Aᴅᴍɪɴs Oɴʟʏ*
 
- ❍ /nightmode*:* Adds Group to NightMode Chats
- ❍ /rmnight*:* Removes Group From NightMode Chats
+ ❍ /nightmode *:* Aᴅᴅs Gʀᴏᴜᴘ ᴛᴏ NɪɢʜᴛMᴏᴅᴇ Cʜᴀᴛs
+ ❍ /rmnigtht *:* Rᴇᴍᴏᴠᴇs Gʀᴏᴜᴘ Fʀᴏᴍ NɪɢʜᴛMᴏᴅᴇ Cʜᴀᴛs
 
-*Note:* Night Mode chats get Automatically closed at 12 am(IST) and Automatically openned at 6 am(IST) to Prevent Night Spams.
+*Nᴏᴛᴇ:* Nɪɢʜᴛ Mᴏᴅᴇ ᴄʜᴀᴛs ɢᴇᴛ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴄʟᴏsᴇᴅ ᴀᴛ 12 ᴀᴍ(IST) ᴀɴᴅ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴏᴘᴇɴɴᴇᴅ ᴀᴛ 6 ᴀᴍ(IST) ᴛᴏ Pʀᴇᴠᴇɴᴛ Nɪɢʜᴛ Sᴘᴀᴍs
 """
 
 __mod_name__ = "Nɪɢʜᴛ​"

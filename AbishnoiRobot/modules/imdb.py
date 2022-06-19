@@ -42,8 +42,8 @@ async def imdb(e):
         credits = soup.findAll("div", "credit_summary_item")
         if len(credits) == 1:
             director = credits[0].a.text
-            writer = "Not available"
-            stars = "Not available"
+            writer = "Nᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ"
+            stars = "Nᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ"
         elif len(credits) > 2:
             director = credits[0].a.text
             writer = credits[1].a.text
@@ -54,7 +54,7 @@ async def imdb(e):
             stars = actors[0] + "," + actors[1] + "," + actors[2]
         else:
             director = credits[0].a.text
-            writer = "Not available"
+            writer = "Nᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ"
             actors = []
             for x in credits[1].findAll("a"):
                 actors.append(x.text)
@@ -63,7 +63,7 @@ async def imdb(e):
         if soup.find("div", "inline canwrap"):
             story_line = soup.find("div", "inline canwrap").findAll("p")[0].text
         else:
-            story_line = "Not available"
+            story_line = "Nᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ"
         info = soup.findAll("div", "txt-block")
         if info:
             mov_country = []
@@ -79,7 +79,7 @@ async def imdb(e):
             for r in soup.findAll("div", "ratingValue"):
                 mov_rating = r.strong["title"]
         else:
-            mov_rating = "Not available"
+            mov_rating = "Nᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ"
         await e.reply(
             "<a href=" + poster + ">&#8203;</a>"
             "<b>Title : </b><code>"
@@ -110,7 +110,7 @@ async def imdb(e):
 
 
 __help__ = """
- ❍ /imdb <Movie name>*:* Get full info about a movie from [imdb.com](https://m.imdb.com)
+ ❍ /imdb <Mᴏᴠɪᴇ ɴᴀᴍᴇ>*:* Gᴇᴛ ғᴜʟʟ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴀ ᴍᴏᴠɪᴇ ғʀᴏᴍ [imdb.com](https://m.imdb.com)
 """
 
 __mod_name__ = "Iᴍᴅʙ"

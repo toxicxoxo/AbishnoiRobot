@@ -34,7 +34,7 @@ async def proboyx(event):
     on = await bot.send_file(
         event.chat_id,
         file=file2,
-        caption=f"Hey {firstname}, \n Click on the button below \n to get info about you",
+        caption=f"ʜᴇʏ  {firstname}, \n Cʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ  \n ᴛᴏ ɢᴇᴛ ɪɴғᴏ ᴀʙᴏᴜᴛ ʏᴏᴜ ",
         buttons=button,
     )
 
@@ -71,13 +71,13 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        LILIE = "POWERED BY 𝗔𝗕𝗜𝗦𝗛𝗡𝗢𝗜 \n\n"
-        LILIE += f"FIRST NAME : {PRO.first_name} \n"
-        LILIE += f"LAST NAME : {PRO.last_name}\n"
-        LILIE += f"YOU BOT : {PRO.bot} \n"
-        LILIE += f"RESTRICTED : {PRO.restricted} \n"
-        LILIE += f"USER ID : {boy}\n"
-        LILIE += f"USERNAME : {PRO.username}\n"
+        LILIE = "Pᴏᴡᴇʀᴅ ʙʏ Aʙɪsʜɴᴏɪ  \n\n"
+        LILIE += f"ғɪʀsᴛ ɴᴀᴍᴇ  : {PRO.first_name} \n"
+        LILIE += f"ʟᴀsᴛ ɴᴀᴍᴇ  : {PRO.last_name}\n"
+        LILIE += f"ʏᴏᴜ ʙᴏᴛ  : {PRO.bot} \n"
+        LILIE += f"ʀᴇsᴛɪᴄᴛᴇᴅ  : {PRO.restricted} \n"
+        LILIE += f"ʏᴏᴜʀ ɪᴅ  : {boy}\n"
+        LILIE += f"ᴜsᴇʀɴᴀᴍᴇ : {PRO.username}\n"
         await event.answer(LILIE, alert=True)
     except Exception as e:
         await event.reply(f"{e}")

@@ -9,9 +9,9 @@ from AbishnoiRobot import telethn as tbot
 async def _(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):
-        await event.reply("`Please reply to a sticker`")
+        await event.reply("`Pʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ & ᴛᴇxᴛ `")
         return
-    kontol = await event.reply("`Processing tiny...`")
+    kontol = await event.reply("`💫`")
     ik = await tbot.download_media(reply)
     im1 = Image.open("AbishnoiRobot/resources/blank_background.png")
     if ik.endswith(".tgs"):
@@ -79,5 +79,5 @@ async def _(event):
 
 __mod_name__ = "Tɪɴʏ"
 __help__ = """
-❍ /tiny*:* reply a sticker and see magic
+❍ /tiny*:* Rᴇᴘʟʏ ɪɴ sᴛɪᴄᴋᴇʀ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ 
 """

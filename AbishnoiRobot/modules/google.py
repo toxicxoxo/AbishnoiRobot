@@ -35,7 +35,7 @@ async def _(event):
     if event.fwd_from:
         return
 
-    webevent = await event.reply("Searching...")
+    webevent = await event.reply("🔍")
     match = event.pattern_match.group(1)
     page = re.findall(r"page=\d+", match)
     try:
@@ -102,7 +102,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await tbot.download_media(message, photo)
     else:
-        await img.reply("`Reply to photo or sticker fu*ker`")
+        await img.reply("`Rᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ ᴏʀ sᴛɪᴄᴋᴇʀ ғᴜ*ᴋᴇʀ`")
         return
 
     if photo:
@@ -123,11 +123,11 @@ async def okgoogle(img):
 
         if response != 400:
             await dev.edit(
-                "`Image successfully uploaded to Google. Maybe.`"
-                "\n`Parsing source now. Maybe.`"
+                "` Iᴍᴀɢᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴛᴏ Gᴏᴏɢʟᴇ. Mᴀʏʙᴇ.`"
+                "\n`Pᴀʀsɪɴɢ sᴏᴜʀᴄᴇ ɴᴏᴡ. Mᴀʏʙᴇ.`"
             )
         else:
-            await dev.edit("`Google told me to fu*k off.`")
+            await dev.edit("`Gᴏᴏɢʟᴇ ᴛᴏʟᴅ ᴍᴇ ᴛᴏ ғᴜ*ᴋ ᴏғғ..`")
             return
 
         os.remove(name)
@@ -279,10 +279,10 @@ async def apk(e):
 __mod_name__ = "Gᴏᴏɢʟᴇ"
 
 __help__ = """
- ❍ /google <text>*:* Perform a google search
- ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
- ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
- ❍ /reverse: Does a reverse image search of the media which it was replied to.
- ❍ Abishnoi <query>*:* Abishnoi answers the query
-  💡Ex: `Abishnoi where is India?`
+❍ /google <ᴛᴇxᴛ>*:* Pᴇʀғᴏʀᴍ ᴀ ɢᴏᴏɢʟᴇ sᴇᴀʀᴄʜ
+ ❍ /ing <ᴛᴇxᴛ>*:* Sᴇᴀʀᴄʜ Gᴏᴏɢʟᴇ ғᴏʀ ɪᴍᴀɢᴇs ᴀɴᴅ ʀᴇᴛᴜʀɴs ᴛʜᴇᴍ\ɴFᴏʀ ɢʀᴇᴀᴛᴇʀ ɴᴏ. ᴏғ ʀᴇsᴜʟᴛs sᴘᴇᴄɪғʏ ʟɪᴍ, Fᴏʀ ᴇɢ: `/ɪᴍɢ ʜᴇʟʟᴏ ʟɪᴍ=10`
+ ❍ /app <ᴀᴘᴘɴᴀᴍᴇ>*:* Sᴇᴀʀᴄʜᴇs ғᴏʀ ᴀɴ ᴀᴘᴘ ɪɴ Pʟᴀʏ Sᴛᴏʀᴇ ᴀɴᴅ ʀᴇᴛᴜʀɴs ɪᴛs ᴅᴇᴛᴀɪʟs.
+ ❍ /reverse : Dᴏᴇs ᴀ ʀᴇᴠᴇʀsᴇ ɪᴍᴀɢᴇ sᴇᴀʀᴄʜ ᴏғ ᴛʜᴇ ᴍᴇᴅɪᴀ ᴡʜɪᴄʜ ɪᴛ ᴡᴀs ʀᴇᴘʟɪᴇᴅ ᴛᴏ.
+ ❍ Abishnoi <ǫᴜᴇʀʏ>*:* Aʙɪsʜɴᴏɪ ᴀɴsᴡᴇʀs ᴛʜᴇ ǫᴜᴇʀʏ
+  💡Ex: `Aʙɪsʜɴᴏɪ ᴡʜᴇʀᴇ ɪs Iɴᴅɪᴀ?`
 """

@@ -24,13 +24,13 @@ def load(update: Update, context: CallbackContext):
     message = update.effective_message
     text = message.text.split(" ", 1)[1]
     load_messasge = message.reply_text(
-        f"Attempting to load module : <b>{text}</b>", parse_mode=ParseMode.HTML
+        f"Aᴛᴛᴇᴍᴘᴛɪɴɢ ᴛᴏ ʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ : <b>{text}</b>", parse_mode=ParseMode.HTML
     )
 
     try:
         imported_module = importlib.import_module("AbishnoiRobot.modules." + text)
     except:
-        load_messasge.edit_text("Does that module even exist?")
+        load_messasge.edit_text("Dᴏᴇs ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ ᴇᴠᴇɴ ᴇxɪsᴛ?")
         return
 
     if not hasattr(imported_module, "__mod_name__"):
@@ -39,7 +39,7 @@ def load(update: Update, context: CallbackContext):
     if imported_module.__mod_name__.lower() not in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
-        load_messasge.edit_text("Module already loaded.")
+        load_messasge.edit_text("Mᴏᴅᴜʟᴇ ᴀʟʀᴇᴀᴅʏ ʟᴏᴀᴅᴇᴅ.")
         return
     if "__handlers__" in dir(imported_module):
         handlers = imported_module.__handlers__
@@ -55,7 +55,7 @@ def load(update: Update, context: CallbackContext):
                     dispatcher.add_handler(handler_name, priority)
     else:
         IMPORTED.pop(imported_module.__mod_name__.lower())
-        load_messasge.edit_text("The module cannot be loaded.")
+        load_messasge.edit_text("Tʜᴇ ᴍᴏᴅᴜʟᴇ ᴄᴀɴɴᴏᴛ ʙᴇ ʟᴏᴀᴅᴇᴅ.")
         return
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
@@ -84,7 +84,7 @@ def load(update: Update, context: CallbackContext):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
     load_messasge.edit_text(
-        "Successfully loaded module : <b>{}</b>".format(text), parse_mode=ParseMode.HTML
+        "Sᴜᴄᴄᴇssғᴜʟʟʏ ʟᴏᴀᴅᴇᴅ ᴍᴏᴅᴜʟᴇ : <b>{}</b>".format(text), parse_mode=ParseMode.HTML
     )
 
 
@@ -94,13 +94,13 @@ def unload(update: Update, context: CallbackContext):
     message = update.effective_message
     text = message.text.split(" ", 1)[1]
     unload_messasge = message.reply_text(
-        f"Attempting to unload module : <b>{text}</b>", parse_mode=ParseMode.HTML
+        f"Aᴛᴛᴇᴍᴘᴛɪɴɢ ᴛᴏ ᴜɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ : <b>{text}</b>", parse_mode=ParseMode.HTML
     )
 
     try:
         imported_module = importlib.import_module("AbishnoiRobot.modules." + text)
     except:
-        unload_messasge.edit_text("Does that module even exist?")
+        unload_messasge.edit_text("Dᴏᴇs ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ ᴇᴠᴇɴ ᴇxɪsᴛ?")
         return
 
     if not hasattr(imported_module, "__mod_name__"):
@@ -108,13 +108,13 @@ def unload(update: Update, context: CallbackContext):
     if imported_module.__mod_name__.lower() in IMPORTED:
         IMPORTED.pop(imported_module.__mod_name__.lower())
     else:
-        unload_messasge.edit_text("Can't unload something that isn't loaded.")
+        unload_messasge.edit_text("Cᴀɴ'ᴛ ᴜɴʟᴏᴀᴅ sᴏᴍᴇᴛʜɪɴɢ ᴛʜᴀᴛ ɪsɴ'ᴛ ʟᴏᴀᴅᴇᴅ.")
         return
     if "__handlers__" in dir(imported_module):
         handlers = imported_module.__handlers__
         for handler in handlers:
             if isinstance(handler, bool):
-                unload_messasge.edit_text("This module can't be unloaded!")
+                unload_messasge.edit_text("Tʜᴇ ᴍᴏᴅᴜʟᴇ ᴄᴀɴɴᴏᴛ ʙᴇ ᴜɴʟᴏᴀᴅᴇᴅ!")
                 return
             elif not isinstance(handler, tuple):
                 dispatcher.remove_handler(handler)
@@ -126,7 +126,7 @@ def unload(update: Update, context: CallbackContext):
                     handler_name, priority = handler
                     dispatcher.remove_handler(handler_name, priority)
     else:
-        unload_messasge.edit_text("The module cannot be unloaded.")
+        unload_messasge.edit_text("Tʜᴇ ᴍᴏᴅᴜʟᴇ ᴄᴀɴɴᴏᴛ ʙᴇ ᴜɴʟᴏᴀᴅᴇᴅ.")
         return
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
@@ -155,7 +155,7 @@ def unload(update: Update, context: CallbackContext):
         USER_SETTINGS.pop(imported_module.__mod_name__.lower())
 
     unload_messasge.edit_text(
-        f"Successfully unloaded module : <b>{text}</b>", parse_mode=ParseMode.HTML
+        f"Sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʟᴏᴀᴅᴇᴅ ᴍᴏᴅᴜʟᴇ , ᴀʙ ᴊᴀ ᴏʀ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ @Abishnoi_bots : <b>{text}</b>", parse_mode=ParseMode.HTML
     )
 
 
@@ -171,7 +171,7 @@ def listmodules(update: Update, context: CallbackContext):
         file_name = file_info.__name__.rsplit("AbishnoiRobot.modules.", 1)[1]
         mod_name = file_info.__mod_name__
         module_list.append(f"- <code>{mod_name} ({file_name})</code>\n")
-    module_list = "Following modules are loaded : \n\n" + "".join(module_list)
+    module_list = "Fᴏʟʟᴏᴡɪɴɢ ᴍᴏᴅᴜʟᴇs ᴀʀᴇ ʟᴏᴀᴅᴇᴅ : \n\n" + "".join(module_list)
     message.reply_text(module_list, parse_mode=ParseMode.HTML)
 
 

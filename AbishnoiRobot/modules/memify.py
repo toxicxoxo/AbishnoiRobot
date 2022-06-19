@@ -24,7 +24,7 @@ async def handler(event):
 
     if not event.reply_to_msg_id:
 
-        await event.reply("Provide Some Text To Draw!")
+        await event.reply("Pʀᴏᴠɪᴅᴇ Sᴏᴍᴇ Tᴇxᴛ Tᴏ Dʀᴀᴡ!")
 
         return
 
@@ -32,25 +32,25 @@ async def handler(event):
 
     if not reply_message.media:
 
-        await event.reply("```Reply to a image/sticker.```")
+        await event.reply("```Rᴇᴘʟʏ ᴛᴏ ᴀ ɪᴍᴀɢᴇ/sᴛɪᴄᴋᴇʀ.```")
 
         return
 
     file = await bot.download_media(reply_message)
 
-    msg = await event.reply("```Memifying this image! ✊🏻 ```")
+    msg = await event.reply("```Mᴇᴍɪғʏɪɴɢ ᴛʜɪs ɪᴍᴀɢᴇ! ✊🏻 ```")
 
     if "Abishnoi1M" in Credit:
         pass
 
     else:
-        await event.reply("This nigga removed credit line from code")
+        await event.reply("Tʜɪs ɴɪɢɢᴀ ʀᴇᴍᴏᴠᴇᴅ ᴄʀᴇᴅɪᴛ ʟɪɴᴇ ғʀᴏᴍ ᴄᴏᴅᴇ")
 
     text = str(event.pattern_match.group(1)).strip()
 
     if len(text) < 1:
 
-        return await msg.reply("You might want to try `/mmf text`")
+        return await msg.reply("Yᴏᴜ ᴍɪɢʜᴛ ᴡᴀɴᴛ ᴛᴏ ᴛʀʏ `/mmf ᴛᴇxᴛ`")
 
     meme = await drawText(file, text)
 
@@ -205,4 +205,4 @@ async def drawText(image_path, text):
     return webp_file
 
 
-__mod_name__ = "mmf"
+__mod_name__ = "Mᴍғ"

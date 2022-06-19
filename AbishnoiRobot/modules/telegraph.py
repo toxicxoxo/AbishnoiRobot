@@ -30,7 +30,7 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             h = await event.reply(
-                "Downloaded to {} in {} seconds.".format(downloaded_file_name, ms)
+                "Dᴏᴡɴʟᴏᴀᴅᴇᴅ ᴛᴏ {} ɪɴ {} sᴇᴄᴏɴᴅs.".format(downloaded_file_name, ms)
             )
             if downloaded_file_name.endswith((".webp")):
                 resize_image(downloaded_file_name)
@@ -45,7 +45,7 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await h.edit(
-                    "Uploaded to https://telegra.ph{})".format(media_urls[0]),
+                    "Uᴘʟᴏᴛᴇᴅ ᴛᴏ https://telegra.ph{})".format(media_urls[0]),
                     link_preview=True,
                 )
         elif input_str == "p":
@@ -72,13 +72,13 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             await event.reply(
-                "Pasted to https://telegra.ph/{} in {} seconds.".format(
+                "Pᴀsᴛᴇᴅ ᴛᴏ https://telegra.ph/{} ɪɴ {} sᴇᴄᴏɴᴅs.".format(
                     response["path"], ms
                 ),
                 link_preview=True,
             )
     else:
-        await event.reply("Reply to a message to get a permanent telegra.ph link.")
+        await event.reply("Rᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ɢᴇᴛ ᴀ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴛᴇʟᴇɢʀᴀ.ᴘʜ ʟɪɴᴋ.")
 
 
 def resize_image(image):
@@ -87,9 +87,9 @@ def resize_image(image):
 
 
 __help__ = """
-I can upload files to Telegraph
- ❍ /tm :Get Telegraph Link Of Replied Media
- ❍ /tp :Get Telegraph Link of Replied Text
+I ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ғɪʟᴇs ᴛᴏ Tᴇʟᴇɢʀᴀᴘʜ
+ ❍ /tm :Gᴇᴛ Tᴇʟᴇɢʀᴀᴘʜ Lɪɴᴋ Oғ Rᴇᴘʟɪᴇᴅ Mᴇᴅɪᴀ
+ ❍ /tp :Gᴇᴛ Tᴇʟᴇɢʀᴀᴘʜ Lɪɴᴋ ᴏғ Rᴇᴘʟɪᴇᴅ Tᴇxᴛ
 """
 
 __mod_name__ = "T-Gʀᴀᴘʜ"

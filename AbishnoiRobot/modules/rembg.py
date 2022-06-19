@@ -1,21 +1,8 @@
-# Copyright (C) 2021 TeamDaisyX
+# KingAbishnoi (GitHub)
+# @Abishnoi1M (tg)
+# @Abishnoi_bots (tg)
 
-
-# This file is part of Daisy (Telegram Bot)
-
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+#AbishnoiRobot
 
 import io
 import os
@@ -47,7 +34,7 @@ async def is_register_admin(chat, user):
 
 @register(pattern="^/rmbg")
 async def _(event):
-    HELP_STR = "use `/rmbg` as reply to a media"
+    HELP_STR = "ᴜsᴇ `/rmbg` ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ"
     if event.fwd_from:
         return
     if event.is_group:
@@ -56,7 +43,7 @@ async def _(event):
         else:
             return
     if REM_BG_API_KEY is None:
-        await event.reply("`You need API token from remove.bg to use this plugin.`")
+        await event.reply("`Yᴏᴜ ɴᴇᴇᴅ API ᴛᴏᴋᴇɴ ғʀᴏᴍ ʀᴇᴍᴏᴠᴇ.ʙɢ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴘʟᴜɢɪɴ.`")
         return False
     start = datetime.now()
     message_id = event.message.id
@@ -91,7 +78,7 @@ async def _(event):
             )
         end = datetime.now()
         ms = (end - start).seconds
-        await event.reply("Background Removed in {} seconds".format(ms))
+        await event.reply("Bᴀᴄᴋɢʀᴏᴜɴᴅ Rᴇᴍᴏᴠᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs".format(ms))
     else:
         await event.reply(
             "remove.bg API returned Errors. Please report to @Abishnoi_bots\n`{}".format(

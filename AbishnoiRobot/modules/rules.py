@@ -37,18 +37,18 @@ def send_rules(update, chat_id, from_pm=False, dest_chat=None):
     try:
         chat = bot.get_chat(chat_id)
     except BadRequest as excp:
-        if excp.message == "Chat not found" and from_pm:
+        if excp.message == "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ" and from_pm:
             bot.send_message(
                 dest_chat,
-                "The rules shortcut for this chat hasn't been set properly! Ask admins to "
-                "fix this.\nMaybe they forgot the hyphen in ID",
+                "Tʜᴇ ʀᴜʟᴇs sʜᴏʀᴛᴄᴜᴛ ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ ʜᴀsɴ'ᴛ ʙᴇᴇɴ sᴇᴛ ᴘʀᴏᴘᴇʀʟʏ! Asᴋ ᴀᴅᴍɪɴs ᴛᴏ "
+                "ғɪx ᴛʜɪs.\n Mᴀʏʙᴇ ᴛʜᴇʏ ғᴏʀɢᴏᴛ ᴛʜᴇ ʜʏᴘʜᴇɴ ɪɴ ID",
             )
             return
         else:
             raise
 
     rules = sql.get_rules(chat_id)
-    text = f"The rules for *{escape_markdown(chat.title)}* are:\n\n{rules}"
+    text = f"Tʜᴇ ʀᴜʟᴇs ғᴏʀ *{escape_markdown(chat.title)}* ᴀʀᴇ :\n\n{rules}"
 
     if from_pm and rules:
         bot.send_message(
@@ -60,8 +60,8 @@ def send_rules(update, chat_id, from_pm=False, dest_chat=None):
     elif from_pm:
         bot.send_message(
             dest_chat,
-            "The group admins haven't set any rules for this chat yet. "
-            "This probably doesn't mean it's lawless though...!",
+            "Tʜᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs ʜᴀᴠᴇɴ'ᴛ sᴇᴛ ᴀɴʏ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ ʏᴇᴛ. "
+            "Tʜɪs ᴘʀᴏʙᴀʙʟʏ ᴅᴏᴇsɴ'ᴛ ᴍᴇᴀɴ ɪᴛ's ʟᴀᴡʟᴇss ᴛʜᴏᴜɢʜ...!",
         )
     elif rules and reply_msg:
         reply_msg.reply_text(
@@ -93,8 +93,8 @@ def send_rules(update, chat_id, from_pm=False, dest_chat=None):
         )
     else:
         update.effective_message.reply_text(
-            "The group admins haven't set any rules for this chat yet. "
-            "This probably doesn't mean it's lawless though...!",
+            "Tʜᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs ʜᴀᴠᴇɴ'ᴛ sᴇᴛ ᴀɴʏ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ ʏᴇᴛ. "
+            "Tʜɪs ᴘʀᴏʙᴀʙʟʏ ᴅᴏᴇsɴ'ᴛ ᴍᴇᴀɴ ɪᴛ's ʟᴀᴡʟᴇss ᴛʜᴏᴜɢʜ...!",
         )
 
 
@@ -122,9 +122,9 @@ def set_rules(update: Update, context: CallbackContext):
         )
 
         sql.set_rules(chat_id, markdown_rules)
-        update.effective_message.reply_text("Successfully set rules for this group.")
+        update.effective_message.reply_text("Sᴜᴄᴄᴇssғᴜʟʟʏ sᴇᴛ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ɢʀᴏᴜᴘ..")
     else:
-        update.effective_message.reply_text("There's... no rules?")
+        update.effective_message.reply_text("Tʜᴇʀᴇ's... ɴᴏ ʀᴜʟᴇs?")
 
 
 @connection_status
@@ -132,11 +132,11 @@ def set_rules(update: Update, context: CallbackContext):
 def clear_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     sql.set_rules(chat_id, "")
-    update.effective_message.reply_text("Successfully cleared rules!")
+    update.effective_message.reply_text("Sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʟᴇᴀʀᴇᴅ ʀᴜʟᴇs.!")
 
 
 def __stats__():
-    return f"• {sql.num_chats()} groups have rules."
+    return f"• {sql.num_chats()} ɢʀᴏᴜᴘs ʜᴀᴠᴇ ʀᴜʟᴇs."
 
 
 def __import_data__(chat_id, data):
@@ -150,15 +150,15 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 def __chat_settings__(chat_id, user_id):
-    return f"This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
+    return f"Tʜɪs ᴄʜᴀᴛ ʜᴀs ʜᴀᴅ ɪᴛ's ʀᴜʟᴇs sᴇᴛ: `{bool(sql.get_rules(chat_id))}`"
 
 
 __help__ = """
- ‣ `/rules`*:* get the rules for this chat.
- ‣ `/rules here`*:* get the rules for this chat but send it in the chat.
-*Admins only:*
- ‣ `/setrules <your rules here>`*:* set the rules for this chat.
- ‣ `/clearrules`*:* clear the rules for this chat.
+ ‣ `/rules `*:* ɢᴇᴛ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.
+ ‣ `/rules here `*:* ɢᴇᴛ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ ʙᴜᴛ sᴇɴᴅ ɪᴛ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
+*Aᴅᴍɪɴs ᴏɴʟʏ:*
+ ‣ `/setrules <ʏᴏᴜʀ ʀᴜʟᴇs ʜᴇʀᴇ>`*:* sᴇᴛ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.
+ ‣ `/clearrules `*:* ᴄʟᴇᴀʀ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.
 """
 
 __mod_name__ = "Rᴜʟᴇs"

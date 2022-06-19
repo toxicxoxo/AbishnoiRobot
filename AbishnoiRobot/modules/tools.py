@@ -5,6 +5,6 @@ __mod_name__ = "Tᴏᴏʟs"
 __help__ = """
 
 *Converts*
- ❍ /encrypt*:* Encrypts The Given Text
- ❍ /decrypt*:* Decrypts Previously Ecrypted Text
+ ❍ /encrypt*:* Eɴᴄʀʏᴘᴛ ᴀɴᴛ ᴛᴇxᴛ 
+ ❍ /decrypt*:* Dᴇᴄʀʏᴘᴛs Pʀᴇᴠɪᴏᴜsʟʏ Eᴄʀʏᴘᴛᴇᴅ
 """

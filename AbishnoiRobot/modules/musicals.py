@@ -1,6 +1,8 @@
 __mod_name__ = "Mᴜsɪᴄ"
 
 __help__ = """
- ❍ /song <song name>*:* Uploads the song in it's best quality available
- 💡Ex: `/song KTMBK`
+
+ ❍ /song <sᴏɴɢ ɴᴀᴍᴇ>*:* Uᴘʟᴏᴀᴅs ᴛʜᴇ sᴏɴɢ ɪɴ ɪᴛ's ʙᴇsᴛ ǫᴜᴀʟɪᴛʏ ᴀᴠᴀɪʟᴀʙʟᴇ
+ 
+ 💡Ex: `/sᴏɴɢ KTMBK`
 """

@@ -8,12 +8,13 @@ from telegram.ext.dispatcher import run_async
 from telegram.ext import CallbackContext, Filters, CommandHandler
 
 MARKDOWN_HELP = f"""
-Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \
-saved messages are correctly parsed, and to allow you to create buttons.
+Mᴀʀᴋᴅᴏᴡɴ ɪs ᴀ ᴠᴇʀʏ ᴘᴏᴡᴇʀғᴜʟ ғᴏʀᴍᴀᴛᴛɪɴɢ ᴛᴏᴏʟ sᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ. {dispatcher.bot.first_name} ʜᴀs sᴏᴍᴇ ᴇɴʜᴀɴᴄᴇᴍᴇɴᴛs, ᴛᴏ ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ \
+sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ᴀʀᴇ ᴄᴏʀʀᴇᴄᴛʟʏ ᴘᴀʀsᴇᴅ, ᴀɴᴅ ᴛᴏ ᴀʟʟᴏᴡ ʏᴏᴜ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʙᴜᴛᴛᴏɴs.
 
 • <code>_italic_</code>: wrapping text with '_' will produce italic text
 • <code>*bold*</code>: wrapping text with '*' will produce bold text
-• <code>`code`</code>: wrapping text with '`' will produce monospaced text, also known as 'code'
+• <code>`code`</code>: wrapping text with '`' will produce monospaced text, also known as 'code
+'
 • <code>[sometext](someURL)</code>: this will create a link - the message will just show <code>sometext</code>, \
 and tapping on it will open the page at <code>someURL</code>.
 <b>Example:</b><code>[test](example.com)</code>
@@ -52,7 +53,7 @@ def echo(update: Update, context: CallbackContext):
 def markdown_help_sender(update: Update):
     update.effective_message.reply_text(MARKDOWN_HELP, parse_mode=ParseMode.HTML)
     update.effective_message.reply_text(
-        "Try forwarding the following message to me, and you'll see, and Use #test!"
+        "Tʀʏ ғᴏʀᴡᴀʀᴅɪɴɢ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴇ, ᴀɴᴅ ʏᴏᴜ'ʟʟ sᴇᴇ, ᴀɴᴅ Usᴇ #test !"
     )
     update.effective_message.reply_text(
         "/save test This is a markdown test. _italics_, *bold*, code, "
@@ -82,24 +83,24 @@ def markdown_help(update: Update, context: CallbackContext):
 
 
 __help__ = """
-*Available commands:*
-*Markdown:*
- ❍ /markdownhelp*:* quick summary of how markdown works in telegram - can only be called in private chats
-*React:*
- ❍ /react*:* Reacts with a random reaction 
-*Urban Dictonary:*
- ❍ /ud <word>*:* Type the word or expression you want to search use
-*Wikipedia:*
- ❍ /wiki <query>*:* wikipedia your query
-*Wallpapers:*
- ❍ /wall <query>*:* get a wallpaper from wall.alphacoders.com
-*Currency converter:* 
- ❍ /cash*:* currency converter
-Example:
- `/cash 1 USD INR`  
+*Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:*
+*Mᴀʀᴋᴅᴏᴡɴ:*
+ ❍ /markdownhelp *:* ǫᴜɪᴄᴋ sᴜᴍᴍᴀʀʏ ᴏғ ʜᴏᴡ ᴍᴀʀᴋᴅᴏᴡɴ ᴡᴏʀᴋs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ - ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴄᴀʟʟᴇᴅ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛs
+*Rᴇᴀᴄᴛ:*
+ ❍ /react *:* Rᴇᴀᴄᴛs ᴡɪᴛʜ ᴀ ʀᴀɴᴅᴏᴍ ʀᴇᴀᴄᴛɪᴏɴ 
+*Uʀʙᴀɴ Dɪᴄᴛᴏɴᴀʀʏ:*
+ ❍ /ud <ᴡᴏʀᴅ>*:* Tʏᴘᴇ ᴛʜᴇ ᴡᴏʀᴅ ᴏʀ ᴇxᴘʀᴇssɪᴏɴ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴀʀᴄʜ ᴜsᴇ
+*Wɪᴋɪᴘᴇᴅɪᴀ:*
+ ❍ /wiki  <ǫᴜᴇʀʏ>*:* ᴡɪᴋɪᴘᴇᴅɪᴀ ʏᴏᴜʀ ǫᴜᴇʀʏ
+*Wᴀʟʟᴘᴀᴘᴇʀs:*
+ ❍ /wall & /wallpaper <ǫᴜᴇʀʏ>*:* ɢᴇᴛ ᴀ ᴡᴀʟʟᴘᴀᴘᴇʀ ғʀᴏᴍ ᴡᴀʟʟ.ᴀʟᴘʜᴀᴄᴏᴅᴇʀs.ᴄᴏᴍ
+*Cᴜʀʀᴇɴᴄʏ ᴄᴏɴᴠᴇʀᴛᴇʀ:* 
+ ❍ /cash *:* ᴄᴜʀʀᴇɴᴄʏ ᴄᴏɴᴠᴇʀᴛᴇʀ
+Exᴀᴍᴘʟᴇ:
+ `/ᴄᴀsʜ 1 USD INR`  
       _OR_
- `/cash 1 usd inr`
-Output: `1.0 USD = 75.505 INR`
+ `/ᴄᴀsʜ 1 ᴜsᴅ ɪɴʀ`
+Oᴜᴛᴘᴜᴛ: `1.0 USD = 75.505 INR
 
 """
 

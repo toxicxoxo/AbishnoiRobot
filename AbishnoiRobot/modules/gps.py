@@ -27,18 +27,18 @@ async def _(event):
             ),
         )
         await event.reply(
-            "Open with: [🌏Google Maps]({})".format(gm),
+            "Oᴘᴇɴ ᴡɪᴛʜ : [🌏Gᴏᴏɢʟᴇ ᴍᴀᴘs]({})".format(gm),
             link_preview=False,
         )
     except Exception as e:
         print(e)
-        await event.reply("I can't find that")
+        await event.reply("I ᴄᴀɴ'ᴛ ғɪɴᴅ ᴛʜᴀᴛ")
 
 
 __help__ = """
-Sends you the gps location of the given query...
+Sᴇɴᴅs ʏᴏᴜ ᴛʜᴇ ɢᴘs ʟᴏᴄᴀᴛɪᴏɴ ᴏғ ᴛʜᴇ ɢɪᴠᴇɴ ǫᴜᴇʀʏ...
 
- ❍ /gps <location>*:* Get gps location.
+ ❍ /gps <ʟᴏᴄᴀᴛɪᴏɴ>*:* Gᴇᴛ ɢᴘs ʟᴏᴄᴀᴛɪᴏɴ.
 """
 
 __mod_name__ = "Gᴘs"
