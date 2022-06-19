@@ -22,15 +22,18 @@ async def repo(client, message):
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
 **» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
 
-**「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」 sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
+**「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ ᴏʀ ᴍᴜsɪ 」 sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="tg://user?id=1452219013"),
+                    InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/Abishnoi1M"),
                     InlineKeyboardButton(
-                        "• sᴏᴜʀᴄᴇ •",
-                        url="https://github.com/KingAbishnoi/AbishnoiRobot",
+                        "ʀᴏʙᴏᴛ",
+                        url="https://github.com/KingAbishnoi/AbishnoiRobot",)
+                    InlineKeyboardButton(
+                        "ᴍᴜsɪᴄ",
+                        url="https://github.com/KingAbishnoi/AbishnoiXMusic"    
                      
                     ),
                 ]
