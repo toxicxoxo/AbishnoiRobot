@@ -5,7 +5,7 @@ import glob
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 from AbishnoiRobot.events import register
-from AbishnoiRobot import telethn as tbot, ubot2
+from AbishnoiRobot import telethn as tbot
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
@@ -27,7 +27,7 @@ async def logo_(event):
                 bg_ = await temp.download_media()
     else:
         pics = []
-        async for i in ubot2.iter_messages(
+        async for i in tbot.iter_messages(
             "@kenlogopack", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -37,7 +37,7 @@ async def logo_(event):
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
-        async for i in ubot2.iter_messages(
+        async for i in tbot.iter_messages(
             "@kenlogopack", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
