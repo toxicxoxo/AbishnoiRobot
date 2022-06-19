@@ -15,7 +15,7 @@ pretty_errors.mono()
 
 
 class ErrorsDict(dict):
-    "A ᴄᴜsᴛᴏᴍ ᴅɪᴄᴛ ᴛᴏ sᴛᴏʀᴇ ᴇʀʀᴏʀs ᴀɴᴅ ᴛʜᴇɪʀ ᴄᴏᴜɴᴛ"
+    "A custom dict to store errors and their count"
 
     def __init__(self, *args, **kwargs):
         self.raw = []
@@ -53,7 +53,7 @@ def error_callback(update: Update, context: CallbackContext):
         pretty_error = stringio.getvalue()
         stringio.close()
     except:
-        pretty_error = "Fᴀɪʟᴇᴅ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴘʀᴇᴛᴛʏ ᴇʀʀᴏʀ."
+        pretty_error = "Failed to create pretty error."
     tb_list = traceback.format_exception(
         None, context.error, context.error.__traceback__
     )
@@ -61,12 +61,12 @@ def error_callback(update: Update, context: CallbackContext):
     pretty_message = (
         "{}\n"
         "-------------------------------------------------------------------------------\n"
-        "Aɴ ᴇxᴄᴇᴘᴛɪᴏɴ ᴡᴀs ʀᴀɪsᴇᴅ ᴡʜɪʟᴇ ʜᴀɴᴅʟɪɴɢ ᴀɴ ᴜᴘᴅᴀᴛᴇ\n"
-        "Usᴇʀ : {}\n"
-        "Cʜᴀᴛ : {} {}\n"
-        "Cᴀʟʟʙᴀᴄᴋ ᴅᴀᴛᴀ : {}\n"
-        "Mᴇssᴀɢᴇ :  {}\n\n"
-        "Fᴜʟʟ Tʀᴀᴄᴇʙᴀᴄᴋ: {}"
+        "An exception was raised while handling an update\n"
+        "User: {}\n"
+        "Chat: {} {}\n"
+        "Callback data: {}\n"
+        "Message: {}\n\n"
+        "Full Traceback: {}"
     ).format(
         pretty_error,
         update.effective_user.id,
@@ -86,7 +86,7 @@ def error_callback(update: Update, context: CallbackContext):
         context.bot.send_document(
             OWNER_ID,
             open("error.txt", "rb"),
-            caption=f"#{context.error.identifier}\n<b>Aɴ ᴜɴᴋɴᴏᴡɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ:</b>\n<code>{e}</code>",
+            caption=f"#{context.error.identifier}\n<b>An unknown error occured:</b>\n<code>{e}</code>",
             parse_mode="html",
         )
         return
@@ -94,7 +94,7 @@ def error_callback(update: Update, context: CallbackContext):
     url = f"https://nekobin.com/{key}.py"
     context.bot.send_message(
         OWNER_ID,
-        text=f"#{context.error.identifier}\n<b>Aɴ ᴜɴᴋɴᴏᴡɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ:</b>\n<code>{e}</code>",
+        text=f"#{context.error.identifier}\n<b>An unknown error occured:</b>\n<code>{e}</code>",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Nekobin", url=url)]]),
         parse_mode="html",
     )
@@ -109,14 +109,14 @@ def list_errors(update: Update, context: CallbackContext):
     msg = "<b>Errors List:</b>\n"
     for x in e:
         msg += f"• <code>{x}:</code> <b>{e[x]}</b> #{x.identifier}\n"
-    msg += f"{len(errors)} ʜᴀᴠᴇ ᴏᴄᴄᴜʀʀᴇᴅ sɪɴᴄᴇ sᴛᴀʀᴛᴜᴘ."
+    msg += f"{len(errors)} have occurred since startup."
     if len(msg) > 4096:
         with open("errors_msg.txt", "w+") as f:
             f.write(msg)
         context.bot.send_document(
             update.effective_chat.id,
             open("errors_msg.txt", "rb"),
-            caption=f"Tᴏᴏ ᴍᴀɴʏ ᴇʀʀᴏʀs ʜᴀᴠᴇ ᴏᴄᴄᴜʀᴇᴅ"..",
+            caption=f"Too many errors have occured..",
             parse_mode="html",
         )
         return
