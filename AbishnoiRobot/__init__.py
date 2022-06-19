@@ -36,11 +36,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     
  
 
-    if sys.version_info[0] < 3 or sys.version_info[1] < 9:
-    LOGGER.error(
-        "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
-    )
-    sys.exit(1)
+  
     
 ENV = bool(os.environ.get("ENV", False))
 
@@ -211,7 +207,7 @@ try:
     ubot2.start()
 except BaseException:    
    print("Userbot Error! Have you added a STRING_SESSION in deploying??")  
- sys.exit(1)
+ quit(1)
     
 pbot = Client("AbishnoiRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
