@@ -72,6 +72,7 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
 
     DB_URI = os.environ.get("DATABASE_URL")
+    SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
@@ -191,11 +192,8 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Abishnoi", API_ID, API_HASH)
 
 ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
-try:
-    ubot2.start()
-except BaseException:
-    print("Userbot Error! Have you added A STRING_SESSION in deploying??")
-    sys.exit(1)
+try:     ubot2.start()
+except BaseException:     print("Userbot Error! Have you added a STRING_SESSION in deploying??")     sys.exit(1)
     
 pbot = Client("AbishnoiRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
