@@ -26,6 +26,8 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
         "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
     )
     quit(1)
+    
+ LOGGER = logging.getLogger('[AbishnoiRbot]')
 
     if sys.version_info[0] < 3 or sys.version_info[1] < 9:
     LOGGER.error(
