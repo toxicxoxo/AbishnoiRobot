@@ -416,10 +416,10 @@ __help__ = """
  `6ʜ` = 6 ʜᴏᴜʀs
  `3ᴅ` = 3 ᴅᴀʏs
  `1ᴡ` = 1 ᴡᴇᴇᴋ
- """
+"""
+
 
 __mod_name__ = "Aɴᴛɪ-Fʟᴏᴏᴅ"
-
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.group, check_flood
 )
