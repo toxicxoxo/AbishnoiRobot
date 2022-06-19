@@ -8,9 +8,9 @@ from AbishnoiRobot.pyrogramee.errors import capture_err
 __mod_name__ = "Gɪᴛʜᴜʙ"
 
 __help__ = """
-I will give information about github profile 
+I ᴡɪʟʟ ɢɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ɢɪᴛʜᴜʙ ᴘʀᴏғɪʟᴇ
 
- ❍ /github <username>*:* Get information about a GitHub user.
+ ❍ /github <username>*:* Gᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ GɪᴛHᴜʙ ᴜsᴇʀ
 """
 
 
@@ -41,16 +41,16 @@ async def github(_, message):
                 followers = result["followers"]
                 following = result["following"]
                 caption = f"""**Info Of {name}**
-**Username:** `{username}`
-**Bio:** `{bio}`
-**Profile Link:** [Here]({url})
-**Company:** `{company}`
-**Created On:** `{created_at}`
-**Repositories:** `{repositories}`
-**Blog:** `{blog}`
-**Location:** `{location}`
-**Followers:** `{followers}`
-**Following:** `{following}`"""
+**Usᴇʀᴇɴᴀᴍᴇ:** `{username}`
+**Bɪᴏ :** `{bio}`
+**Pʀᴏғɪʟᴇ ʟɪɴᴋ :** [Here]({url})
+**Cᴏᴍᴘᴀɴʏ :** `{company}`
+**Cʀᴇᴀᴛᴇᴅ ᴏɴ:** `{created_at}`
+**Rᴇᴘᴏsɪᴛᴏʀɪᴇs:** `{repositories}`
+**Bʟᴏɢ :** `{blog}`
+**Lᴏᴄᴀᴛɪᴏɴ :** `{location}`
+**Fᴏʟʟᴏᴡᴇʀs :** `{followers}`
+**Fᴏʟʟᴏᴡɪɴɢ :** `{following}`"""
             except Exception as e:
                 print(str(e))
                 pass

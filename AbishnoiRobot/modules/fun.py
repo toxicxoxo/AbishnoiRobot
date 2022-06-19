@@ -310,7 +310,7 @@ def weebify(update: Update, context: CallbackContext):
         string = "  ".join(args).lower()
 
     if not string:
-        message.reply_text("Usage is `/weebify <text>`", parse_mode=ParseMode.MARKDOWN)
+        message.reply_text("Usᴀɢᴇ  ɪs `/weebify <text>`", parse_mode=ParseMode.MARKDOWN)
         return
 
     for normiecharacter in string:
@@ -325,20 +325,20 @@ def weebify(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /runs*:* reply a random string from an array of replies
- ❍ /slap*:* slap a user, or get slapped if not a reply
- ❍ /shrug*:* get shrug XD
- ❍ /table*:* get flip/unflip :v
- ❍ /decide*:* Randomly answers yes/no/maybe
- ❍ /toss*:* Tosses A coin
- ❍ /bluetext*:* check urself :V
- ❍ /roll*:* Roll a dice
- ❍ /rlg*:* Join ears,nose,mouth and create an emo ;-;
- ❍ /shout <keyword>*:* write anything you want to give loud shout
- ❍ /weebify <text>*:* returns a weebified text
- ❍ /sanitize*:* always use this before /pat or any contact
- ❍ /pat*:* pats a user, or get patted
- ❍ /8ball*:* predicts using 8ball method 
+ ❍ /runs*:* ʀᴇᴘʟʏ ᴀ ʀᴀɴᴅᴏᴍ sᴛʀɪɴɢ ғʀᴏᴍ ᴀɴ ᴀʀʀᴀʏ ᴏғ ʀᴇᴘʟɪᴇs
+ ❍ /slap*:* sʟᴀᴘ ᴀ ᴜsᴇʀ, ᴏʀ ɢᴇᴛ sʟᴀᴘᴘᴇᴅ ɪғ ɴᴏᴛ ᴀ ʀᴇᴘʟʏ
+ ❍ /shrug*:* ɢᴇᴛ sʜʀᴜɢ XD
+ ❍ /table*:* ɢᴇᴛ ғʟɪᴘ/ᴜɴғʟɪᴘ :v
+ ❍ /decide*:* Rᴀɴᴅᴏᴍʟʏ ᴀɴsᴡᴇʀs ʏᴇs/ɴᴏ/ᴍᴀʏʙᴇ
+ ❍ /toss*:* Tᴏssᴇᴅ ᴀ ᴄᴏɪɴ 
+ ❍ /bluetext*:* ᴄʜᴇᴄᴋ ᴜʀsᴇʟғ :V
+ ❍ /roll*:* ʀᴏʟʟ ᴀ ᴅɪᴄᴇ 
+ ❍ /rlg*:* Jᴏɪɴ ᴇᴀʀs,ɴᴏsᴇ,ᴍᴏᴜᴛʜ ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴀɴ ᴇᴍᴏ ;-;
+ ❍ /shout <keyword>*:* ᴡʀɪᴛᴇ ᴀɴʏᴛʜɪɴɢ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢɪᴠᴇ ʟᴏᴜᴅ sʜᴏᴜᴛ
+ ❍ /weebify <text>*:* ʀᴇᴛᴜʀɴs ᴀ ᴡᴇᴇʙɪғɪᴇᴅ ᴛᴇxᴛ
+ ❍ /sanitize*:* ᴀʟᴡᴀʏs ᴜsᴇ ᴛʜɪs ʙᴇғᴏʀᴇ /pat  ᴏʀ ᴀɴʏ ᴄᴏɴᴛᴀᴄᴛ
+ ❍ /pat*:* ᴘᴀᴛs ᴀ ᴜsᴇʀ, ᴏʀ ɢᴇᴛ ᴘᴀᴛᴛᴇᴅ
+ ❍ /8ball*:* ᴘʀᴇᴅɪᴄᴛs ᴜsɪɴɢ 8ʙᴀʟʟ ᴍᴇᴛʜᴏᴅ 
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)

@@ -43,13 +43,13 @@ def generate_time(to_find: str, findtype: List[str]) -> str:
 
     try:
         result = (
-            f"<b>Country:</b> <code>{country_name}</code>\n"
-            f"<b>Zone Name:</b> <code>{country_zone}</code>\n"
-            f"<b>Country Code:</b> <code>{country_code}</code>\n"
-            f"<b>Daylight saving:</b> <code>{daylight_saving}</code>\n"
-            f"<b>Day:</b> <code>{current_day}</code>\n"
-            f"<b>Current Time:</b> <code>{current_time}</code>\n"
-            f"<b>Current Date:</b> <code>{current_date}</code>\n"
+            f"<b>Cᴏᴜɴᴛʀʏ:</b> <code>{country_name}</code>\n"
+            f"<b>Zᴏɴᴇ Nᴀᴍᴇ:</b> <code>{country_zone}</code>\n"
+            f"<b>Cᴏᴜɴᴛʀʏ Cᴏᴅᴇ:</b> <code>{country_code}</code>\n"
+            f"<b>Dᴀʏʟɪɢʜᴛ sᴀᴠɪɴɢ:</b> <code>{daylight_saving}</code>\n"
+            f"<b>Dᴀʏ :</b> <code>{current_day}</code>\n"
+            f"<b>Cᴜʀʀᴇɴᴛ Tɪᴍᴇ:</b> <code>{current_time}</code>\n"
+            f"<b>Cᴜʀʀᴇɴᴛ Dᴀᴛᴇ:</b> <code>{current_date}</code>\n"
             '<b>Timezones:</b> <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List here</a>'
         )
     except:
@@ -65,10 +65,10 @@ def gettime(update: Update, context: CallbackContext):
     try:
         query = message.text.strip().split(" ", 1)[1]
     except:
-        message.reply_text("Provide a country name/abbreviation/timezone to find.")
+        message.reply_text("Pʀᴏᴠɪᴅᴇ ᴀ ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ /abbreviation/timezone to find.")
         return
     send_message = message.reply_text(
-        f"Finding timezone info for <b>{query}</b>", parse_mode=ParseMode.HTML
+        f"Fɪɴᴅɪɴɢ ᴛɪᴍᴇᴢᴏɴᴇ ɪɴғᴏ ғᴏʀ <b>{query}</b>", parse_mode=ParseMode.HTML
     )
 
     query_timezone = query.lower()
@@ -79,8 +79,8 @@ def gettime(update: Update, context: CallbackContext):
 
     if not result:
         send_message.edit_text(
-            f"Timezone info not available for <b>{query}</b>\n"
-            '<b>All Timezones:</b> <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List here</a>',
+            f"Tɪᴍᴇᴢᴏɴᴇ ɪɴғᴏ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ <b>{query}</b>\n"
+            '<b>Aʟʟ Tɪᴍᴇᴢᴏɴᴇs:</b> <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List here</a>',
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
         )
@@ -92,11 +92,12 @@ def gettime(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /time <query>*:* Gives information about a timezone.
-*Available queries:* Country Code/Country Name/Timezone Name
- ❍ ⏰ [Timezones list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+ ❍ /time <query>*:* Gɪᴠᴇs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴛɪᴍᴇᴢᴏɴᴇ.
+*Aᴠᴀɪʟᴀʙʟᴇ ǫᴜᴇʀɪᴇs:* Cᴏᴜɴᴛʀʏ Cᴏᴅᴇ/Cᴏᴜɴᴛʀʏ Nᴀᴍᴇ/Tɪᴍᴇᴢᴏɴᴇ Nᴀᴍᴇ
 
-💡 Ex:- /time IN *:* It will shows Indian current time and date..
+ ❍ ⏰ [Tɪᴍᴇᴢᴏɴᴇs ʟɪsᴛ](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+💡 Ex:- /time IN *:* Iᴛ ᴡɪʟʟ sʜᴏᴡs Iɴᴅɪᴀɴ ᴄᴜʀʀᴇɴᴛ ᴛɪᴍᴇ ᴀɴᴅ ᴅᴀᴛᴇ...
 """
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)

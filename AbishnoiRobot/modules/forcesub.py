@@ -183,22 +183,23 @@ def config(client, message):
 __help__ = """
   *Force Subscribe:*
 
-  Abishnoi Robot can mute members who are not subscribed your channel until they subscribe When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
+ **Aʙɪsʜɴᴏɪ Rᴏʙᴏᴛ** ᴄᴀɴ ᴍᴜᴛᴇ ᴍᴇᴍʙᴇʀs ᴡʜᴏ ᴀʀᴇ ɴᴏᴛ sᴜʙsᴄʀɪʙᴇᴅ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴜɴᴛɪʟ ᴛʜᴇʏ sᴜʙsᴄʀɪʙᴇ Wʜᴇɴ ᴇɴᴀʙʟᴇᴅ I ᴡɪʟʟ ᴍᴜᴛᴇ ᴜɴsᴜʙsᴄʀɪʙᴇᴅ ᴍᴇᴍʙᴇʀs ᴀɴᴅ sʜᴏᴡ ᴛʜᴇᴍ ᴀ ᴜɴᴍᴜᴛᴇ ʙᴜᴛᴛᴏɴ. Wʜᴇɴ ᴛʜᴇʏ ᴘʀᴇssᴇᴅ ᴛʜᴇ ʙᴜᴛᴛᴏɴ I ᴡɪʟʟ ᴜɴᴍᴜᴛᴇ ᴛʜᴇᴍ
 
-  *Setup* *:* *Only for chat owner*
-  ❍ Add me in your group as admin
-  ❍ Add me in your channel as admin 
+  *Sᴇᴛᴜᴘ* *:* *Oɴʟʏ ғᴏʀ ᴄʜᴀᴛ ᴏᴡɴᴇʀ*
+  
+  ❍ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ
+  ❍ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴀs ᴀᴅᴍɪɴ 
     
   *Commmands*
-  ❍ /fsub {channel username} *:* To turn on and setup the channel.
+  ❍ /fsub {ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ} *:* Tᴏ ᴛᴜʀɴ ᴏɴ ᴀɴᴅ sᴇᴛᴜᴘ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ. 
 
-    💡Do this first...
+    💡Dᴏ ᴛʜɪs ғɪʀsᴛ......
 
-  ❍ /fsub *:* To get the current settings.
-  ❍ /fsub disable *:* To turn of ForceSubscribe..
+  ❍ /fsub *:* Tᴏ ɢᴇᴛ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴇᴛᴛɪɴɢs..
+  ❍ /fsub disable *:* Tᴏ ᴛᴜʀɴ ᴏғ FᴏʀᴄᴇSᴜʙsᴄʀɪʙᴇ..
 
-    💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
+   💡Iғ ʏᴏᴜ ᴅɪsᴀʙʟᴇ ғsᴜʙ, ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ sᴇᴛ ᴀɢᴀɪɴ ғᴏʀ ᴡᴏʀᴋɪɴɢ.. /fsub {ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ}} 
 
-  ❍ /fsub clear *:* To unmute all members who are muted by me for not joining the channel.
+  ❍ /fsub clear *:* Tᴏ ᴜɴᴍᴜᴛᴇ ᴀʟʟ ᴍᴇᴍʙᴇʀs ᴡʜᴏ ᴀʀᴇ ᴍᴜᴛᴇᴅ ʙʏ ᴍᴇ ғᴏʀ ɴᴏᴛ ᴊᴏɪɴɪɴɢ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ.
 """
 __mod_name__ = "Fᴏʀᴄᴇ-Sᴜʙ"

@@ -478,13 +478,13 @@ __help__ = """
 
 *ᴄᴏɴᴠᴇʀᴛs sɪᴍᴩʟᴇ ᴛᴇxᴛ ᴛᴏ ʙᴇᴀᴜᴛɪғᴜʟ ᴛᴇxᴛ ʙʏ ᴄʜᴀɴɢɪɴɢ ɪᴛ's ғᴏɴᴛ*
 
- ❍ /weebify *:* Change the text into weeb text.
- ❍ /bubble *:* Change the text into bubble text.
- ❍ /fbubble *:* Change the text into fbubble text.
- ❍ /square *:* Change the text into square text.
- ❍ /blue *:* Change the text into blue text.
- ❍ /latin *:* Change the text into latin text.
- ❍ /lined *:* Change the text into lined text.
+ ❍ /weebify *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ ᴡᴇᴇʙ ᴛᴇxᴛ.
+ ❍ /bubble *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ ʙᴜʙʙʟᴇ ᴛᴇx
+ ❍ /fbubble *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ ғʙᴜʙʙʟᴇ ᴛᴇx
+ ❍ /square *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ sǫᴜᴀʀᴇ ᴛᴇx.
+ ❍ /blue *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ ʙʟᴜᴇ  ᴛᴇx.
+ ❍ /latin *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ ʟᴀᴛɪɴ ᴛᴇx.
+ ❍ /lined *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ ʟɪɴᴇᴅ ᴛᴇx
  """
 __mod_name__ = "Fᴏɴᴛ Eᴅɪᴛᴏʀ"
 
