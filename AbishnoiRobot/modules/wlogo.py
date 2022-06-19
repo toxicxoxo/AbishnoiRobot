@@ -89,7 +89,4 @@ async def logo_(event):
         if not font_.startswith("./AbishnoiRobot/resources/fonts"):
             os.remove(font_)
           
- __mod_name__ = "ᴡLᴏɢᴏ​"
-
-__help__ = """
-Aʙɪsʜɴᴏɪ Rᴏʙᴏᴛ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ sᴏᴍᴇ ʙᴇᴀᴜᴛɪғᴜʟ ᴀɴᴅ ᴀᴛᴛʀᴀᴄᴛɪᴠᴇ ᴛᴇxᴛ ʟᴏɢᴏ ғᴏʀ ʏᴏᴜʀ ᴘʀᴏғɪʟᴇ ᴘɪᴄs.
+__mod_name__ = "Wʟᴏɢᴏ"
