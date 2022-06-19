@@ -57,16 +57,16 @@ GBAN_ERRORS = {
 }
 
 UNGBAN_ERRORS = {
-    "User is an administrator of the chat",
-    "Chat not found",
-    "Not enough rights to restrict/unrestrict chat member",
-    "User_not_participant",
-    "Method is available for supergroup and channel chats only",
-    "Not in the chat",
-    "Channel_private",
-    "Chat_admin_required",
-    "Peer_id_invalid",
-    "User not found",,
+    "Usᴇʀ ɪs ᴀɴ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ ᴏғ ᴛʜᴇ ᴄʜᴀᴛ",
+    "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ",
+    "Nᴏᴛ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛs ᴛᴏ ʀᴇsᴛʀɪᴄᴛ/ᴜɴʀᴇsᴛʀɪᴄᴛ ᴄʜᴀᴛ ᴍᴇᴍʙᴇʀ",
+    "Usᴇʀ_ɴᴏᴛ_ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ",
+    "Mᴇᴛʜᴏᴅ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ sᴜᴘᴇʀɢʀᴏᴜᴘ ᴀɴᴅ ᴄʜᴀɴɴᴇʟ ᴄʜᴀᴛs ᴏɴʟʏ",
+    "Nᴏᴛ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ",
+    "Cʜᴀɴɴᴇʟ_ᴘʀɪᴠᴀᴛᴇ",
+    "Cʜᴀᴛ_ᴀᴅᴍɪɴ_ʀᴇǫᴜɪʀᴇᴅ",
+    "Pᴇᴇʀ_ɪᴅ_ɪɴᴠᴀʟɪᴅ",
+    "Usᴇʀ ɴᴏᴛ ғᴏᴜɴᴅ",
 }
 
 
