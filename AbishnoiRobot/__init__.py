@@ -17,15 +17,8 @@ logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
 )
-logging.getLogger("pyrogram").setLevel(logging.INFO)
-logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
 LOGGER = logging.getLogger(__name__)
-LOGGER.info("Emiko is starting. | An Kennedy Project Parts. | Licensed under GPLv3.")
-LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
-LOGGER.info("Project maintained by: github.com/kennedy-ex (t.me/excrybaby)")
-
-
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
@@ -33,11 +26,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
         "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
     )
     quit(1)
-    
- 
 
-  
-    
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
@@ -83,8 +72,6 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
 
     DB_URI = os.environ.get("DATABASE_URL")
-    SESSION_STRING = os.environ.get("SESSION_STRING", None)
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
@@ -182,7 +169,6 @@ else:
     ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
     REM_BG_API_KEY = Config.REM_BG_API_KEY
-    STRING_SESSION = Config.STRING_SESSION
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
@@ -202,13 +188,6 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Abishnoi", API_ID, API_HASH)
 
-ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
-try: 
-    ubot2.start()
-except BaseException:    
-   print("Userbot Error! Have you added a STRING_SESSION in deploying??")  
- quit(1)
-    
 pbot = Client("AbishnoiRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 aiohttpsession = ClientSession()
