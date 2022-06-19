@@ -72,6 +72,7 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
 
     DB_URI = os.environ.get("DATABASE_URL")
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
@@ -169,6 +170,7 @@ else:
     ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
     REM_BG_API_KEY = Config.REM_BG_API_KEY
+    STRING_SESSION = Config.STRING_SESSION
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
