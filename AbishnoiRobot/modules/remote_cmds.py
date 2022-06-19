@@ -231,7 +231,7 @@ def runban(update: Update, context: CallbackContext):
 
     try:
         chat.unban_member(user_id)
-        message.reply_text("Yᴇᴘ, ᴛʜɪs ᴜsᴇʀ ᴄᴀɴ ᴊᴏɪɴ ᴛʜᴀᴛ ᴄʜᴀᴛ!"!")
+        message.reply_text("Yᴇᴘ, ᴛʜɪs ᴜsᴇʀ ᴄᴀɴ ᴊᴏɪɴ ᴛʜᴀᴛ ᴄʜᴀᴛ!")
     except BadRequest as excp:
         if excp.message == "Rᴇᴘʟʏ ᴍᴇssᴀɢᴇ ɴᴏᴛ ғᴏᴜɴᴅ":
             # Do not reply
