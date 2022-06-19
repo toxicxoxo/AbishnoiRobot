@@ -18,7 +18,7 @@ def wall(update: Update, context: CallbackContext):
     bot = context.bot
     query = " ".join(args)
     if not query:
-        msg.reply_text(""Pʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ǫᴜᴇʀʏ!")
+        msg.reply_text("Pʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ǫᴜᴇʀʏ!")
         return
     else:
         caption = query
