@@ -30,10 +30,10 @@ ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "AbishnoiRobot/elevated_users.js
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
     bot = context.bot
     if not user_id:
-        reply = "That...is a chat! baka ka omae?"
+        reply = "Tʜᴀᴛ...ɪs ᴀ ᴄʜᴀᴛ! ʙᴀᴋᴀ ᴋᴀ ᴏᴍᴀᴇ?"
 
     elif user_id == bot.id:
-        reply = "This does not work that way."
+        reply = "Tʜɪs ᴅᴏᴇs ɴᴏᴛ ᴡᴏʀᴋ ᴛʜᴀᴛ ᴡᴀʏ."
 
     else:
         reply = None
@@ -73,16 +73,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a Dragon Disaster")
+        message.reply_text("Tʜɪs ᴍᴇᴍʙᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ Dʀᴀɢᴏɴ Dɪsᴀsᴛᴇʀ")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HA to promote a Demon Disaster to Dragon."
+        rt += "Rᴇǫᴜᴇsᴛᴇᴅ HA ᴛᴏ ᴘʀᴏᴍᴏᴛᴇ ᴀ Dᴇᴍᴏɴ Dɪsᴀsᴛᴇʀ ᴛᴏ Dʀᴀɢᴏɴ."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote a Wolf Disaster to Dragon."
+        rt += "Rᴇǫᴜᴇsᴛᴇᴅ HA ᴛᴏ ᴘʀᴏᴍᴏᴛᴇ ᴀ Wᴏʟғ Dɪsᴀsᴛᴇʀ ᴛᴏ Dʀᴀɢᴏɴ."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -94,7 +94,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt
-        + "\nSuccessfully set Disaster level of {} to Dragon!".format(
+        + "\nSᴜᴄᴄᴇssғᴜʟʟʏ sᴇᴛ Dɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ {} ᴛᴏ Dʀᴀɢᴏɴ !".format(
             user_member.first_name
         )
     )
@@ -135,16 +135,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to demote this Dragon to Demon"
+        rt += "Rᴇǫᴜᴇsᴛᴇᴅ HA ᴛᴏ ᴅᴇᴍᴏᴛᴇ ᴛʜɪs Dʀᴀɢᴏɴ ᴛᴏ Dᴇᴍᴏɴ"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a Demon Disaster.")
+        message.reply_text("Tʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ Dᴇᴍᴏɴ Dɪsᴀsᴛᴇʀ.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this Wolf Disaster to Demon"
+        rt += "Rᴇǫᴜᴇsᴛᴇᴅ HA ᴛᴏ ᴘʀᴏᴍᴏᴛᴇ ᴛʜɪs Wᴏʟғ Dɪsᴀsᴛᴇʀ ᴛᴏ Dᴇᴍᴏɴ"
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -155,7 +155,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a Demon Disaster!"
+        rt + f"\n{user_member.first_name} ᴡᴀs ᴀᴅᴅᴇᴅ ᴀs ᴀ Dᴇᴍᴏɴ Dɪsᴀsᴛᴇʀ!"
     )
 
     log_message = (
@@ -191,17 +191,17 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Dragon Disaster, Demoting to Wolf."
+        rt += "Tʜɪs ᴍᴇᴍʙᴇʀ ɪs ᴀ Dʀᴀɢᴏɴ Dɪsᴀsᴛᴇʀ, Dᴇᴍᴏᴛɪɴɢ ᴛᴏ Wᴏʟғ."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon Disaster, Demoting to Wolf."
+        rt += "Tʜɪs ᴍᴇᴍʙᴇʀ ɪs ᴀ Dʀᴀɢᴏɴ Dɪsᴀsᴛᴇʀ, Dᴇᴍᴏᴛɪɴɢ ᴛᴏ Wᴏʟғ."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("This user is already a Wolf Disaster.")
+        message.reply_text("Tʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ Wᴏʟғ Dɪsᴀsᴛᴇʀ.")
         return ""
 
     data["whitelists"].append(user_id)
@@ -211,7 +211,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\nSuccessfully promoted {user_member.first_name} to a Wolf Disaster!"
+        rt + f"\nSᴜᴄᴄᴇssғᴜʟʟʏ ᴘʀᴏᴍᴏᴛᴇᴅ {user_member.first_name} ᴛᴏ ᴀ Wᴏʟғ Dɪsᴀsᴛᴇʀ !"
     )
 
     log_message = (
@@ -247,22 +247,22 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Dragon Disaster, Demoting to Tiger."
+        rt += "Tʜɪs ᴍᴇᴍʙᴇʀ ɪs ᴀ Dʀᴀɢᴏɴ Dɪsᴀsᴛᴇʀ, Dᴇᴍᴏᴛɪɴɢ ᴛᴏ Tɪɢᴇʀ."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon Disaster, Demoting to Tiger."
+        rt += "Tʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ Dᴇᴍᴏɴ Dɪsᴀsᴛᴇʀ, Dᴇᴍᴏᴛɪɴɢ ᴛᴏ Tɪɢᴇʀ."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a Wolf Disaster, Demoting to Tiger."
+        rt += "Tʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ Wᴏʟғ Dɪsᴀsᴛᴇʀ, Dᴇᴍᴏᴛɪɴɢ ᴛᴏ Tɪɢᴇʀ."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Tiger.")
+        message.reply_text("Tʜɪs ᴜsᴇʀ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ Tɪɢᴇʀ.")
         return ""
 
     data["tigers"].append(user_id)
@@ -272,7 +272,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\nSuccessfully promoted {user_member.first_name} to a Tiger Disaster!"
+        rt + f"\nSᴜᴄᴄᴇssғᴜʟʟʏ ᴘʀᴏᴍᴏᴛᴇᴅ {user_member.first_name} ᴛᴏ ᴀ Tɪɢᴇʀ Dɪsᴀsᴛᴇʀ!"
     )
 
     log_message = (
@@ -307,7 +307,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("Rᴇǫᴜᴇsᴛᴇᴅ HA ᴛᴏ ᴅᴇᴍᴏᴛᴇ ᴛʜɪs ᴜsᴇʀ ᴛᴏ Cɪᴠɪʟɪᴀɴ")
         DRAGONS.remove(user_id)
         data["sudos"].remove(user_id)
 
@@ -326,7 +326,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Dragon Disaster!")
+        message.reply_text("Tʜɪs ᴜsᴇʀ ɪs ɴᴏᴛ ᴀ Dʀᴀɢᴏɴ Dɪsᴀsᴛᴇʀ!")
         return ""
 
 
@@ -350,7 +350,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("Rᴇǫᴜᴇsᴛᴇᴅ HA ᴛᴏ ᴅᴇᴍᴏᴛᴇ ᴛʜɪs ᴜsᴇʀ ᴛᴏ Cɪᴠɪʟɪᴀɴ")
         DEMONS.remove(user_id)
         data["supports"].remove(user_id)
 
@@ -369,7 +369,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Demon level Disaster!")
+        message.reply_text("Tʜɪs ᴜsᴇʀ ɪs ɴᴏᴛ ᴀ Dᴇᴍᴏɴ ʟᴇᴠᴇʟ Dɪsᴀsᴛᴇʀ!")
         return ""
 
 
@@ -411,7 +411,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Wolf Disaster!")
+        message.reply_text("Tʜɪs ᴜsᴇʀ ɪs ɴᴏᴛ ᴀ Wᴏʟғ Dɪsᴀsᴛᴇʀ!")
         return ""
 
 
@@ -453,14 +453,14 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Tiger Disaster!")
+        message.reply_text("Dᴇᴍᴏᴛɪɴɢ ᴛᴏ ɴᴏʀᴍᴀʟ ᴜsᴇ!")
         return ""
 
 
 @run_async
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Wolf Disasters 🐺:</b>\n"
+    reply = "<b>Kɴᴏᴡɴ Wᴏʟғ Dɪsᴀsᴛᴇʀs 🐺:</b>\n"
     m = update.effective_message.reply_text(
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
     )
@@ -479,9 +479,9 @@ def whitelistlist(update: Update, context: CallbackContext):
 @run_async
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Tiger Disasters 🐯:</b>\n"
+    reply = "<b>Kɴᴏᴡɴ Tɪɢᴇʀ Dɪsᴀsᴛᴇʀs 🐯:</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+        "<code>Gᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ..</code>", parse_mode=ParseMode.HTML
     )
     bot = context.bot
     for each_user in TIGERS:
@@ -499,9 +499,9 @@ def tigerlist(update: Update, context: CallbackContext):
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+        "<code>Gᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ..</code>", parse_mode=ParseMode.HTML
     )
-    reply = "<b>Known Demon Disasters 👹:</b>\n"
+    reply = "<b>Kɴᴏᴡɴ Dᴇᴍᴏɴ Dɪsᴀsᴛᴇʀs 👹:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -517,10 +517,10 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+        "<code>Gᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ..</code>", parse_mode=ParseMode.HTML
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known Dragon Disasters 🐉:</b>\n"
+    reply = "<b>Kɴᴏᴡɴ Dʀᴀɢᴏɴ Dɪsᴀsᴛᴇʀs 🐉:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -536,10 +536,10 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
+        "<code>Gᴀᴛʜᴇʀɪɴɢ ɪɴᴛᴇʟ..</code>", parse_mode=ParseMode.HTML
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Hero Association Members ⚡️:</b>\n"
+    reply = "<b>Hᴇʀᴏ Assᴏᴄɪᴀᴛɪᴏɴ Mᴇᴍʙᴇʀs ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -551,101 +551,101 @@ def devlist(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-*⚠️ Notice:*
-Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
-Group admins/group owners do not need these commands. 
+**NOTICE : **
+Cᴏᴍᴍᴀɴᴅs ʟɪsᴛᴇᴅ ʜᴇʀᴇ ᴏɴʟʏ ᴡᴏʀᴋ ғᴏʀ ᴜsᴇʀs ᴡɪᴛʜ sᴘᴇᴄɪᴀʟ ᴀᴄᴄᴇss ᴀʀᴇ ᴍᴀɪɴʟʏ ᴜsᴇᴅ ғᴏʀ ᴛʀᴏᴜʙʟᴇsʜᴏᴏᴛɪɴɢ, ᴅᴇʙᴜɢɢɪɴɢ ᴘᴜʀᴘᴏsᴇs.
+Gʀᴏᴜᴘ ᴀᴅᴍɪɴs/ɢʀᴏᴜᴘ ᴏᴡɴᴇʀs ᴅᴏ ɴᴏᴛ ɴᴇᴇᴅ ᴛʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅs. 
 
-*List all special users:*
- ❍ /dragons*:* Lists all Dragon disasters
- ❍ /demons*:* Lists all Demon disasters
- ❍ /tigers*:* Lists all Tigers disasters
- ❍ /wolves*:* Lists all Wolf disasters
- ❍ /heroes*:* Lists all Hero Association members
- ❍ /adddragon*:* Adds a user to Dragon
- ❍ /adddemon*:* Adds a user to Demon
- ❍ /addtiger*:* Adds a user to Tiger
- ❍ /addwolf*:* Adds a user to Wolf
- ❍ `Add dev doesnt exist, devs should know how to add themselves`
+*Lɪsᴛ ᴀʟʟ sᴘᴇᴄɪᴀʟ ᴜsᴇʀs:*
+ ❍ /dragons*:* Lɪsᴛs ᴀʟʟ Dʀᴀɢᴏɴ ᴅɪsᴀsᴛᴇʀs
+ ❍ /demons*:* Lɪsᴛs ᴀʟʟ Dᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀs
+ ❍ /tigers*:* Lɪsᴛs ᴀʟʟ Tɪɢᴇʀs ᴅɪsᴀsᴛᴇʀs
+ ❍ /wolves*:* Lɪsᴛs ᴀʟʟ Wᴏʟғ ᴅɪsᴀsᴛᴇʀs
+ ❍ /heroes*:* Lɪsᴛs ᴀʟʟ Hᴇʀᴏ Assᴏᴄɪᴀᴛɪᴏɴ ᴍᴇᴍʙᴇʀs
+ ❍ /adddragon *:* Aᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ Dʀᴀɢᴏɴ
+ ❍ /adddemon*:* Aᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ Dᴇᴍᴏɴ
+ ❍ /addtiger *:* Aᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ Tɪɢᴇʀ
+ ❍ /addwolf *:* Aᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ Wᴏʟғ
+ ❍ `Aᴅᴅ ᴅᴇᴠ ᴅᴏᴇsɴᴛ ᴇxɪsᴛ, ᴅᴇᴠs sʜᴏᴜʟᴅ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴀᴅᴅ ᴛʜᴇᴍsᴇʟᴠᴇs`
 
-*Ping:*
- ❍ /ping*:* gets ping time of bot to telegram server
- ❍ /pingall*:* gets all listed ping times
+*Pɪɴɢ:*
+ ❍ /ping & /alive *:* ɢᴇᴛs ᴘɪɴɢ ᴛɪᴍᴇ ᴏғ ʙᴏᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀ
+ ❍ /pingall *:* ɢᴇᴛs ᴀʟʟ ʟɪsᴛᴇᴅ ᴘɪɴɢ ᴛɪᴍᴇs
 
-*Broadcast: (Bot owner only)*
-*Note:* This supports basic markdown
- ❍ /broadcastall*:* Broadcasts everywhere
- ❍ /broadcastusers*:* Broadcasts too all users
- ❍ /broadcastgroups*:* Broadcasts too all groups
+*Bʀᴏᴀᴅᴄᴀsᴛ: (Bᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)*
+*Nᴏᴛᴇ:* Tʜɪs sᴜᴘᴘᴏʀᴛs ʙᴀsɪᴄ ᴍᴀʀᴋᴅᴏᴡɴ
+ ❍ /broadcastall <your msg.> *:* Bʀᴏᴀᴅᴄᴀsᴛs ᴇᴠᴇʀʏᴡʜᴇʀᴇ
+ ❍ /broadcastusers *:* Bʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ᴜsᴇʀs
+ ❍ /broadcastgroups *:* Bʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ɢʀᴏᴜᴘs
 
-*Groups Info:*
- ❍ /groups*:* List the groups with Name, ID, members count as a txt
- ❍ /leave <ID>*:* Leave the group, ID must have hyphen
- ❍ /stats*:* Shows overall bot stats
- ❍ /getchats*:* Gets a list of group names the user has been seen in. Bot owner only
- ❍ /ginfo username/link/ID*:* Pulls info panel for entire group
+*Gʀᴏᴜᴘs Iɴғᴏ:*
+ ❍ /groups *:* Lɪsᴛ ᴛʜᴇ ɢʀᴏᴜᴘs ᴡɪᴛʜ Nᴀᴍᴇ, ID, ᴍᴇᴍʙᴇʀs ᴄᴏᴜɴᴛ ᴀs ᴀ ᴛxᴛ
+ ❍ /leave  <ID>*:* Lᴇᴀᴠᴇ ᴛʜᴇ ɢʀᴏᴜᴘ, ID ᴍᴜsᴛ ʜᴀᴠᴇ ʜʏᴘʜᴇɴ
+ ❍ /stats *:* Sʜᴏᴡs ᴏᴠᴇʀᴀʟʟ ʙᴏᴛ sᴛᴀᴛs
+ ❍ /getchats *:* Gᴇᴛs ᴀ ʟɪsᴛ ᴏғ ɢʀᴏᴜᴘ ɴᴀᴍᴇs ᴛʜᴇ ᴜsᴇʀ ʜᴀs ʙᴇᴇɴ sᴇᴇɴ ɪɴ. Bᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ
+ ❍ /ginfo  ᴜsᴇʀɴᴀᴍᴇ/ʟɪɴᴋ/ID*:* Pᴜʟʟs ɪɴғᴏ ᴘᴀɴᴇʟ ғᴏʀ ᴇɴᴛɪʀᴇ ɢʀᴏᴜᴘ
 
-*Access control:* 
- ❍ /ignore*:* Blacklists a user from using the bot entirely
- ❍ /lockdown <off/on>*:* Toggles bot adding to groups
- ❍ /notice*:* Removes user from blacklist
- ❍ /ignoredlist*:* Lists ignored users
+*Aᴄᴄᴇss ᴄᴏɴᴛʀᴏʟ:* 
+ ❍ /ignore *:* Bʟᴀᴄᴋʟɪsᴛs ᴀ ᴜsᴇʀ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴇɴᴛɪʀᴇʟʏ
+ ❍ /lockdown  <ᴏғғ/ᴏɴ>*:* Tᴏɢɢʟᴇs ʙᴏᴛ ᴀᴅᴅɪɴɢ ᴛᴏ ɢʀᴏᴜᴘs
+ ❍ /notice  *:* Rᴇᴍᴏᴠᴇs ᴜsᴇʀ ғʀᴏᴍ ʙʟᴀᴄᴋʟɪsᴛ
+ ❍ /ignoredlist *:* Lɪsᴛs ɪɢɴᴏʀᴇᴅ ᴜsᴇʀs
 
-*Speedtest:*
- ❍ /speedtest*:* Runs a speedtest and gives you 2 options to choose from, text or image output
+*Sᴘᴇᴇᴅᴛᴇsᴛ:*
+ ❍ /speedtest *:* Rᴜɴs ᴀ sᴘᴇᴇᴅᴛᴇsᴛ ᴀɴᴅ ɢɪᴠᴇs ʏᴏᴜ 2 ᴏᴘᴛɪᴏɴs ᴛᴏ ᴄʜᴏᴏsᴇ ғʀᴏᴍ, ᴛᴇxᴛ ᴏʀ ɪᴍᴀɢᴇ ᴏᴜᴛᴘᴜᴛ
 
-*Module loading:*
- ❍ /listmodules*:* Lists names of all modules
- ❍ /load modulename*:* Loads the said module to memory without restarting.
- ❍ /unload modulename*:* Loads the said module frommemory without restarting memory without restarting the bot 
+*Mᴏᴅᴜʟᴇ ʟᴏᴀᴅɪɴɢ:*
+ ❍ /listmodules *:* Lɪsᴛs ɴᴀᴍᴇs ᴏғ ᴀʟʟ ᴍᴏᴅᴜʟᴇs
+ ❍ /load modulename *:* Lᴏᴀᴅs ᴛʜᴇ sᴀɪᴅ ᴍᴏᴅᴜʟᴇ ᴛᴏ ᴍᴇᴍᴏʀʏ ᴡɪᴛʜᴏᴜᴛ ʀᴇsᴛᴀʀᴛɪɴɢ.
+ ❍ /upload modulename *:* Lᴏᴀᴅs ᴛʜᴇ sᴀɪᴅ ᴍᴏᴅᴜʟᴇ ғʀᴏᴍᴍᴇᴍᴏʀʏ ᴡɪᴛʜᴏᴜᴛ ʀᴇsᴛᴀʀᴛɪɴɢ ᴍᴇᴍᴏʀʏ ᴡɪᴛʜᴏᴜᴛ ʀᴇsᴛᴀʀᴛɪɴɢ ᴛʜᴇ ʙᴏᴛ 
 
-*Remote commands:*
- ❍ /rban*:* user group*:* Remote ban
- ❍ /runban*:* user group*:* Remote un-ban
- ❍ /rpunch*:* user group*:* Remote punch
- ❍ /rmute*:* user group*:* Remote mute
- ❍ /runmute*:* user group*:* Remote un-mute
+*Rᴇᴍᴏᴛᴇ ᴄᴏᴍᴍᴀɴᴅs:*
+ ❍ /rban *:* ᴜsᴇʀ ɢʀᴏᴜᴘ*:* Rᴇᴍᴏᴛᴇ ʙᴀɴ
+ ❍ /runban *:* ᴜsᴇʀ ɢʀᴏᴜᴘ*:* Rᴇᴍᴏᴛᴇ ᴜɴ-ʙᴀɴ
+ ❍ /rpunch *:* ᴜsᴇʀ ɢʀᴏᴜᴘ*:* Rᴇᴍᴏᴛᴇ ᴘᴜɴᴄʜ
+ ❍ /rmute *:* ᴜsᴇʀ ɢʀᴏᴜᴘ*:* Rᴇᴍᴏᴛᴇ ᴍᴜᴛᴇ
+ ❍ /runmute *:* ᴜsᴇʀ ɢʀᴏᴜᴘ*:* Rᴇᴍᴏᴛᴇ ᴜɴ-ᴍᴜᴛᴇ
 
-*Windows self hosted only:*
- ❍ /reboot*:* Restarts the bots service
- ❍ /gitpull*:* Pulls the repo and then restarts the bots service
+*Wɪɴᴅᴏᴡs sᴇʟғ ʜᴏsᴛᴇᴅ ᴏɴʟʏ:*
+ ❍ /reboot *:* Rᴇsᴛᴀʀᴛs ᴛʜᴇ ʙᴏᴛs sᴇʀᴠɪᴄᴇ
+ ❍ /gitpull *:* Pᴜʟʟs ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ʀᴇsᴛᴀʀᴛs ᴛʜᴇ ʙᴏᴛs sᴇʀᴠɪᴄᴇ
 
-*Chatbot:* 
- ❍ /listaichats*:* Lists the chats the chatmode is enabled in
+*Cʜᴀᴛʙᴏᴛ:* 
+ ❍ /listaichats*:* Lɪsᴛs ᴛʜᴇ ᴄʜᴀᴛs ᴛʜᴇ ᴄʜᴀᴛᴍᴏᴅᴇ ɪs ᴇɴᴀʙʟᴇᴅ ɪɴ
  
-*Debugging and Shell:* 
- ❍ /debug <on/off>*:* Logs commands to updates.txt
- ❍ /logs*:* Run this in support group to get logs in pm
- ❍ /eval*:* Self explanatory
- ❍ /sh*:* Runs shell command
- ❍ /shell*:* Runs shell command
- ❍ /clearlocals*:* As the name goes
- ❍ /dbcleanup*:* Removes deleted accs and groups from db
- ❍ /py*:* Runs python code
+*Dᴇʙᴜɢɢɪɴɢ ᴀɴᴅ Sʜᴇʟʟ:* 
+ ❍ /debug  <ᴏɴ/ᴏғғ>*:* Lᴏɢs ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜᴘᴅᴀᴛᴇs.ᴛxᴛ
+ ❍ /logs *:* Rᴜɴ ᴛʜɪs ɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ʟᴏɢs ɪɴ ᴘᴍ
+ ❍ /eval *:* Sᴇʟғ ᴇxᴘʟᴀɴᴀᴛᴏʀʏ
+ ❍ /sh *:* Rᴜɴs sʜᴇʟʟ ᴄᴏᴍᴍᴀɴᴅ
+ ❍ /shell *:* Rᴜɴs sʜᴇʟʟ ᴄᴏᴍᴍᴀɴᴅ
+ ❍ /clearlocals*:* As ᴛʜᴇ ɴᴀᴍᴇ ɢᴏᴇs
+ ❍ /dbcleanup *:* Rᴇᴍᴏᴠᴇs ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄs ᴀɴᴅ ɢʀᴏᴜᴘs ғʀᴏᴍ ᴅʙ
+ ❍ /py *:* Rᴜɴs ᴘʏᴛʜᴏɴ ᴄᴏᴅᴇ
  
-*Global Bans:*
- ❍ /gban <id> <reason>*:* Gbans the user, works by reply too
- ❍ /ungban*:* Ungbans the user, same usage as gban
- ❍ /gbanlist*:* Outputs a list of gbanned users
+*Gʟᴏʙᴀʟ Bᴀɴs:*
+ ❍ /gban  <ɪᴅ> <ʀᴇᴀsᴏɴ>*:* Gʙᴀɴs ᴛʜᴇ ᴜsᴇʀ, ᴡᴏʀᴋs ʙʏ ʀᴇᴘʟʏ ᴛᴏᴏ
+ ❍ /ungban *:* Uɴɢʙᴀɴs ᴛʜᴇ ᴜsᴇʀ, sᴀᴍᴇ ᴜsᴀɢᴇ ᴀs ɢʙᴀɴ
+ ❍ /gbanlist *:* Oᴜᴛᴘᴜᴛs ᴀ ʟɪsᴛ ᴏғ ɢʙᴀɴɴᴇᴅ ᴜsᴇʀs
 
-*Global Blue Text*
- ❍ /gignoreblue*:* <word>*:* Globally ignore bluetext cleaning of saved word across Anonymous Robot.
- ❍ /ungignoreblue*:* <word>*:* Remove said command from global cleaning list
+*Gʟᴏʙᴀʟ Bʟᴜᴇ Tᴇxᴛ*
+ ❍ /gignoreblue*:* <ᴡᴏʀᴅ>*:* Gʟᴏʙᴀʟʟʏ ɪɢɴᴏʀᴇ ʙʟᴜᴇᴛᴇxᴛ ᴄʟᴇᴀɴɪɴɢ ᴏғ sᴀᴠᴇᴅ ᴡᴏʀᴅ ᴀᴄʀᴏss Aɴᴏɴʏᴍᴏᴜs Rᴏʙᴏᴛ.
+ ❍ /ungignoreblue*:* <ᴡᴏʀᴅ>*:* Rᴇᴍᴏᴠᴇ sᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғʀᴏᴍ ɢʟᴏʙᴀʟ ᴄʟᴇᴀɴɪɴɢ ʟɪsᴛ
 
-*Masha Core*
-*Owner only*
- ❍ /send*:* <module name>*:* Send module
- ❍ /install*:* <reply to a .py>*:* Install module 
+*Mᴀsʜᴀ Cᴏʀᴇ*
+*Oᴡɴᴇʀ ᴏɴʟʏ*
+ ❍ /send *:* <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>*:* Sᴇɴᴅ ᴍᴏᴅᴜʟᴇ
+ ❍ /install *:* <ʀᴇᴘʟʏ ᴛᴏ ᴀ .ᴘʏ>*:* Iɴsᴛᴀʟʟ ᴍᴏᴅᴜʟᴇ 
 
-*Heroku Settings*
-*Owner only*
- ❍ /usage*:* Check your heroku dyno hours remaining.
- ❍ /see var <var>*:* Get your existing varibles, use it only on your private group!
- ❍ /set var <newvar> <vavariable>*:* Add new variable or update existing value variable.
- ❍ /del var <var>*:* Delete existing variable.
- ❍ /logs Get heroku dyno logs.
+*Hᴇʀᴏᴋᴜ Sᴇᴛᴛɪɴɢs*
+*Oᴡɴᴇʀ ᴏɴʟʏ*
+ ❍ /usage *:* Cʜᴇᴄᴋ ʏᴏᴜʀ ʜᴇʀᴏᴋᴜ ᴅʏɴᴏ ʜᴏᴜʀs ʀᴇᴍᴀɪɴɪɴɢ.
+ ❍ /see var  <ᴠᴀʀ>*:* Gᴇᴛ ʏᴏᴜʀ ᴇxɪsᴛɪɴɢ ᴠᴀʀɪʙʟᴇs, ᴜsᴇ ɪᴛ ᴏɴʟʏ ᴏɴ ʏᴏᴜʀ ᴘʀɪᴠᴀᴛᴇ ɢʀᴏᴜᴘ!
+ ❍ /set var <ɴᴇᴡᴠᴀʀ> <ᴠᴀᴠᴀʀɪᴀʙʟᴇ>*:* Aᴅᴅ ɴᴇᴡ ᴠᴀʀɪᴀʙʟᴇ ᴏʀ ᴜᴘᴅᴀᴛᴇ ᴇxɪsᴛɪɴɢ ᴠᴀʟᴜᴇ ᴠᴀʀɪᴀʙʟᴇ.
+ ❍ /del var  <ᴠᴀʀ>*:* Dᴇʟᴇᴛᴇ ᴇxɪsᴛɪɴɢ ᴠᴀʀɪᴀʙʟᴇ.
+ ❍ /loges  Gᴇᴛ ʜᴇʀᴏᴋᴜ ᴅʏɴᴏ ʟᴏɢs.
 
-`⚠️ Read from top`
-Visit @{SUPPORT_CHAT} for more information.
+`⚠️ Rᴇᴀᴅ ғʀᴏᴍ ᴛᴏᴘ`
+Vɪsɪᴛ @{SUPPORT_CHAT} ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo)
