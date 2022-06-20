@@ -4,10 +4,8 @@ from pyrogram.types import Message
 from AbishnoiRobot import pbot as app
 from AbishnoiRobot.utils.errors import capture_err
 
-__help__ = """
-» /webss *:* Sends the screenshot of the given url.
-"""
-__mod_name__ = "Wᴇʙsʜᴏᴛ​​"
+
+__mod_name__ = "Wᴇʙsʜᴏᴛ"
 
 
 @app.on_message(filters.command("webss"))
