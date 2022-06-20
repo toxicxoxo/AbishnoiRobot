@@ -1,4 +1,4 @@
-__mod_name__ = "᪥ Bᴀɴs ​᪥"
+__mod_name__ = "Bᴀɴs"
 
 __help__ = """
 
