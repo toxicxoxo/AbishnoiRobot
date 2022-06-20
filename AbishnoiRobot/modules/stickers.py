@@ -452,7 +452,7 @@ def makepack_internal(
 
 
 
-__mod_name__ = "Sᴛɪᴄᴋᴇʀ"
+__mod_name__ = "Sᴛɪᴄᴋᴇʀᴍᴀɪɴ"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 KANG_HANDLER = DisableAbleCommandHandler("kang", kang, admin_ok=True)
