@@ -155,7 +155,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 
-__mod_name__ = "Rᴜʟᴇs"
+__mod_name__ = "Rᴜʟᴇᴍᴀɪɴ"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules)
