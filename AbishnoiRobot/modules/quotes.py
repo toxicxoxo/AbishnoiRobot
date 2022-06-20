@@ -40,7 +40,7 @@ async def quotly_func(client, message: Message):
         return await message.reply_text("Rᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ǫᴜᴏᴛᴇ ɪᴛ.")
     if not message.reply_to_message.text:
         return await message.reply_text("Rᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ ʜᴀs ɴᴏ ᴛᴇxᴛ, ᴄᴀɴ'ᴛ ǫᴜᴏᴛᴇ ɪᴛ .")
-    m = await message.reply_text("Quoting Messages Please wait....")
+    m = await message.reply_text(" ᴛᴡᴏ sᴇᴄ. ʙᴀʙʏ ....")
     if len(message.command) < 2:
         messages = [message.reply_to_message]
 
