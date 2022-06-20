@@ -403,7 +403,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 
- __mod_name__ = "Aɴᴛɪ-Fʟᴏᴏᴅ"
+ __mod_name__ = "AɴᴛɪFʟᴏᴏᴅ"
 
  __help__ = """
 *Antiflood* ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴛᴀᴋᴇ ᴀᴄᴛɪᴏɴ ᴏɴ ᴜsᴇʀs ᴛʜᴀᴛ sᴇɴᴅ ᴍᴏʀᴇ ᴛʜᴀɴ x ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʀᴏᴡ. Exᴄᴇᴇᴅɪɴɢ ᴛʜᴇ sᴇᴛ ғʟᴏᴏᴅ \
