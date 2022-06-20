@@ -91,5 +91,5 @@ async def logo_(event):
 
 
 
-__mod_name__ = "Wlogo"
+__mod_name__ = "Wlogoᴍᴀɪɴ"
 
