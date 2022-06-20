@@ -119,9 +119,4 @@ async def close_send_photo(_, CallbackQuery):
     else:
         await CallbackQuery.message.delete()
 
-
-__help__ = """
-*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ ɪɴ  「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」*
- ❍ /bug *:* ᴛᴏ ʀᴇᴩᴏʀᴛ ᴀ ʙᴜɢ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.
-"""
 __mod_name__ = "Bᴜɢ"

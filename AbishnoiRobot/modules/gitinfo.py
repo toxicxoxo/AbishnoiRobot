@@ -7,12 +7,6 @@ from AbishnoiRobot.pyrogramee.errors import capture_err
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
 
-__help__ = """
-I ᴡɪʟʟ ɢɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ɢɪᴛʜᴜʙ ᴘʀᴏғɪʟᴇ
-
- ❍ /github <username>*:* Gᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ GɪᴛHᴜʙ ᴜsᴇʀ
-"""
-
 
 @pbot.on_message(filters.command("github"))
 @capture_err

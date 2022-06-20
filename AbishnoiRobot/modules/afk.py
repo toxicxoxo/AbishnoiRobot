@@ -380,11 +380,7 @@ async def chat_watcher_func(_, message):
             return
 
 
-__help__ = """
-*Away from group*
- ❍ /afk <reason>*:* ᴍᴀʀᴋ ʏᴏᴜʀsᴇʟғ ᴀs *AFK* (ᴀᴡᴀʏ ғʀᴏᴍ ᴋᴇʏʙᴏᴀʀᴅ).
-Wʜᴇɴ ᴍᴀʀᴋᴇᴅ ᴀs AFK, ᴀɴʏ ᴍᴇɴᴛɪᴏɴs ᴡɪʟʟ ʙᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴡɪᴛʜ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴀʏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ!
-"""
+
 
 __mod_name__ = "Aғᴋ"
 __command_list__ = ["afk"]

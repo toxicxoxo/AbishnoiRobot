@@ -91,14 +91,6 @@ def gettime(update: Update, context: CallbackContext):
     )
 
 
-__help__ = """
- ❍ /time <query>*:* Gɪᴠᴇs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴛɪᴍᴇᴢᴏɴᴇ.
-*Aᴠᴀɪʟᴀʙʟᴇ ǫᴜᴇʀɪᴇs:* Cᴏᴜɴᴛʀʏ Cᴏᴅᴇ/Cᴏᴜɴᴛʀʏ Nᴀᴍᴇ/Tɪᴍᴇᴢᴏɴᴇ Nᴀᴍᴇ
-
- ❍ ⏰ [Tɪᴍᴇᴢᴏɴᴇs ʟɪsᴛ](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-
-💡 Ex:- /time IN *:* Iᴛ ᴡɪʟʟ sʜᴏᴡs Iɴᴅɪᴀɴ ᴄᴜʀʀᴇɴᴛ ᴛɪᴍᴇ ᴀɴᴅ ᴅᴀᴛᴇ...
-"""
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 

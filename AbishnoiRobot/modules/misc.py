@@ -82,27 +82,7 @@ def markdown_help(update: Update, context: CallbackContext):
     markdown_help_sender(update)
 
 
-__help__ = """
-*Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:*
-*Mᴀʀᴋᴅᴏᴡɴ:*
- ❍ /markdownhelp *:* ǫᴜɪᴄᴋ sᴜᴍᴍᴀʀʏ ᴏғ ʜᴏᴡ ᴍᴀʀᴋᴅᴏᴡɴ ᴡᴏʀᴋs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ - ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴄᴀʟʟᴇᴅ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛs
-*Rᴇᴀᴄᴛ:*
- ❍ /react *:* Rᴇᴀᴄᴛs ᴡɪᴛʜ ᴀ ʀᴀɴᴅᴏᴍ ʀᴇᴀᴄᴛɪᴏɴ 
-*Uʀʙᴀɴ Dɪᴄᴛᴏɴᴀʀʏ:*
- ❍ /ud <ᴡᴏʀᴅ>*:* Tʏᴘᴇ ᴛʜᴇ ᴡᴏʀᴅ ᴏʀ ᴇxᴘʀᴇssɪᴏɴ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴀʀᴄʜ ᴜsᴇ
-*Wɪᴋɪᴘᴇᴅɪᴀ:*
- ❍ /wiki  <ǫᴜᴇʀʏ>*:* ᴡɪᴋɪᴘᴇᴅɪᴀ ʏᴏᴜʀ ǫᴜᴇʀʏ
-*Wᴀʟʟᴘᴀᴘᴇʀs:*
- ❍ /wall & /wallpaper <ǫᴜᴇʀʏ>*:* ɢᴇᴛ ᴀ ᴡᴀʟʟᴘᴀᴘᴇʀ ғʀᴏᴍ ᴡᴀʟʟ.ᴀʟᴘʜᴀᴄᴏᴅᴇʀs.ᴄᴏᴍ
-*Cᴜʀʀᴇɴᴄʏ ᴄᴏɴᴠᴇʀᴛᴇʀ:* 
- ❍ /cash *:* ᴄᴜʀʀᴇɴᴄʏ ᴄᴏɴᴠᴇʀᴛᴇʀ
-Exᴀᴍᴘʟᴇ:
- `/ᴄᴀsʜ 1 USD INR`  
-      _OR_
- `/ᴄᴀsʜ 1 ᴜsᴅ ɪɴʀ`
-Oᴜᴛᴘᴜᴛ: `1.0 USD = 75.505 INR
 
-"""
 
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
 MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)

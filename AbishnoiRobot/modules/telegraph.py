@@ -86,10 +86,6 @@ def resize_image(image):
     im.save(image, "PNG")
 
 
-__help__ = """
-I ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ғɪʟᴇs ᴛᴏ Tᴇʟᴇɢʀᴀᴘʜ
- ❍ /tm :Gᴇᴛ Tᴇʟᴇɢʀᴀᴘʜ Lɪɴᴋ Oғ Rᴇᴘʟɪᴇᴅ Mᴇᴅɪᴀ
- ❍ /tp :Gᴇᴛ Tᴇʟᴇɢʀᴀᴘʜ Lɪɴᴋ ᴏғ Rᴇᴘʟɪᴇᴅ Tᴇxᴛ
-"""
+
 
 __mod_name__ = "T-Gʀᴀᴘʜ"

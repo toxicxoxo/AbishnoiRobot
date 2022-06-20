@@ -63,8 +63,4 @@ async def paste_func(_, message):
 
 
 __mod_name__ = "Pᴀsᴛᴇ​"
-__help__ = """
- Pᴀsᴛᴇs ᴛʜᴇ ɢɪᴠᴇɴ ғɪʟᴇ ᴀɴᴅ sʜᴏᴡs ʏᴏᴜ ᴛʜᴇ ʀᴇsᴜʟᴛ
 
- ❍ /paste *:* ʀᴇᴀᴘʟʏ ᴛᴏ ᴀ ᴛxᴛ ғɪʟᴇ 
- """

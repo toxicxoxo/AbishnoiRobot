@@ -78,6 +78,4 @@ async def _(event):
 
 
 __mod_name__ = "Tɪɴʏ"
-__help__ = """
-❍ /tiny*:* Rᴇᴘʟʏ ɪɴ sᴛɪᴄᴋᴇʀ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ 
-"""
+

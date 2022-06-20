@@ -153,13 +153,7 @@ def __chat_settings__(chat_id, user_id):
     return f"Tʜɪs ᴄʜᴀᴛ ʜᴀs ʜᴀᴅ ɪᴛ's ʀᴜʟᴇs sᴇᴛ: `{bool(sql.get_rules(chat_id))}`"
 
 
-__help__ = """
- ‣ `/rules `*:* ɢᴇᴛ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.
- ‣ `/rules here `*:* ɢᴇᴛ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ ʙᴜᴛ sᴇɴᴅ ɪᴛ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
-*Aᴅᴍɪɴs ᴏɴʟʏ:*
- ‣ `/setrules <ʏᴏᴜʀ ʀᴜʟᴇs ʜᴇʀᴇ>`*:* sᴇᴛ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.
- ‣ `/clearrules `*:* ᴄʟᴇᴀʀ ᴛʜᴇ ʀᴜʟᴇs ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ.
-"""
+
 
 __mod_name__ = "Rᴜʟᴇs"
 

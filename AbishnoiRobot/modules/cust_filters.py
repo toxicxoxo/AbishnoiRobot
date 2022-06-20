@@ -613,34 +613,9 @@ def __chat_settings__(chat_id, user_id):
     return "Tʜᴇʀᴇ ᴀʀᴇ `{}` ᴄᴜsᴛᴏᴍ Fɪʟᴛᴇʀs ʜᴇʀᴇ .".format(len(cust_filters))
 
 
-__help__ = """
- ❍ /filters*:* Lɪsᴛ ᴀʟʟ ᴀᴄᴛɪᴠᴇ ғɪʟᴛᴇʀs sᴀᴠᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ..
 
-*Admin only:*
- ❍ /filter <ᴋᴇʏᴡᴏʀᴅ> <ʀᴇᴘʟʏ ᴍᴇssᴀɢᴇ>*:* Aᴅᴅ ᴀ ғɪʟᴛᴇʀ ᴛᴏ ᴛʜɪs ᴄʜᴀᴛ. Tʜᴇ ʙᴏᴛ ᴡɪʟʟ ɴᴏᴡ ʀᴇᴘʟʏ ᴛʜᴀᴛ ᴍᴇssᴀɢᴇ ᴡʜᴇɴᴇᴠᴇʀ 'ᴋᴇʏᴡᴏʀᴅ' \ ɪs ᴍᴇɴᴛɪᴏɴᴇᴅ. Iғ ʏᴏᴜ ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴡɪᴛʜ ᴀ ᴋᴇʏᴡᴏʀᴅ, ᴛʜᴇ ʙᴏᴛ ᴡɪʟʟ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴛʜᴀᴛ sᴛɪᴄᴋᴇʀ. NOTE: ᴀʟʟ ғɪʟᴛᴇʀ \
-ᴋᴇʏᴡᴏʀᴅs ᴀʀᴇ ɪɴ ʟᴏᴡᴇʀᴄᴀsᴇ. Iғ ʏᴏᴜ ᴡᴀɴᴛ ʏᴏᴜʀ ᴋᴇʏᴡᴏʀᴅ ᴛᴏ ʙᴇ ᴀ sᴇɴᴛᴇɴᴄᴇ, ᴜsᴇ ǫᴜᴏᴛᴇs. ᴇɢ: /filter "ʜᴇʏ ᴛʜᴇʀᴇ" Hᴏᴡ ʏᴏᴜ \
-ᴅᴏɪɴ?
- Sᴇᴘᴀʀᴀᴛᴇ ᴅɪғғ ʀᴇᴘʟɪᴇs ʙʏ `%%%` ᴛᴏ ɢᴇᴛ ʀᴀɴᴅᴏᴍ ʀᴇᴘʟɪᴇs
- *Exᴀᴍᴘʟᴇ:* 
- `/ғɪʟᴛᴇʀ "ғɪʟᴛᴇʀɴᴀᴍᴇ"
- Rᴇᴘʟʏ 1
- %%%
- Rᴇᴘʟʏ 2
- %%%
- Rᴇᴘʟʏ 3`
- 
- ❍ /stop <ғɪʟᴛᴇʀ ᴋᴇʏᴡᴏʀᴅ>*:* Sᴛᴏᴘ ᴛʜᴀᴛ ғɪʟᴛᴇʀ.
 
-*Chat creator only:*
- ❍ /removeallfilters *:* Rᴇᴍᴏᴠᴇ ᴀʟʟ ᴄʜᴀᴛ ғɪʟᴛᴇʀs ᴀᴛ ᴏɴᴄᴇ.
 
-*Nᴏᴛᴇ*: Fɪʟᴛᴇʀs ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛᴛᴇʀs ʟɪᴋᴇ: {ғɪʀsᴛ}, {ʟᴀsᴛ} ᴇᴛᴄ.. ᴀɴᴅ ʙᴜᴛᴛᴏɴs.
-
-Cʜᴇᴄᴋ ❍ /markdownhelp  ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ!
-
-"""
-
-__mod_name__ = "Fɪʟᴛᴇʀs"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
@@ -660,9 +635,12 @@ dispatcher.add_handler(CUST_FILTER_HANDLER, HANDLER_GROUP)
 dispatcher.add_handler(RMALLFILTER_HANDLER)
 dispatcher.add_handler(RMALLFILTER_CALLBACK)
 
+__mod_name__ = "Cᴜsᴛ-ғᴜʟᴛᴇʀ"
+
 __handlers__ = [
     FILTER_HANDLER,
     STOP_HANDLER,
     LIST_HANDLER,
     (CUST_FILTER_HANDLER, HANDLER_GROUP, RMALLFILTER_HANDLER),
 ]
+

@@ -71,10 +71,5 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
         await message.reply_text(e)
 
 
-__help__ = """
-Cʜᴏᴏsᴇ ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ
-
- ❍ /couple *:* Cʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ..
-"""
 
 __mod_name__ = "Cᴏᴜᴘʟᴇ​"

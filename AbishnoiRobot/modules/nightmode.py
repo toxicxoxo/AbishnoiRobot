@@ -150,13 +150,6 @@ scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
 scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
 scheduler.start()
 
-__help__ = """
-*Aᴅᴍɪɴs Oɴʟʏ*
 
- ❍ /nightmode *:* Aᴅᴅs Gʀᴏᴜᴘ ᴛᴏ NɪɢʜᴛMᴏᴅᴇ Cʜᴀᴛs
- ❍ /rmnigtht *:* Rᴇᴍᴏᴠᴇs Gʀᴏᴜᴘ Fʀᴏᴍ NɪɢʜᴛMᴏᴅᴇ Cʜᴀᴛs
-
-*Nᴏᴛᴇ:* Nɪɢʜᴛ Mᴏᴅᴇ ᴄʜᴀᴛs ɢᴇᴛ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴄʟᴏsᴇᴅ ᴀᴛ 12 ᴀᴍ(IST) ᴀɴᴅ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴏᴘᴇɴɴᴇᴅ ᴀᴛ 6 ᴀᴍ(IST) ᴛᴏ Pʀᴇᴠᴇɴᴛ Nɪɢʜᴛ Sᴘᴀᴍs
-"""
 
 __mod_name__ = "Nɪɢʜᴛ​"

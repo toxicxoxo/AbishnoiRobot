@@ -79,36 +79,36 @@ async def photo(client: pbot, message: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʙʀɪɢʜᴛ", callback_data="bright"),
-                        InlineKeyboardButton(text="ᴍɪxᴇᴅ", callback_data="mix"),
-                        InlineKeyboardButton(text="ʙ&ᴡ", callback_data="b|w"),
+                        InlineKeyboardButton(text="💡 BRIGHT", callback_data="bright"),
+                        InlineKeyboardButton(text="🖼 MIXED", callback_data="mix"),
+                        InlineKeyboardButton(text="🔳 B&W", callback_data="b|w"),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴄɪʀᴄʟᴇ", callback_data="circle"),
-                        InlineKeyboardButton(text="ʙʟᴜʀ", callback_data="blur"),
-                        InlineKeyboardButton(text="ʙᴏʀᴅᴇʀ", callback_data="border"),
+                        InlineKeyboardButton(text="🟡 CIRCLE", callback_data="circle"),
+                        InlineKeyboardButton(text="🩸 BLUR", callback_data="blur"),
+                        InlineKeyboardButton(text="🌌 BORDER", callback_data="border"),
                     ],
                     [
-                        InlineKeyboardButton(text="sᴛɪᴄᴋᴇʀ", callback_data="stick"),
-                        InlineKeyboardButton(text="ʀᴏᴛᴀᴅᴇ", callback_data="rotate"),
+                        InlineKeyboardButton(text="🎉 STICKER", callback_data="stick"),
+                        InlineKeyboardButton(text="↩️ ROTATE", callback_data="rotate"),
                         InlineKeyboardButton(
-                            text="ᴄᴏɴᴛʀᴀsᴛ", callback_data="contrast"
+                            text="🔦 CONTRAST", callback_data="contrast"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="sᴇᴘɪᴀ", callback_data="sepia"),
-                        InlineKeyboardButton(text="ᴘᴇɴᴄɪʟ", callback_data="pencil"),
-                        InlineKeyboardButton(text="ᴄᴀʀᴛᴏᴏɴ", callback_data="cartoon"),
+                        InlineKeyboardButton(text="🌇 SEPIA", callback_data="sepia"),
+                        InlineKeyboardButton(text="✏️ PENCIL", callback_data="pencil"),
+                        InlineKeyboardButton(text="🐶 CARTOON", callback_data="cartoon"),
                     ],
                     [
                         InlineKeyboardButton(text="🔄 INVERT", callback_data="inverted"),
                         InlineKeyboardButton(text="🔮 GLITCH", callback_data="glitch"),
                         InlineKeyboardButton(
-                            text="ʀᴇᴍᴏᴠᴇ ʙɢ", callback_data="removebg"
+                            text="✂️ REMOVE BG", callback_data="removebg"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_e"),
+                        InlineKeyboardButton(text="❌ CLOSE", callback_data="close_e"),
                     ],
                 ]
             ),
@@ -120,7 +120,7 @@ async def photo(client: pbot, message: Message):
             return
         else:
             try:
-                await message.reply_text("ᴇʀʀᴏʀ !", quote=True)
+                await message.reply_text("Something went wrong!", quote=True)
             except Exception:
                 return
 
@@ -136,15 +136,15 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ᴡɪᴛʜ ᴡʜɪᴛᴇ ʙɢ", callback_data="rmbgwhite"
+                                text="WITH WHITE BG", callback_data="rmbgwhite"
                             ),
                             InlineKeyboardButton(
-                                text="ɴᴏɴ ʙɢ", callback_data="rmbgplain"
+                                text="WITHOUT BG", callback_data="rmbgplain"
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="sᴛɪᴄᴋᴇʀ", callback_data="rmbgsticker"
+                                text="STICKER", callback_data="rmbgsticker"
                             )
                         ],
                     ]
@@ -163,7 +163,7 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="ᴄɪʀᴄʟᴇ", callback_data="circle_sticker"
+                                text="Circle", callback_data="circle_sticker"
                             )
                         ],
                     ]
@@ -190,10 +190,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ɴᴏʀᴍʟᴀ", callback_data="normalglitch"
+                                text="NORMAL", callback_data="normalglitch"
                             ),
                             InlineKeyboardButton(
-                                text="sᴄᴀɴ ʟɪɴᴇ", callback_data="scanlineglitch"
+                                text="SCAN LINES", callback_data="scanlineglitch"
                             ),
                         ]
                     ]
@@ -259,10 +259,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="ʙᴏx", callback_data="box"),
-                            InlineKeyboardButton(text="ɴᴏʀᴍᴀʟ", callback_data="normal"),
+                            InlineKeyboardButton(text="box", callback_data="box"),
+                            InlineKeyboardButton(text="normal", callback_data="normal"),
                         ],
-                        [InlineKeyboardButton(text="ɢᴀs", callback_data="gas")],
+                        [InlineKeyboardButton(text="Gaussian", callback_data="gas")],
                     ]
                 ),
             )
@@ -273,10 +273,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ᴡʜɪᴛ ʙɢ", callback_data="circlewithbg"
+                                text="WITH BG", callback_data="circlewithbg"
                             ),
                             InlineKeyboardButton(
-                                text="ɴᴏ ʙɢ", callback_data="circlewithoutbg"
+                                text="WITHOUT BG", callback_data="circlewithoutbg"
                             ),
                         ]
                     ]
@@ -288,16 +288,16 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="🔴 ʀᴇᴅ 🔴", callback_data="red"),
+                            InlineKeyboardButton(text="🔴 RED 🔴", callback_data="red"),
                             InlineKeyboardButton(
-                                text="🟢 ɢʀᴇᴇɴ 🟢", callback_data="green"
+                                text="🟢 Green 🟢", callback_data="green"
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="⚫ ʙʟᴀᴄᴋ ⚫", callback_data="black"
+                                text="⚫ Black ⚫", callback_data="black"
                             ),
-                            InlineKeyboardButton(text="🔵 ʙʟᴜᴇ 🔵", callback_data="blue"),
+                            InlineKeyboardButton(text="🔵 Blue 🔵", callback_data="blue"),
                         ],
                     ]
                 ),

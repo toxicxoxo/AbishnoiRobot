@@ -324,22 +324,7 @@ def weebify(update: Update, context: CallbackContext):
         message.reply_text(string)
 
 
-__help__ = """
- ❍ /runs*:* ʀᴇᴘʟʏ ᴀ ʀᴀɴᴅᴏᴍ sᴛʀɪɴɢ ғʀᴏᴍ ᴀɴ ᴀʀʀᴀʏ ᴏғ ʀᴇᴘʟɪᴇs
- ❍ /slap*:* sʟᴀᴘ ᴀ ᴜsᴇʀ, ᴏʀ ɢᴇᴛ sʟᴀᴘᴘᴇᴅ ɪғ ɴᴏᴛ ᴀ ʀᴇᴘʟʏ
- ❍ /shrug*:* ɢᴇᴛ sʜʀᴜɢ XD
- ❍ /table*:* ɢᴇᴛ ғʟɪᴘ/ᴜɴғʟɪᴘ :v
- ❍ /decide*:* Rᴀɴᴅᴏᴍʟʏ ᴀɴsᴡᴇʀs ʏᴇs/ɴᴏ/ᴍᴀʏʙᴇ
- ❍ /toss*:* Tᴏssᴇᴅ ᴀ ᴄᴏɪɴ 
- ❍ /bluetext*:* ᴄʜᴇᴄᴋ ᴜʀsᴇʟғ :V
- ❍ /roll*:* ʀᴏʟʟ ᴀ ᴅɪᴄᴇ 
- ❍ /rlg*:* Jᴏɪɴ ᴇᴀʀs,ɴᴏsᴇ,ᴍᴏᴜᴛʜ ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴀɴ ᴇᴍᴏ ;-;
- ❍ /shout <keyword>*:* ᴡʀɪᴛᴇ ᴀɴʏᴛʜɪɴɢ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢɪᴠᴇ ʟᴏᴜᴅ sʜᴏᴜᴛ
- ❍ /weebify <text>*:* ʀᴇᴛᴜʀɴs ᴀ ᴡᴇᴇʙɪғɪᴇᴅ ᴛᴇxᴛ
- ❍ /sanitize*:* ᴀʟᴡᴀʏs ᴜsᴇ ᴛʜɪs ʙᴇғᴏʀᴇ /pat  ᴏʀ ᴀɴʏ ᴄᴏɴᴛᴀᴄᴛ
- ❍ /pat*:* ᴘᴀᴛs ᴀ ᴜsᴇʀ, ᴏʀ ɢᴇᴛ ᴘᴀᴛᴛᴇᴅ
- ❍ /8ball*:* ᴘʀᴇᴅɪᴄᴛs ᴜsɪɴɢ 8ʙᴀʟʟ ᴍᴇᴛʜᴏᴅ 
-"""
+
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)

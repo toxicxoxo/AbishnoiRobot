@@ -197,3 +197,5 @@ __handlers__ = [
     LIST_ALL_CHATS_HANDLER,
     CHATBOT_HANDLER,
 ]
+
+__mod_name__ = "Cʜᴀᴛʙᴏᴛ​"

@@ -416,6 +416,9 @@ dispatcher.add_handler(SET_FLOOD_HANDLER)
 dispatcher.add_handler(SET_FLOOD_MODE_HANDLER)
 dispatcher.add_handler(FLOOD_HANDLER)
 
+__mod_name__ = "Aɴᴛɪғʟᴏᴏᴅ​"
+
+
 __handlers__ = [
     (FLOOD_BAN_HANDLER, FLOOD_GROUP),
     SET_FLOOD_HANDLER,

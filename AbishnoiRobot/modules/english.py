@@ -80,12 +80,4 @@ async def _(event):
     got = net.replace("'", "")
     await event.reply(got)
 
-
-__help__ = """
- ❍ /define <ᴛᴇxᴛ>*:* Tʏᴘᴇ ᴛʜᴇ ᴡᴏʀᴅ ᴏʀ ᴇxᴘʀᴇssɪᴏɴ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴀʀᴄʜ\n Fᴏʀ ᴇxᴀᴍᴘʟᴇ /define  ᴋɪʟʟ
- ❍ /spell*:* ᴡʜɪʟᴇ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ, ᴡɪʟʟ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀ ɢʀᴀᴍᴍᴀʀ ᴄᴏʀʀᴇᴄᴛᴇᴅ ᴠᴇʀsɪᴏɴ
- ❍ /synonyms <word>*:* Fɪɴᴅ ᴛʜᴇ sʏɴᴏɴʏᴍs ᴏғ ᴀ ᴡᴏʀᴅ
- ❍ /antonyms <word>*:* Fɪɴᴅ ᴛʜᴇ ᴀɴᴛᴏɴʏᴍs ᴏғ ᴀ ᴡᴏʀᴅ
-"""
-
-__mod_name__ = "Eɴɢʟɪsʜ"
+__mod_name__ = "English"
