@@ -1,5 +1,5 @@
 
-__mod_name__ = "👽Wᴀʀɴs👽"
+__mod_name__ = "Wᴀʀɴs"
 
 __help__ = """
  ❍ /warns <userhandle>*:* get a user's number, and reason, of warns.
