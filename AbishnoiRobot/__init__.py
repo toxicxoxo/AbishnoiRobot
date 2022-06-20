@@ -91,7 +91,7 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
-
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "OIWIJR-QKCSFZ-ITMHQH-GWBKSG-ARQ")
@@ -169,7 +169,7 @@ else:
     ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
     REM_BG_API_KEY = Config.REM_BG_API_KEY
-
+    SESSION_STRING = Config.SESSION_STRING
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
@@ -188,6 +188,13 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Abishnoi", API_ID, API_HASH)
 
+ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+try:
+    ubot2.start()
+except BaseException:
+    print("Userbot Error! Have you added a STRING_SESSION in deploying??")
+    sys.exit(1)
+    
 pbot = Client("AbishnoiRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 aiohttpsession = ClientSession()
