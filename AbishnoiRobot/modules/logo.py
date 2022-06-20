@@ -297,5 +297,5 @@ async def lego(event):
         await event.reply(f"ғʟᴏᴏᴅᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @Abishnoi_bots")
 
 
-__mod_name__ = "Lᴏɢᴏ​"
+__mod_name__ = "Lᴏɢᴏᴍᴀɪɴ"
 
