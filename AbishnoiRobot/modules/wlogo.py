@@ -89,9 +89,7 @@ async def logo_(event):
         if not font_.startswith("./AbishnoiRobot/resources/fonts"):
             os.remove(font_)
 
-__help__ = """
-✓ /wlogo *:* make a text logo
-"""
+
 
 __mod_name__ = "Wlogo"
 
