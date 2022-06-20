@@ -470,7 +470,7 @@ dispatcher.add_handler(BLACKLISTMODE_HANDLER)
 dispatcher.add_handler(BLACKLIST_DEL_HANDLER, group=BLACKLIST_GROUP)
 
 
-__mod_name__ = "Bʟᴀᴄᴋʟɪsᴛ"
+__mod_name__ = "Bʟᴀᴄᴋʟɪsᴛᴍᴀɪɴ"
 
 
 __handlers__ = [
