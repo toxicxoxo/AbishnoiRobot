@@ -563,7 +563,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 
-__mod_name__ = "Lᴏᴄᴋs"
+__mod_name__ = "ᴍᴀɪɴ"
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes)
 LOCK_HANDLER = CommandHandler("lock", lock, pass_args=True)  # , filters=Filters.group)
