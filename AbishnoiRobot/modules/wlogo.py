@@ -9,10 +9,10 @@ from AbishnoiRobot import telethn as tbot, ubot2
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
-    xx = await event.reply("`Preparing your logo...`")
+    xx = await event.reply("`ᴡᴀɪᴛ ᴀ sᴇᴄ ʙᴀʙʏ ...`")
     name = event.pattern_match.group(1)
     if not name:
-        await xx.edit("`Provide some text to draw!\nExample: /wlogo <your name>!`")
+        await xx.edit("ɢɪᴠᴇ ᴍᴇ ᴛᴇxᴛ \nExample: `/wlogo Aʙɪsʜɴᴏɪ`")
         return
     bg_, font_ = "", ""
     if event.reply_to_msg_id:
@@ -78,7 +78,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Abishnoi Robot](https://t.me/Abishnoi_ro_bot)",
+            caption="Lᴏɢᴏ ʙʏ ➪[Abishnoi Robot](https://t.me/Abishnoi_ro_bot)",
             force_document=False,
         )
         os.remove(flnme)
