@@ -181,6 +181,22 @@
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
          "value": ""
+            
+               },
+      "ARQ_API_URL": {
+         "description": "https://arq.hamker.in",
+         "required": false,
+         "value": "https://arq.hamker.in"    
+        },
+      "ARQ_API_KEY": {
+         "description": "ARQ_API_KEY",
+         "required": false,
+         "value": ""
+            },
+      "REM_BG_API_KEY": {
+         "description": "REM_BG_API_KEY",
+         "required": false,
+         "value": "LSdLgCceYz8vNqFgJVzrkDgR"  
       }
       
    }
