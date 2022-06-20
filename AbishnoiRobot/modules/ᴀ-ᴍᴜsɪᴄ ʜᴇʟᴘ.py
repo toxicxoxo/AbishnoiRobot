@@ -1,4 +1,4 @@
-__mod_name__ = "♪A-Mᴜsɪᴄ ♪"
+__mod_name__ = "A-Mᴜsɪᴄ"
 
 __help__ = """
    ❍ /mstart *:* sᴛᴀʀᴛ [ᴍᴜsɪᴄ ʙᴏᴛ]
