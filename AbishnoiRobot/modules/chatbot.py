@@ -161,11 +161,7 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 
-__help__ = """
-*Admins only Commands*:
-  »  /chatbot *:* Shows chatbot control panel
 
-"""
 
 __mod_name__ = "Cʜᴀᴛʙᴏᴛ"
 
