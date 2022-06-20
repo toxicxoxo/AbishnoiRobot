@@ -517,7 +517,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 
-__mod_name__ = "Nᴏᴛᴇs"
+__mod_name__ = "Nᴏᴛᴇ"
 
 GET_HANDLER = CommandHandler("get", cmd_get)
 HASH_GET_HANDLER = MessageHandler(Filters.regex(r"^#[^\s]+"), hash_get)
