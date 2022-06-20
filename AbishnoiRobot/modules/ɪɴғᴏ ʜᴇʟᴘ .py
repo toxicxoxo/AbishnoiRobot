@@ -1,4 +1,4 @@
-__mod_name__ = "🔍 Iɴғᴏ 🔎"
+__mod_name__ = "Iɴғᴏ"
 
 __help__ = """    
   ❍ /whois *:*  
@@ -28,7 +28,7 @@ __help__ = """
   *Overall Information about you:*
   ❍ /info*:* get information about a user. 
   ❍ /myinfo*:* Shows info about the user who sent this command.
-
-
- 𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
-"""                                      
+     𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
+"""
+ 
+                                      
