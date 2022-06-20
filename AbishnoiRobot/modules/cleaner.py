@@ -255,4 +255,4 @@ __handlers__ = [
     (CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP),
 ]
 
-__mod_name__ = "Cʟᴇᴀɴᴇʀ"
+__mod_name__ = "Cʟᴇᴀɴᴇʀᴍᴀɪɴ"
