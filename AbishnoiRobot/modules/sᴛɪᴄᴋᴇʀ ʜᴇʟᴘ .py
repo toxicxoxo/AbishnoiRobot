@@ -1,4 +1,4 @@
-__mod_name__ = "🗃️ Sᴛɪᴄᴋᴇʀs 🗃️"
+__mod_name__ = "Sᴛɪᴄᴋᴇʀs"
 __help__ = """
  ❍ /tiny *:* Rᴇᴘʟʏ ɪɴ sᴛɪᴄᴋᴇʀ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ 
  ❍ /stickerid *:* reply to a sticker to me to tell you its file ID.
