@@ -5,7 +5,7 @@ import glob
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 from AbishnoiRobot.events import register
-from AbishnoiRobot import telethn as tbot
+from AbishnoiRobot import telethn as tbot, ubot2
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
@@ -27,7 +27,7 @@ async def logo_(event):
                 bg_ = await temp.download_media()
     else:
         pics = []
-        async for i in tbot.iter_messages(
+        async for i in ubot2.iter_messages(
             "@kenlogopack", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -37,7 +37,7 @@ async def logo_(event):
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
-        async for i in tbot.iter_messages(
+        async for i in ubot2.iter_messages(
             "@kenlogopack", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -78,7 +78,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Abishnoi Robot](https://t.me/EmiexRobot)",
+            caption="Logo by [Abishnoi Robot](https://t.me/Abishnoi_ro_bot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -88,5 +88,10 @@ async def logo_(event):
     if os.path.exists(font_):
         if not font_.startswith("./AbishnoiRobot/resources/fonts"):
             os.remove(font_)
+
           
-__mod_name__ = "Wʟᴏɢᴏ"
+ __mod_name__ = "ᴡLᴏɢᴏ​"
+
+__help__ = """
+Aʙɪsʜɴᴏɪ Rᴏʙᴏᴛ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ sᴏᴍᴇ ʙᴇᴀᴜᴛɪғᴜʟ ᴀɴᴅ ᴀᴛᴛʀᴀᴄᴛɪᴠᴇ ᴛᴇxᴛ ʟᴏɢᴏ ғᴏʀ ʏᴏᴜʀ ᴘʀᴏғɪʟᴇ ᴘɪᴄs.
+"""
