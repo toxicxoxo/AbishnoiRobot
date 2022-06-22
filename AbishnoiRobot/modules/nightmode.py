@@ -134,7 +134,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "ɴᴏᴡ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ \n** Pᴏᴡᴇʀᴇᴅ Bʏ 「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」**",
+                "ɴᴏᴡ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ\n** Pᴏᴡᴇʀᴇᴅ Bʏ「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ **",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -153,4 +153,4 @@ scheduler.start()
 
 
 __mod_name__ = "Nɪɢʜᴛ​"
-n 
+
