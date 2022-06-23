@@ -753,7 +753,7 @@ def remove_fvrtsticker(update, context):
 __mod_name__ = "Stickers"
 
 KANG_HANDLER = DisableAbleCommandHandler(
-    ["addsticker", "kang", "steal"], addsticker, pass_args=True, run_async=True)
+    "kang", kang, admin_ok=True)
 DEL_HANDLER = DisableAbleCommandHandler(
     "delsticker", delsticker, run_async=True)
 STICKERID_HANDLER = DisableAbleCommandHandler(
