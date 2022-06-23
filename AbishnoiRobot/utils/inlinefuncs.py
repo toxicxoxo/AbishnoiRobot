@@ -28,16 +28,16 @@ from EmikoRobot import (
     BOT_USERNAME,
     ubot2,
 )
-from EmikoRobot import pbot as app 
-from EmikoRobot import arq
-from EmikoRobot.services.keyboard import Ikb
-from EmikoRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
-from EmikoRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
-from EmikoRobot.services.types import InlineQueryResultCachedDocument
-from EmikoRobot.modules.info import get_chat_info, get_user_info
-from EmikoRobot.modules.music import download_youtube_audio
-from EmikoRobot.utils.functions import test_speedtest
-from EmikoRobot.utils.pastebin import paste
+from AbishnoiRobot import pbot as app 
+from AbishnoiRobot import arq
+from AbishnoiRobot.services.keyboard import Ikb
+from AbishnoiRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
+from AbishnoiRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
+from AbishnoiRobot.services.types import InlineQueryResultCachedDocument
+from AbishnoiRobot.modules.info import get_chat_info, get_user_info
+from AbishnoiRobot.modules.music import download_youtube_audio
+from AbishnoiRobot.utils.functions import test_speedtest
+from AbishnoiRobot.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = EVENT_LOGS
 
