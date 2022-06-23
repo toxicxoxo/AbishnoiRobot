@@ -77,28 +77,28 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *ʜᴇʏ,\n ᴛʜɪs ɪs {}* [!](https://telegra.ph/file/cc65ac16e99c3b9e0f023.jpg)\n\n*ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴏʀ ᴍᴜsɪᴄ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.*\n*ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ*\n
-​ /help   ➪ *ғᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴄᴏᴍᴍᴇɴᴅ*   \n 
+/help   ➪ *ғᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴄᴏᴍᴍᴇɴᴅ*   \n 
 /mhelp  ➪ *ғᴏʀ ᴠᴄ ᴍᴜsɪᴄ ʙᴏᴛ ᴄᴏᴍᴍᴇɴᴅ*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="ރ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​  ރ",
+            text="✢ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ✢",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="➤ ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text="➫ ʜᴇʟᴘ  ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="➳ ᴀʙᴏᴜᴛ ᴍᴇ​​", callback_data="Abishnoi_"),
-        InlineKeyboardButton(text="➳ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", callback_data="source_"),
+        InlineKeyboardButton(text="✦ ᴀʙᴏᴜᴛ ᴍᴇ ✦", callback_data="Abishnoi_"),
+        InlineKeyboardButton(text="✦ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✦", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="➵ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="『 sᴜᴘᴘᴏʀᴛ 』", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(
-            text="➵ ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
+            text="『 ᴅᴇᴠᴇʟᴏᴘᴇʀ 』", url=f"https://t.me/{OWNER_USERNAME}"
         ),
     ],
 ]
