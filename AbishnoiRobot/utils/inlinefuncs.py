@@ -22,7 +22,7 @@ from pyrogram.types import (CallbackQuery,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from EmikoRobot import (
+from AbishnoiRobot import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
