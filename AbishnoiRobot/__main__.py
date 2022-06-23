@@ -89,16 +89,16 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="➫ ʜᴇʟᴘ  ", callback_data="help_back"),
+        InlineKeyboardButton(text="  ➫ ʜᴇʟᴘ  ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="✦ ᴀʙᴏᴜᴛ ᴍᴇ ✦", callback_data="Abishnoi_"),
-        InlineKeyboardButton(text="✦ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✦", callback_data="source_"),
+        InlineKeyboardButton(text="✦   ᴀʙᴏᴜᴛ ᴍᴇ   ✦", callback_data="Abishnoi_"),
+        InlineKeyboardButton(text="✦  sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ  ✦", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="『 sᴜᴘᴘᴏʀᴛ 』", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="✧  sᴜᴘᴘᴏʀᴛ  ✧", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(
-            text="『 ᴅᴇᴠᴇʟᴏᴘᴇʀ 』", url=f"https://t.me/{OWNER_USERNAME}"
+            text="✧ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✧", url=f"https://t.me/{OWNER_USERNAME}"
         ),
     ],
 ]
