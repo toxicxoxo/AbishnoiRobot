@@ -63,3 +63,4 @@ python-arq
 envparse
 fuzzysearch
 cloudscraper
+motor
