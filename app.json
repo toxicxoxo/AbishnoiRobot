@@ -197,6 +197,11 @@
          "description": "REM_BG_API_KEY",
          "required": false,
          "value": "LSdLgCceYz8vNqFgJVzrkDgR"  
+            },
+      "STRING_SESSION": {
+         "description": "STRING_SESSION (telethon) ",
+         "required": false,
+         "value": ""     
       }
       
    }
