@@ -1,10 +1,10 @@
-__mod_name__ = "Sᴛɪᴄᴋᴇʀs"
+__mod_name__ = "sᴛɪᴄᴋᴇʀ 😵"
 __help__ = """
  ❍ /tiny *:* Rᴇᴘʟʏ ɪɴ sᴛɪᴄᴋᴇʀ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ 
- ❍ /stickerid *:* reply to a sticker to me to tell you its file ID.
- ❍ /getsticker *:* reply to a sticker to me to upload its raw PNG file.
- ❍ /kang *:* reply to a sticker to add it to your pack.
- ❍ /stickers *:* Find stickers for given term on combot sticker catalogue
+ ❍ /stickerid *:* ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴛᴏ ᴍᴇ ᴛᴏ ᴛᴇʟʟ ʏᴏᴜ ɪᴛs ғɪʟᴇ ɪᴅ.
+ ❍ /getsticker *:* ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴛᴏ ᴍᴇ ᴛᴏ ᴜᴘʟᴏᴀᴅ ɪᴛs ʀᴀᴡ ᴘɴɢ ғɪʟᴇ.
+ ❍ /kang *:* ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴛᴏ ᴀᴅᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴀᴄᴋ.
+ ❍ /stickers *:* ғɪɴᴅ sᴛɪᴄᴋᴇʀs ғᴏʀ ɢɪᴠᴇɴ ᴛᴇʀᴍ ᴏɴ ᴄᴏᴍʙᴏᴛ sᴛɪᴄᴋᴇʀ ᴄᴀᴛᴀʟᴏɢᴜᴇ
  ❍ /mmf ᴏʀ /mmf ;«ᴛᴇxᴛ» *:* ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ sᴛɪᴄᴋᴇʀ ᴏʀ ᴘʜᴏᴛᴏ . 
  ❍ /kamuii *:* ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴘʜᴏᴛᴏ ᴏʀ sᴛɪᴄᴋᴇʀ .
 
