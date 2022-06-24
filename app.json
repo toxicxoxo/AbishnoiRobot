@@ -191,7 +191,7 @@
       "ARQ_API_KEY": {
          "description": "ARQ_API_KEY",
          "required": false,
-         "value": ""
+         "value": "@ARQRobot ya Se apne Arq api dal le"
             },
       "REM_BG_API_KEY": {
          "description": "REM_BG_API_KEY",
