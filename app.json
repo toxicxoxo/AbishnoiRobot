@@ -200,7 +200,7 @@
             },
       "STRING_SESSION": {
          "description": "STRING_SESSION (telethon) ",
-         "required": false,
+         "required": true,
          "value": ""     
       }
       
