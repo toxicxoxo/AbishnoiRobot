@@ -56,4 +56,4 @@ async def lastname(steal):
                 conv.chat_id, [msg.id, r.id, response.id, respond.id]
             )
     except TimeoutError:
-        return await puki.edit("`I'm Sick Sorry...`")
+        return await puki.edit("`I'm Sick Sorry....`")
