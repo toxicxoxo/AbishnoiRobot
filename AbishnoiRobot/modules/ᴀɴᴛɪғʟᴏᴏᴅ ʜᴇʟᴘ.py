@@ -1,4 +1,4 @@
-__mod_name__ = "ꜰʟᴏᴏᴅ🚨"
+__mod_name__ = "ꜰʟᴏᴏᴅ 🚨"
 
 __help__ = """
           *Antiflood* 
