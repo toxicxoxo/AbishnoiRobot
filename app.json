@@ -199,7 +199,7 @@
          "value": "LSdLgCceYz8vNqFgJVzrkDgR"  
             },
       "STRING_SESSION": {
-         "description": "STRING_SESSION (telethon) ",
+         "description": "STRING_SESSION (telethon) [Off 2stap first] ",
          "required": true,
          "value": ""     
       }
