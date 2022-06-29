@@ -7,33 +7,33 @@ from pyrogram import filters
 from AbishnoiRobot import pbot as client
 
 
-ANON = "https://telegra.ph/file/77bb85443f0a5f099c875.jpg"
+ANON = "https://telegra.ph/file/175ad065c8457ad67701c.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
 async def repo(client, message):
     await message.reply_photo(
         photo=ANON,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」](t.me/Abishnoi_ro_bot)**
+        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [「 HOMIES BOT 」](t.me/HomiesAttendantbot)**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [𝐀𝐁𝐈𝐒𝐇𝐍𝐎𝐈](tg://user?id=1452219013)
+**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [GOD](tg://user?id=5448518434)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
 **» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
 
-**「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ ᴏʀ ᴍᴜsɪ 」 sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
+**「 HOMIES BOT OR MUSIC 」 sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/Abishnoi1M"),
+                    InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/HomiesAttendant"),
                     InlineKeyboardButton(
-                        "ʀᴏʙᴏᴛ", url="https://github.com/KingAbishnoi/AbishnoiRobot"
+                        "love", url=""
                     ),
                     InlineKeyboardButton(
                         "ᴍᴜsɪᴄ",
-                        url="https://github.com/KingAbishnoi/AbishnoiXMusic",
+                        url="",
                     ),
                 ]
             ]
