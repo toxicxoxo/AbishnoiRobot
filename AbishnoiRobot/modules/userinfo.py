@@ -294,7 +294,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' \n[<a href="https://t.me/DevilsHeavenMF/96962">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
+        text += ' \n[<a href="https://t.me/real_homies">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
             bot.username
         )
 
@@ -524,7 +524,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Iɴꜰᴏs"
+__mod_name__ = "Iɴfᴏs"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
