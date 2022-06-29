@@ -9,5 +9,5 @@ __help__ = """
  ❍ /kamuii *:* ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴘʜᴏᴛᴏ ᴏʀ sᴛɪᴄᴋᴇʀ .
 
 
-𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
+thanks vanshika
 """
