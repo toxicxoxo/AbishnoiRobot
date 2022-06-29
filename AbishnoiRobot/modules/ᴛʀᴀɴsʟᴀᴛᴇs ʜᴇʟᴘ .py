@@ -1,10 +1,10 @@
 __mod_name__ = "ᴛʀᴀɴsʟᴀᴛᴇ 🔍"
 
 __help__ = """ 
- ❍ /tr or /tl (ʟᴀɴɢᴜᴀɢᴇ ᴄᴏᴅᴇ) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ʟᴏɴɢ ᴍᴇssᴀɢᴇ
+ 🌵 /tr or /tl (ʟᴀɴɢᴜᴀɢᴇ ᴄᴏᴅᴇ) ᴀs ʀᴇᴘʟʏ ᴛᴏ ᴀ ʟᴏɴɢ ᴍᴇssᴀɢᴇ
 *Example:* 
- ❍ /tr en*:* ᴛʀᴀɴsʟᴀᴛᴇs sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ ᴇɴɢʟɪsʜ
- ❍ /tr hi *:* ᴛʀᴀɴsʟᴀᴛᴇs  ʜɪɴᴅɪ 
+🌵/tr en*:* ᴛʀᴀɴsʟᴀᴛᴇs sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ ᴇɴɢʟɪsʜ
+🌵 /tr hi *:* ᴛʀᴀɴsʟᴀᴛᴇs  ʜɪɴᴅɪ 
 
 *Lᴀɴɢᴜᴀɢᴇ Cᴏᴅᴇs*
 `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
@@ -14,5 +14,5 @@ ml,mn,mr,ms,mt,my,ne,nl,no,ny,pa,pl,ps,pt,ro,ru,sd,si,sk,sl,
 sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 
-   𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
+🔥 THANKS SURAJ 🔥
 """
