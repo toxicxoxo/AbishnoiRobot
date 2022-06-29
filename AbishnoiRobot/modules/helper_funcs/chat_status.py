@@ -114,8 +114,8 @@ def dev_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "ᴛʜɪꜱ ɪꜱ ᴀ ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴇꜱᴛʀɪᴄᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅ."
-                " ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴛᴏ ʀᴜɴ ᴛʜɪꜱ."
+                "ᴛʜɪS ISꜱ ᴀ ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴇSᴛʀɪᴄᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅ."
+                " ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪSꜱɪᴏɴꜱ ᴛᴏ ʀᴜɴ ᴛʜɪꜱ."
             )
 
     return is_dev_plus_func
@@ -176,7 +176,7 @@ def whitelist_plus(func):
             return func(update, context, *args, **kwargs)
         else:
             update.effective_message.reply_text(
-                f"ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ.\nVɪsɪᴛ @{SUPPORT_CHAT}"
+                f"ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇSS ᴛᴏ ᴜSᴇ ᴛʜɪꜱ.\nVɪsɪᴛ @{SUPPORT_CHAT}"
             )
 
     return is_whitelist_plus_func
@@ -273,9 +273,9 @@ def bot_can_delete(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_delete = "ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ʜᴇʀᴇ !\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜꜱᴇʀ'ꜱ ᴍᴇꜱꜱᴀɢᴇꜱ."
+            cant_delete = "ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇSSᴀɢᴇS ʜᴇʀᴇ !\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜSᴇʀ'ꜱ ᴍᴇSSᴀɢᴇS."
         else:
-            cant_delete = f"ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜꜱᴇʀ'ꜱ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛʜᴇʀᴇ."
+            cant_delete = f"ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇSSᴀɢᴇS ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜSᴇʀ'S ᴍᴇSSᴀɢᴇS ᴛʜᴇʀᴇ."
 
         if can_delete(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -295,10 +295,10 @@ def can_pin(func):
 
         if update_chat_title == message_chat_title:
             cant_pin = (
-                "ɪ ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇꜱꜱᴀɢᴇꜱ ʜᴇʀᴇ!\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇꜱꜱᴀɢᴇꜱ."
+                "ɪ ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇSSᴀɢᴇS ʜᴇʀᴇ!\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇSSᴀɢᴇS
             )
         else:
-            cant_pin = f"ɪ ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇꜱꜱᴀɢᴇꜱ ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛʜᴇʀᴇ."
+            cant_pin = f"ɪ ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇSSᴀɢᴇS ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇSSᴀɢᴇS ᴛʜᴇʀᴇ."
 
         if chat.get_member(bot.id).can_pin_messages:
             return func(update, context, *args, **kwargs)
