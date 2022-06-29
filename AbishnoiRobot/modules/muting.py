@@ -139,7 +139,7 @@ def unmute(update: Update, context: CallbackContext) -> str:
                 pass
             bot.sendMessage(
                 chat.id,
-                f"I sʜᴀᴡ ᴀʟʟᴏᴡ  <b>{html.escape(member.user.first_name)}</b> ᴛᴏ ᴛᴇxᴛ ||ᴇɴᴊᴏʏ ʙᴀʙʏ|| !",
+                f"I sʜᴀᴡ ᴀʟʟᴏᴡ  <b>{html.escape(member.user.first_name)}</b> ᴛᴏ ᴛᴇxᴛ ||ᴇɴᴊᴏʏ HOMIE|| !",
                 parse_mode=ParseMode.HTML,
             )
             return (
