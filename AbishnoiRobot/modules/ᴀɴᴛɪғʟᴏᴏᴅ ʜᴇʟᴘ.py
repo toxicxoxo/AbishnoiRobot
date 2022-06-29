@@ -1,4 +1,4 @@
-__mod_name__ = "ꜰʟᴏᴏᴅ 🚨"
+__mod_name__ = "Fʟᴏᴏᴅ 🚨"
 
 __help__ = """
           *Antiflood* 
@@ -18,5 +18,5 @@ Tʜɪs ᴡɪʟʟ ᴍᴜᴛᴇ ᴜsᴇʀs ɪғ ᴛʜᴇʏ sᴇɴᴅ ᴍᴏʀᴇ �
  `3ᴅ` = 3 ᴅᴀʏs
  `1ᴡ` = 1 ᴡᴇᴇᴋ
  
-  𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
+    💫THANKS MARGRITA💫
   """
