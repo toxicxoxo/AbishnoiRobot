@@ -8,5 +8,5 @@ __help__ = """
 ➥ /bug *:*   ɪғ sʜᴏᴡ ᴀɴʏ ʙᴜɢ ᴀɴᴅ ɪssᴜ 
 ➥ /speedtest *:* sᴘᴇᴇᴅ ᴘᴀɴᴇʟ
 
-  𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
+  💫THANKS SUBHDEEP💫
 """
