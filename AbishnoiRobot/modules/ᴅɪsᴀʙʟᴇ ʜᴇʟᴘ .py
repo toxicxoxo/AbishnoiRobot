@@ -9,5 +9,5 @@ __help__ = """
 ➥ /disablemodule <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ> *:* ᴅɪsᴀʙʟᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ɪɴ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ
 ➥ /listcmds*:* ʟɪsᴛ ᴀʟʟ ᴘᴏssɪʙʟᴇ ᴛᴏɢɢʟᴇᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs
 
-   𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
+   ❄️THANKS Vashishth❄️
 """
