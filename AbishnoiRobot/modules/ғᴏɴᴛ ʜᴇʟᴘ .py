@@ -12,5 +12,5 @@ __help__ = """
 ➥ /lined *:* Cʜᴀɴɢᴇ ᴛʜᴇ ᴛᴇxᴛ ɪɴᴛᴏ ʟɪɴᴇᴅ ᴛᴇx
  
  
- 𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M
+    ✨ THANKS SAGAR ✨
  """
