@@ -114,7 +114,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "12:00 Aᴍ, Gʀᴏᴜᴘ Is Cʟᴏsɪɴɢ Tɪʟʟ 6 Aᴍ. Nɪɢʜᴛ Mᴏᴅᴇ Sᴛᴀʀᴛᴇᴅ ! \n**ᴘᴏᴠᴇʀᴅ ʙʏ ➪ ᴀʙɢ ʀᴏʙᴏᴛ**",
+                "12:00 Aᴍ, Gʀᴏᴜᴘ Is Cʟᴏsɪɴɢ Tɪʟʟ 6 Aᴍ. Nɪɢʜᴛ Mᴏᴅᴇ Sᴛᴀʀᴛᴇᴅ ! \n**ᴘᴏᴠᴇʀᴅ ʙʏ ➪ HOMIES **",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -139,7 +139,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "ɴᴏᴡ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ\n** Pᴏᴡᴇʀᴇᴅ Bʏ「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ **",
+                "ɴᴏᴡ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ\n** Pᴏᴡᴇʀᴇᴅ Bʏ「 HOMIES BOT **",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
