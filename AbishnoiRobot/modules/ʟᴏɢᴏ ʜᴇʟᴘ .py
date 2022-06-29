@@ -7,5 +7,5 @@ __help__ = """
 ➥ /wallpaper *:* ɢᴇᴛ ᴀ ᴡᴀʟʟᴘᴀᴘᴇʀ 
 ➥ /write <text> *:* Wʀɪᴛᴇs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ
 
-  𒊹︎︎︎ ᴘᴏᴡᴇʀᴅ ʙʏ @Abishnoi1M 
+  🍃THANKS IHIMANSHU 🍃
   """
