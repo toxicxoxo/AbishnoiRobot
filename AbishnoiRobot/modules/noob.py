@@ -10,19 +10,19 @@ from pyrogram.types import (
 
 from AbishnoiRobot import pbot as bot
 
-ABISHNOI = "https://telegra.ph/file/348fd99cf32b44153f5c1.jpg"
+ABISHNOI = "https://telegra.ph/file/a3a0020960c76b37dd1d9.png"
 
 
 @bot.on_message(filters.command(["noob", "owner"]))
 async def repo(client, message):
     await message.reply_photo(
         photo=ABISHNOI,
-        caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」](t.me/Abishnoi_ro_bot)**
+        caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [「HOMIES BOT」](t.me/HomiesAttendantbot)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/Abishnoi1M"),
+                    InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/HomiesAttendant"),
                 ]
             ]
         ),
