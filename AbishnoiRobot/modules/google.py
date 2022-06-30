@@ -102,7 +102,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await tbot.download_media(message, photo)
     else:
-        await img.reply("`Rᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ ᴏʀ sᴛɪᴄᴋᴇʀ ғᴜ*ᴋᴇʀ`")
+        await img.reply("`Rᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ ᴏʀ sᴛɪᴄᴋᴇʀ`")
         return
 
     if photo:
@@ -268,7 +268,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Abishnoi <==="
+        app_details += "\n\n===> GOD <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
