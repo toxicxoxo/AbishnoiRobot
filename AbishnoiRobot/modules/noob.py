@@ -10,7 +10,7 @@ from pyrogram.types import (
 
 from AbishnoiRobot import pbot as bot
 
-ABISHNOI = "https://telegra.ph/file/a3a0020960c76b37dd1d9.png"
+ABISHNOI = "https://telegra.ph/file/ec3d72893958f6495ad3b.jpg"
 
 
 @bot.on_message(filters.command(["noob", "owner"]))
