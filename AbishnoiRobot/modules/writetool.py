@@ -17,7 +17,7 @@ async def handwriting(_, message):
     await m.edit("» ᴜᴩʟᴏᴀᴅɪɴɢ...")
     await pbot.send_chat_action(message.chat.id, "upload_photo")
     await message.reply_photo(
-        hand, caption="ᴡʀɪᴛᴛᴇɴ ᴡɪᴛʜ 🖊 ʙʏ [ᴀʙɪsʜɴᴏɪ](t.me/Abishnoi1M)"
+        hand, caption="ᴡʀɪᴛᴛᴇɴ ᴡɪᴛʜ  ʙʏ [GOD](t.me/HomiesAttendant)"
     )
 
 
