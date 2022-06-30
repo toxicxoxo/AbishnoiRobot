@@ -16,7 +16,7 @@ async def purge_messages(event):
     if not await user_is_admin(
         user_id=event.sender_id, message=event
     ) and event.from_id not in [1087968824]:
-        await event.reply("Oɴʟʏ Aᴅᴍɪɴs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ")
+        await event.reply("Oɴʟʏ Aᴅᴍɪɴs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ TUMSE NA HO PAYGA")
         return
 
     if not await can_delete_messages(message=event):
@@ -54,7 +54,7 @@ async def delete_messages(event):
     if not await user_is_admin(
         user_id=event.sender_id, message=event
     ) and event.from_id not in [1087968824]:
-        await event.reply("Oɴʟʏ Aᴅᴍɪɴs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ")
+        await event.reply("Oɴʟʏ Aᴅᴍɪɴs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ TUMSE NA HO PAYGA")
         return
 
     if not await can_delete_messages(message=event):
@@ -63,7 +63,7 @@ async def delete_messages(event):
 
     message = await event.get_reply_message()
     if not message:
-        await event.reply("Wʜᴀᴅʏᴀ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ?")
+        await event.reply(" ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ?")
         return
     chat = await event.get_input_chat()
     del_message = [message, event.message]
