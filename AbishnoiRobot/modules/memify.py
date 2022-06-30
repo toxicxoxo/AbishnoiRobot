@@ -12,7 +12,7 @@ from AbishnoiRobot import LOGGER, TEMP_DOWNLOAD_DIRECTORY
 from AbishnoiRobot import telethn as bot
 
 
-Credit = "Abishnoi1M"
+Credit = "GOD"
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -44,7 +44,7 @@ async def handler(event):
         pass
 
     else:
-        await event.reply("Tʜɪs ɴɪɢɢᴀ ʀᴇᴍᴏᴠᴇᴅ ᴄʀᴇᴅɪᴛ ʟɪɴᴇ ғʀᴏᴍ ᴄᴏᴅᴇ")
+        await event.reply("Tʜɪs  ʀᴇᴍᴏᴠᴇᴅ ᴄʀᴇᴅɪᴛ ʟɪɴᴇ ғʀᴏᴍ ᴄᴏᴅᴇ")
 
     text = str(event.pattern_match.group(1)).strip()
 
