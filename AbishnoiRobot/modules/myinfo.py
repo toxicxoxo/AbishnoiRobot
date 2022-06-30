@@ -17,11 +17,11 @@ from AbishnoiRobot import dispatcher
 
 edit_time = 5
 """ =======================HOMIES BOT====================== """
-file1 = "https://telegra.ph/file/9a85d0a873e2dd80d278d.jpg"
-file2 = "https://telegra.ph/file/9e7815284031452afa9e5.jpg"
-file3 = "https://telegra.ph/file/dcc5e003287f69acea368.jpg"
-file4 = "https://telegra.ph/file/ed1ce7fee94f46b0f671e.jpg"
-file5 = "https://telegra.ph/file/701028ce085ecfa961a36.jpg"
+file1 = "https://telegra.ph/file/ff1a85057ef19a2e9f5c4.jpg"
+file2 = "https://telegra.ph/file/3f08027fa00cbe727a515.jpg"
+file3 = "https://telegra.ph/file/df52ba7b1783a2ee2cb97.jpg"
+file4 = "https://telegra.ph/file/7e410e1ccaec5c47ef6e1.jpg"
+file5 = "https://telegra.ph/file/fe8c6da35023c67ba1e66.jpg"
 """ =======================HOMIES BOT====================== """
 
 
