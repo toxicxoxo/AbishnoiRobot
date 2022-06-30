@@ -591,7 +591,7 @@ def addnew_filter(update, chat_id, keyword, text, file_type, file_id, buttons):
     totalfilt = sql.get_chat_triggers(chat_id)
     if len(totalfilt) >= 150:  # Idk why i made this like function....
         msg.reply_text(
-            "Tʜɪs ɢʀᴏᴜᴘ ʜᴀs ʀᴇᴀᴄʜᴇᴅ ɪᴛs ᴍᴀx ғɪʟᴛᴇʀs ʟɪᴍɪᴛ ᴏғ 150.\n ɴᴇᴇᴅ ᴍᴏʀᴇ ɢᴏ ʜᴇᴀʀ @Abishnoi_bots"
+            "Tʜɪs ɢʀᴏᴜᴘ ʜᴀs ʀᴇᴀᴄʜᴇᴅ ɪᴛs ᴍᴀx ғɪʟᴛᴇʀs ʟɪᴍɪᴛ ᴏғ 150.\n ɴᴇᴇᴅ ᴍᴏʀᴇ ɢᴏ ʜᴇᴀʀ @HomiesAttendantbot"
         )
         return False
     else:
