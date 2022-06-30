@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*❤卄i,\n ᴛʜɪs ɪs {}* [!](https://telegra.ph/file/a3a0020960c76b37dd1d9.png)\n\n*👮 ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀᖴᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏᶠ ᴛᴇʟᴇɢʀᴀᴍ..*\n
+*❤卄i,\n ᴛʜɪs ɪs {}* [!](https://telegra.ph/file/e823b344ff8101948e098.jpg)\n\n*👮 ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀᖴᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏᶠ ᴛᴇʟᴇɢʀᴀᴍ..*\n
 /help   ➪ *🌼ғᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴄᴏᴍᴍᴇɴᴅ*   \n 
 /mhelp  ➪ *🌼ғᴏʀ ᴠᴄ ᴍᴜsɪᴄ ʙᴏᴛ ᴄᴏᴍᴍᴇɴᴅ*
 """
@@ -104,7 +104,7 @@ buttons = [
     ],
 ]
 
-AbishnoiRobot_IMG = "https://telegra.ph/file/a3a0020960c76b37dd1d9.png"
+AbishnoiRobot_IMG = "https://telegra.ph/file/e823b344ff8101948e098.jpg"
 
 HELP_STRINGS = f"""
 ❤HOMIES❤ *🍁ᴇxᴄʟᴜsɪᴠᴇ Fᴇᴀᴛᴜʀᴇs🍁*\n*» 🍁ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n*»IF ʏᴏᴜ ɢᴏᴛ ᴀɴʏ ɪssᴜᴇ ᴏʀ ʙᴜɢ ɪɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ @{SUPPORT_CHAT}*\n\n*ㅤㅤㅤ      ㅤㅤ💥 » ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅ « 💥 «*\n\n➲ /donate : *sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.*\n➲ /help  : *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅ Sᴇᴄᴛɪᴏɴ.*\n𝄠 /mhelp :*ᴍᴜsɪᴄ ʙᴏᴛ ʜᴇʟᴘ .*"""
@@ -737,7 +737,7 @@ def main():
         try:
             dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
-                "https://telegra.ph/file/a3a0020960c76b37dd1d9.png",
+                "https://telegra.ph/file/1dfada489528335e50d1c.png",
                 caption=" HOMIES BOT IS ALIVE !\n\n  MADE BY GOD ",
             )
         except Unauthorized:
