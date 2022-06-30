@@ -11,22 +11,22 @@ from AbishnoiRobot import telethn as tbot
 
 
 PHOTO = [
-    "https://telegra.ph/file/c8b388e5c3fa17f7dbbfe.jpg",
-    "https://telegra.ph/file/32c5d35031af56a2bc37e.mp4",
+    "https://telegra.ph/file/3464661fa61aa4e7918b5.png",
+    "https://telegra.ph/file/ec3d72893958f6495ad3b.jpg",
 ]
 
 
 @register(pattern=("/alive"))
 async def awake(event):
-    TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ 「 ᴀʙɢ 𒆜 ʀᴏʙᴏᴛ 」​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-    TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝝙𝗕𝗜𝗦𝗛𝗡𝗢𝗜](https://t.me/Abishnoi1M)** \n\n"
+    TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ 「 HOMIES BOT 」​**\n━━━━━━━━━━━━━━━━━━━\n\n"
+    TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [GOD](https://t.me/HomiesAttendant)** \n\n"
     TEXT += f"» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
     TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
     TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
     BUTTON = [
         [
-            Button.url("ʜᴇʟᴘ​", "https://t.me/Abishnoi_ro_bot?start=help"),
-            Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/Abishnoi_bots"),
+            Button.url("ʜᴇʟᴘ​", "https://t.me/HomiesAttendant?start=help"),
+            Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/real_homies"),
         ]
     ]
     ran = random.choice(PHOTO)
